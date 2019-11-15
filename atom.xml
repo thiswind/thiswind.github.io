@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.thiswind.work</id>
     <title>thiswind</title>
-    <updated>2019-11-15T13:45:42.299Z</updated>
+    <updated>2019-11-15T13:49:31.273Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://www.thiswind.work"/>
     <link rel="self" href="https://www.thiswind.work/atom.xml"/>
@@ -16,6 +16,18 @@
         <link href="https://www.thiswind.work/post/brew-daily-work">
         </link>
         <updated>2019-11-15T13:40:32.000Z</updated>
+        <summary type="html"><![CDATA[<pre><code class="language-bash">brew update
+brew upgrade
+brew cleanup
+brew cleanup --prune 7	# older than 7 days
+</code></pre>
+]]></summary>
+        <content type="html"><![CDATA[<pre><code class="language-bash">brew update
+brew upgrade
+brew cleanup
+brew cleanup --prune 7	# older than 7 days
+</code></pre>
+]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[gitlab-runner 一定要手动安装，不能通过 brew 安装]]></title>
@@ -23,6 +35,10 @@
         <link href="https://www.thiswind.work/post/gitlab-runner-yi-ding-yao-shou-dong-an-zhuang-bu-neng-tong-guo-brew-an-zhuang">
         </link>
         <updated>2019-11-15T13:35:21.000Z</updated>
+        <summary type="html"><![CDATA[<p>否则会下载错误的 gitlab-runner-helper 的docker镜像（已经过期，删掉了，下载不到了）</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>否则会下载错误的 gitlab-runner-helper 的docker镜像（已经过期，删掉了，下载不到了）</p>
+]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
