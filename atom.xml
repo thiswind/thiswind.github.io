@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://www.thiswind.work</id>
+    <title>thiswind</title>
+    <updated>2019-11-15T13:17:09.682Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="http://www.thiswind.work"/>
+    <link rel="self" href="http://www.thiswind.work/atom.xml"/>
+    <subtitle>thiswind：笔记本</subtitle>
+    <logo>http://www.thiswind.work/images/avatar.png</logo>
+    <icon>http://www.thiswind.work/favicon.ico</icon>
+    <rights>All rights reserved 2019, thiswind</rights>
+    <entry>
+        <title type="html"><![CDATA[Hello Gridea]]></title>
+        <id>http://www.thiswind.work/post/hello-gridea</id>
+        <link href="http://www.thiswind.work/post/hello-gridea">
+        </link>
+        <updated>2018-12-11T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+]]></content>
+    </entry>
+</feed>
