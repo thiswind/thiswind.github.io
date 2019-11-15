@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.thiswind.work</id>
     <title>thiswind</title>
-    <updated>2019-11-15T14:09:24.426Z</updated>
+    <updated>2019-11-15T14:11:32.686Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://www.thiswind.work"/>
     <link rel="self" href="https://www.thiswind.work/atom.xml"/>
@@ -10,6 +10,19 @@
     <logo>https://www.thiswind.work/images/avatar.png</logo>
     <icon>https://www.thiswind.work/favicon.ico</icon>
     <rights>All rights reserved 2019, thiswind</rights>
+    <entry>
+        <title type="html"><![CDATA[Zotero Style Repository]]></title>
+        <id>https://www.thiswind.work/post/zotero-style-repository</id>
+        <link href="https://www.thiswind.work/post/zotero-style-repository">
+        </link>
+        <updated>2019-11-15T14:09:53.000Z</updated>
+        <summary type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://www.thiswind.work/post-images/1573827065399.png" alt=""></figure>
+<p><a href="https://www.zotero.org/styles/?q=chinese-gb7714-2005">https://www.zotero.org/styles/?q=chinese-gb7714-2005</a></p>
+]]></summary>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://www.thiswind.work/post-images/1573827065399.png" alt=""></figure>
+<p><a href="https://www.zotero.org/styles/?q=chinese-gb7714-2005">https://www.zotero.org/styles/?q=chinese-gb7714-2005</a></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Quote this to prevent word splitting]]></title>
         <id>https://www.thiswind.work/post/quote-this-to-prevent-word-splitting</id>
