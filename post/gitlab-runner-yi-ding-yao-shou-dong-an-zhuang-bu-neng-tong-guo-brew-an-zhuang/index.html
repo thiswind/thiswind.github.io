@@ -1,8 +1,8 @@
 <html>
   <head>
-  <meta charset="utf-8" />
+    <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Gridea | thiswind</title>
+<title>gitlab-runner 一定要手动安装，不能通过 brew 安装 | thiswind</title>
 <meta name="description" content="thiswind：笔记本" />
 <link rel="shortcut icon" href="https://www.thiswind.work/favicon.ico?v=1573825254869">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -70,47 +70,55 @@
   </div>
 </div>
 
-        <div class="current-tag-container">
-            <h2 class="title">
-                标签：# Gridea
-            </h2> 
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              gitlab-runner 一定要手动安装，不能通过 brew 安装
+            </h2>
+            <div class="post-info">
+              <span>
+                2019-11-15
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+            </div>
+            
+              <img class="post-feature-image" src="https://www.thiswind.work/post-images/gitlab-runner-yi-ding-yao-shou-dong-an-zhuang-bu-neng-tong-guo-brew-an-zhuang.png" alt="">
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>否则会下载错误的 gitlab-runner-helper 的docker镜像（已经过期，删掉了，下载不到了）</p>
+<p>Download the binary for your system:</p>
+<pre><code class="language-bash">sudo curl --output /usr/local/bin/gitlab-runner https://gitlab-runner-downloads.s3.amazonaws.com/latest/binaries/gitlab-runner-darwin-amd64
+</code></pre>
+<p>You can download a binary for every available version as described in Bleeding Edge - download any other tagged release.<br>
+Give it permissions to execute:</p>
+<pre><code class="language-bash">sudo chmod +x /usr/local/bin/gitlab-runner
+</code></pre>
+<p><a href="https://docs.gitlab.com/runner/install/osx.html#manual-installation-official">https://docs.gitlab.com/runner/install/osx.html#manual-installation-official</a></p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
         </div>
-        <div class="post-container">
-  
-    <article class="post">
-      <a href="https://www.thiswind.work/post/hello-gridea">
-        <h2 class="post-title">Hello Gridea</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2018-12-12
-        </span>
-        <span>
-          2 min read
-        </span>
-        
-          <a href="https://www.thiswind.work/tag/IMFTPBFda" class="post-tag">
-            # Gridea
-          </a>
-        
-      </div>
-      
-        <a href="https://www.thiswind.work/post/hello-gridea" class="post-feature-image" style="background-image: url('https://www.thiswind.work/post-images/hello-gridea.png')">
-        </a>
-      
-      <div class="post-abstract">
-        <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
 
-      </div>
-    </article>
-  
-</div>
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://www.thiswind.work/post/hello-gridea">
+              <h3 class="post-title">
+                Hello Gridea
+              </h3>
+            </a>
+          </div>
+        
 
-        <div class="pagination-container">
-  
-  
-</div>
+        
 
         <div class="site-footer">
   @thiswind 2019 | 
