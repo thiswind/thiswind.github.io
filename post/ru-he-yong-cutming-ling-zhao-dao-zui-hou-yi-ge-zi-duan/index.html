@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>gitlab-runner 一定要手动安装，不能通过 brew 安装 | thiswind</title>
+<title>如何用`cut`命令找到最后一个字段 | thiswind</title>
 <meta name="description" content="thiswind：笔记本">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -92,29 +92,28 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">gitlab-runner 一定要手动安装，不能通过 brew 安装</h2>
-            <div class="post-date">2019-11-15</div>
+            <h2 class="post-title">如何用`cut`命令找到最后一个字段</h2>
+            <div class="post-date">2019-11-19</div>
             
             <div class="post-content">
-              <p>否则会下载错误的 gitlab-runner-helper 的docker镜像（已经过期，删掉了，下载不到了）</p>
+              <pre><code class="language-bash">pwd | rev | cut -d &quot;/&quot; -f 1 | rev
+</code></pre>
+<p>原理：</p>
+<ol>
+<li>逆向</li>
+<li>切分，找到第一项</li>
+<li>逆向，还原</li>
+</ol>
 <!-- more -->
-<p>Download the binary for your system:</p>
-<pre><code class="language-bash">sudo curl --output /usr/local/bin/gitlab-runner https://gitlab-runner-downloads.s3.amazonaws.com/latest/binaries/gitlab-runner-darwin-amd64
-</code></pre>
-<p>You can download a binary for every available version as described in Bleeding Edge - download any other tagged release.<br>
-Give it permissions to execute:</p>
-<pre><code class="language-bash">sudo chmod +x /usr/local/bin/gitlab-runner
-</code></pre>
-<p><a href="https://docs.gitlab.com/runner/install/osx.html#manual-installation-official">https://docs.gitlab.com/runner/install/osx.html#manual-installation-official</a></p>
 
             </div>
             
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://www.thiswind.work/post/about">
+                <a href="https://www.thiswind.work/post/latex-shu-xue-gong-shi">
                   <h3 class="post-title">
-                    关于
+                    LaTeX数学公式
                   </h3>
                 </a>
               </div>
