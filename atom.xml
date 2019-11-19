@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.thiswind.work</id>
     <title>thiswind</title>
-    <updated>2019-11-19T09:46:35.793Z</updated>
+    <updated>2019-11-19T09:50:55.625Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://www.thiswind.work"/>
     <link rel="self" href="https://www.thiswind.work/atom.xml"/>
@@ -16,23 +16,33 @@
         <link href="https://www.thiswind.work/post/bash-input">
         </link>
         <updated>2019-11-19T09:44:55.000Z</updated>
-        <summary type="html"><![CDATA[<pre><code class="language-bash">[ONE]&gt; read  
-aaa
+        <summary type="html"><![CDATA[<pre><code class="language-bash">[ONE]&gt; read name
+aaaaa
+[ONE]&gt; echo $name
+aaaaa
+[ONE]&gt; read age
+9999
+[ONE]&gt; echo $age
+9999
+[ONE]&gt; read i
+3333
 [ONE]&gt; echo $i
-hello
-[ONE]&gt; name=$i
-[ONE]&gt; echo name
-name
+3333
 [ONE]&gt; 
 </code></pre>
 ]]></summary>
-        <content type="html"><![CDATA[<pre><code class="language-bash">[ONE]&gt; read  
-aaa
+        <content type="html"><![CDATA[<pre><code class="language-bash">[ONE]&gt; read name
+aaaaa
+[ONE]&gt; echo $name
+aaaaa
+[ONE]&gt; read age
+9999
+[ONE]&gt; echo $age
+9999
+[ONE]&gt; read i
+3333
 [ONE]&gt; echo $i
-hello
-[ONE]&gt; name=$i
-[ONE]&gt; echo name
-name
+3333
 [ONE]&gt; 
 </code></pre>
 ]]></content>
