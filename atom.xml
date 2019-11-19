@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.thiswind.work</id>
     <title>thiswind</title>
-    <updated>2019-11-19T07:06:36.664Z</updated>
+    <updated>2019-11-19T07:10:45.381Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://www.thiswind.work"/>
     <link rel="self" href="https://www.thiswind.work/atom.xml"/>
@@ -109,12 +109,10 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
         <link href="https://www.thiswind.work/post/zotero-style-repository">
         </link>
         <updated>2019-11-15T14:09:53.000Z</updated>
-        <summary type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://www.thiswind.work/post-images/1573827065399.png" alt=""></figure>
-<p><a href="https://www.zotero.org/styles/?q=chinese-gb7714-2005">https://www.zotero.org/styles/?q=chinese-gb7714-2005</a></p>
-]]></summary>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://www.thiswind.work/post-images/1573827065399.png" alt=""></figure>
-<p><a href="https://www.zotero.org/styles/?q=chinese-gb7714-2005">https://www.zotero.org/styles/?q=chinese-gb7714-2005</a></p>
-]]></content>
+        <summary type="html"><![CDATA[<p>下载地址： <a href="https://www.zotero.org/styles/?q=chinese-gb7714-2005">https://www.zotero.org/styles/?q=chinese-gb7714-2005</a></p>
+<img src="file:///Users/thiswind/Documents/Gridea/post-images/1573827065399.png" width="30%" height="30%">]]></summary>
+        <content type="html"><![CDATA[<p>下载地址： <a href="https://www.zotero.org/styles/?q=chinese-gb7714-2005">https://www.zotero.org/styles/?q=chinese-gb7714-2005</a></p>
+<img src="file:///Users/thiswind/Documents/Gridea/post-images/1573827065399.png" width="30%" height="30%">]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Quote this to prevent word splitting]]></title>
