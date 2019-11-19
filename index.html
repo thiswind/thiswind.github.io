@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://www.thiswind.work/favicon.ico?v=1574155812250">
+<link rel="shortcut icon" href="https://www.thiswind.work/favicon.ico?v=1574156045743">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://www.thiswind.work/styles/main.css">
 
@@ -30,7 +30,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://www.thiswind.work">
-        <img src="https://www.thiswind.work/images/avatar.png?v=1574155812250" class="site-logo">
+        <img src="https://www.thiswind.work/images/avatar.png?v=1574156045743" class="site-logo">
         <h1 class="site-title">thiswind</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -91,6 +91,39 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://www.thiswind.work/post/bash-fail-then-continue-fail-then-exit">
+                  <h2 class="post-title">bash fail then continue, fail then exit</h2>
+                </a>
+                <div class="post-date">
+                  2019-11-19
+                </div>
+                <div class="post-abstract">
+                  <p>fail then continue</p>
+<pre><code class="language-bash"># process list of formulas that have been installed
+while read i ;  do
+
+    # Jump blank lines
+    test -z &quot;$i&quot; &amp;&amp; continue
+
+    echo &quot;Installing $i ...&quot;
+
+    # attempt to install formula; if error write error, process next formula
+
+    brew install &quot;$i&quot; || continue
+
+done
+</code></pre>
+<p>fail then exit</p>
+<pre><code class="language-bash">some_command || exit
+</code></pre>
+
+                </div>
+              </div>
+              
+            </article>
           
             <article class="post-item">
               <div class="left">
@@ -299,22 +332,6 @@ brew upgrade
 brew cleanup
 brew cleanup --prune 7	# older than 7 days
 </code></pre>
-
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://www.thiswind.work/post/gitlab-runner-yi-ding-yao-shou-dong-an-zhuang-bu-neng-tong-guo-brew-an-zhuang">
-                  <h2 class="post-title">gitlab-runner 一定要手动安装，不能通过 brew 安装</h2>
-                </a>
-                <div class="post-date">
-                  2019-11-15
-                </div>
-                <div class="post-abstract">
-                  <p>否则会下载错误的 gitlab-runner-helper 的docker镜像（已经过期，删掉了，下载不到了）</p>
 
                 </div>
               </div>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>shell loop | thiswind</title>
+<title>bash fail then continue, fail then exit | thiswind</title>
 <meta name="description" content="thiswind：笔记本">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -92,15 +92,27 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">shell loop</h2>
+            <h2 class="post-title">bash fail then continue, fail then exit</h2>
             <div class="post-date">2019-11-19</div>
             
             <div class="post-content">
-              <pre><code class="language-bash">printf &quot;letters: &quot;
-for i in &quot;a&quot; &quot;b&quot; &quot;c&quot;; do
-    printf &quot;%s,&quot; &quot;$i&quot;
+              <p>fail then continue</p>
+<pre><code class="language-bash"># process list of formulas that have been installed
+while read i ;  do
+
+    # Jump blank lines
+    test -z &quot;$i&quot; &amp;&amp; continue
+
+    echo &quot;Installing $i ...&quot;
+
+    # attempt to install formula; if error write error, process next formula
+
+    brew install &quot;$i&quot; || continue
+
 done
-printf &quot;\n&quot;
+</code></pre>
+<p>fail then exit</p>
+<pre><code class="language-bash">some_command || exit
 </code></pre>
 <!-- more -->
 
@@ -109,9 +121,9 @@ printf &quot;\n&quot;
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://www.thiswind.work/post/shell-if">
+                <a href="https://www.thiswind.work/post/shell-loop">
                   <h3 class="post-title">
-                    shell if
+                    shell loop
                   </h3>
                 </a>
               </div>
