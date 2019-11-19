@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>Zotero Style Repository | thiswind</title>
+<title>shell if | thiswind</title>
 <meta name="description" content="thiswind：笔记本">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -92,12 +92,19 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">Zotero Style Repository</h2>
-            <div class="post-date">2019-11-15</div>
+            <h2 class="post-title">shell if</h2>
+            <div class="post-date">2019-11-19</div>
             
             <div class="post-content">
-              <p>下载地址： <a href="https://www.zotero.org/styles/?q=chinese-gb7714-2005">https://www.zotero.org/styles/?q=chinese-gb7714-2005</a></p>
-<img src="/post-images/1573827065399.png" width="50%" height="50%">
+              <pre><code class="language-bash">if test -f abc.txt; then
+    ls -l abc.txt
+fi
+</code></pre>
+<p>OR</p>
+<pre><code class="language-bash">if [ -f abc.txt ]; then
+    ls -l abc.txt
+fi
+</code></pre>
 <!-- more -->
 
             </div>
@@ -105,9 +112,9 @@
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://www.thiswind.work/post/quote-this-to-prevent-word-splitting">
+                <a href="https://www.thiswind.work/post/shell-test-not">
                   <h3 class="post-title">
-                    Quote this to prevent word splitting
+                    shell test not
                   </h3>
                 </a>
               </div>

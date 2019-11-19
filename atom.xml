@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.thiswind.work</id>
     <title>thiswind</title>
-    <updated>2019-11-19T07:17:38.618Z</updated>
+    <updated>2019-11-19T09:30:14.425Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://www.thiswind.work"/>
     <link rel="self" href="https://www.thiswind.work/atom.xml"/>
@@ -10,6 +10,99 @@
     <logo>https://www.thiswind.work/images/avatar.png</logo>
     <icon>https://www.thiswind.work/favicon.ico</icon>
     <rights>All rights reserved 2019, thiswind</rights>
+    <entry>
+        <title type="html"><![CDATA[shell loop]]></title>
+        <id>https://www.thiswind.work/post/shell-loop</id>
+        <link href="https://www.thiswind.work/post/shell-loop">
+        </link>
+        <updated>2019-11-19T09:28:11.000Z</updated>
+        <summary type="html"><![CDATA[<pre><code class="language-bash">printf &quot;letters: &quot;
+for i in &quot;a&quot; &quot;b&quot; &quot;c&quot;; do
+    printf &quot;%s,&quot; &quot;$i&quot;
+done
+printf &quot;\n&quot;
+</code></pre>
+]]></summary>
+        <content type="html"><![CDATA[<pre><code class="language-bash">printf &quot;letters: &quot;
+for i in &quot;a&quot; &quot;b&quot; &quot;c&quot;; do
+    printf &quot;%s,&quot; &quot;$i&quot;
+done
+printf &quot;\n&quot;
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[shell if]]></title>
+        <id>https://www.thiswind.work/post/shell-if</id>
+        <link href="https://www.thiswind.work/post/shell-if">
+        </link>
+        <updated>2019-11-19T09:26:31.000Z</updated>
+        <summary type="html"><![CDATA[<pre><code class="language-bash">if test -f abc.txt; then
+    ls -l abc.txt
+fi
+</code></pre>
+<p>OR</p>
+<pre><code class="language-bash">if [ -f abc.txt ]; then
+    ls -l abc.txt
+fi
+</code></pre>
+]]></summary>
+        <content type="html"><![CDATA[<pre><code class="language-bash">if test -f abc.txt; then
+    ls -l abc.txt
+fi
+</code></pre>
+<p>OR</p>
+<pre><code class="language-bash">if [ -f abc.txt ]; then
+    ls -l abc.txt
+fi
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[shell test not]]></title>
+        <id>https://www.thiswind.work/post/shell-test-not</id>
+        <link href="https://www.thiswind.work/post/shell-test-not">
+        </link>
+        <updated>2019-11-19T09:25:23.000Z</updated>
+        <summary type="html"><![CDATA[<p>The test command syntax is as follows:</p>
+<pre><code class="language-bash">! expression
+</code></pre>
+<p>OR</p>
+<pre><code class="language-bash">[ ! expression ]
+</code></pre>
+<p>OR</p>
+<pre><code class="language-bash">if test ! condition
+then
+     command1
+     command2
+fi
+if [ ! condition ]
+then
+     command1
+     command2
+fi
+</code></pre>
+]]></summary>
+        <content type="html"><![CDATA[<p>The test command syntax is as follows:</p>
+<pre><code class="language-bash">! expression
+</code></pre>
+<p>OR</p>
+<pre><code class="language-bash">[ ! expression ]
+</code></pre>
+<p>OR</p>
+<pre><code class="language-bash">if test ! condition
+then
+     command1
+     command2
+fi
+if [ ! condition ]
+then
+     command1
+     command2
+fi
+</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[如何用`cut`命令找到最后一个字段]]></title>
         <id>https://www.thiswind.work/post/ru-he-yong-cutming-ling-zhao-dao-zui-hou-yi-ge-zi-duan</id>
@@ -163,26 +256,6 @@ brew cleanup --prune 7	# older than 7 days
         <summary type="html"><![CDATA[<p>否则会下载错误的 gitlab-runner-helper 的docker镜像（已经过期，删掉了，下载不到了）</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>否则会下载错误的 gitlab-runner-helper 的docker镜像（已经过期，删掉了，下载不到了）</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[关于]]></title>
-        <id>https://www.thiswind.work/post/about</id>
-        <link href="https://www.thiswind.work/post/about">
-        </link>
-        <updated>2019-01-25T11:09:48.000Z</updated>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://www.thiswind.work/post/hello-gridea</id>
-        <link href="https://www.thiswind.work/post/hello-gridea">
-        </link>
-        <updated>2018-12-11T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
 ]]></content>
     </entry>
 </feed>
