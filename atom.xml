@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.thiswind.work</id>
     <title>thiswind</title>
-    <updated>2019-11-19T09:36:45.572Z</updated>
+    <updated>2019-11-19T09:40:47.052Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://www.thiswind.work"/>
     <link rel="self" href="https://www.thiswind.work/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>https://www.thiswind.work/images/avatar.png</logo>
     <icon>https://www.thiswind.work/favicon.ico</icon>
     <rights>All rights reserved 2019, thiswind</rights>
+    <entry>
+        <title type="html"><![CDATA[bilibili]]></title>
+        <id>https://www.thiswind.work/post/bilibili</id>
+        <link href="https://www.thiswind.work/post/bilibili">
+        </link>
+        <updated>2019-11-19T09:39:49.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[shellcheck]]></title>
         <id>https://www.thiswind.work/post/shellcheck</id>
@@ -274,26 +281,5 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
 <img src="/post-images/1573827065399.png" width="50%" height="50%">]]></summary>
         <content type="html"><![CDATA[<p>下载地址： <a href="https://www.zotero.org/styles/?q=chinese-gb7714-2005">https://www.zotero.org/styles/?q=chinese-gb7714-2005</a></p>
 <img src="/post-images/1573827065399.png" width="50%" height="50%">]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Quote this to prevent word splitting]]></title>
-        <id>https://www.thiswind.work/post/quote-this-to-prevent-word-splitting</id>
-        <link href="https://www.thiswind.work/post/quote-this-to-prevent-word-splitting">
-        </link>
-        <updated>2019-11-15T14:08:05.000Z</updated>
-        <summary type="html"><![CDATA[<p>Problematic code:</p>
-<pre><code class="language-bash">ls -l $(getfilename)
-</code></pre>
-<p>Correct code:</p>
-<pre><code class="language-bash">ls -l &quot;$(getfilename)&quot;
-</code></pre>
-]]></summary>
-        <content type="html"><![CDATA[<p>Problematic code:</p>
-<pre><code class="language-bash">ls -l $(getfilename)
-</code></pre>
-<p>Correct code:</p>
-<pre><code class="language-bash">ls -l &quot;$(getfilename)&quot;
-</code></pre>
-]]></content>
     </entry>
 </feed>
