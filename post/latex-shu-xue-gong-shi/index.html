@@ -1,126 +1,93 @@
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="robots" content="all,follow">
-<meta name="googlebot" content="index,follow,snippet,archive">
+  <head>
+    <meta charset="utf-8" >
+
 <title>LaTeX数学公式 | thiswind</title>
-<link rel="shortcut icon" href="https://www.thiswind.work/favicon.ico?v=1574158898082">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-<link rel="stylesheet" href="https://www.thiswind.work/styles/main.css" type='text/css' media='all'>
+<meta name="description" content="thiswind：笔记本">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="shortcut icon" href="https://www.thiswind.work/favicon.ico?v=1574159052706">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://www.thiswind.work/styles/main.css">
+
 
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 
 
-
-</head>
-<body class="home blog ct-body standard">
-<div id="overflow-container" class="overflow-container">
-  <a class="skip-content" href="#main">Skip to content</a>
-  <header id="site-header" class="site-header" role="banner">
-    <div class='top-navigation top-navigation-important'>
-        <div class='container'>
-            <div id="menu-secondary" class="menu-container menu-secondary" role="navigation">
-                <button id="toggle-secondary-navigation" class="toggle-secondary-navigation"><i class="fa fa-plus"></i></button>
-                <div class="menu">
-                    <ul id="menu-secondary-items" class="menu-secondary-items">
-                        
-                        
-                    </ul>
-                </div>
-            </div>
-            <ul class="social-media-icons">
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-            </ul>
-        </div>
-    </div>
-
-    <div class="container">
-        <div id="title-info" class="title-info">
-            <div id='site-title' class='site-title'>
-                <a href="https://www.thiswind.work">  thiswind </a>
-            </div>
-        </div>
-        <button id="toggle-navigation" class="toggle-navigation">
-            <i class="fa fa-bars"></i>
-        </button>
-        <div id="menu-primary-tracks" class="menu-primary-tracks"></div>
-        <div id="menu-primary" class="menu-container menu-primary" role="navigation">
-            <p class="site-description">thiswind：笔记本</p>
-            <div class="menu">
-                <ul id="menu-primary-items" class="menu-primary-items">
-                     
-                        
-                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
-                                <a href="/">首页</a>
-                            </li>
-                        
-                    
-                        
-                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
-                                <a href="/archives">归档</a>
-                            </li>
-                        
-                    
-                        
-                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
-                                <a href="/tags">标签</a>
-                            </li>
-                        
-                    
-                        
-                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
-                                <a href="/post/about">关于</a>
-                            </li>
-                        
-                    
-                </ul>
-            </div>
-        </div>
-    </div>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
-</header>
-
-
-  <div id="main" class="main" role="main">
-    <div id="loop-container" class="loop-container">
-      <div class="post type-post status-publish format-standard has-post-thumbnail hentry category-design tag-design tag-standard-2 tag-tagalicious tag-travel entry full-without-featured odd excerpt-1">
+  </head>
+  <body>
+  
+    <nav class="navbar border fixed split-nav">
+  <div class="nav-brand">
+    <h3><a href="https://www.thiswind.work">thiswind</a></h3>
+  </div>
+  <div class="collapsible">
+    <input id="collapsible1" type="checkbox" name="collapsible1">
+    <button>
+      <label for="collapsible1">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+    </button>
+    <div class="collapsible-body">
+      <ul class="inline">
         
+          <li>
+            
+              <a href="/" class="menu">
+                首页
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/archives" class="menu">
+                归档
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/tags" class="menu">
+                标签
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/post/about" class="menu">
+                关于
+              </a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
 
-        <div class="entry-meta">
-          <span class="date">· 2019-11-16 ·</span> <span> / </span>
-          <span class="author">
-            <a href="https://www.thiswind.work" title="" rel="author"> @thiswind 2019</a>
-          </span>
-          
-        </div>
-        <div class='entry-header'>
-          <h1 class='entry-title'>LaTeX数学公式</h1>
-        </div>
-        <div class="entry-container">
-          <div class="entry-content">
-            <article>
+    <div id="top" class="row site">
+      <div class="sm-12 md-8 col">
+        <div class="paper">
+          <article class="article">
+            <h1>LaTeX数学公式</h1>
+            <p class="article-meta">
+              2019-11-16
+              
+            </p>
+            
+            <div class="post-content">
               <p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>被减数</mtext><mo>−</mo><mtext>减数</mtext><mo>=</mo><mtext>差</mtext></mrow><annotation encoding="application/x-tex">\text{被减数}-\text{减数}=\text{差}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord text"><span class="mord cjk_fallback">被减数</span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord text"><span class="mord cjk_fallback">减数</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord text"><span class="mord cjk_fallback">差</span></span></span></span></span></p>
 <p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover><mover><mrow><mn>0</mn><mo separator="true">,</mo><mn>0</mn><mo separator="true">,</mo><mo>…</mo><mo separator="true">,</mo><mn>0</mn></mrow><mo stretchy="true">⏞</mo></mover><mtext>共n项</mtext></mover></mrow><annotation encoding="application/x-tex">\overbrace{0,0,\dots,0}^{\text{共n项}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.165211em;vertical-align:-0.19444em;"></span><span class="mord mover"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.970771em;"><span style="top:-3.29244em;"><span class="pstrut" style="height:3.29244em;"></span><span class="mord mover"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.29244em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">0</span></span></span><span class="svg-align" style="top:-3.74444em;"><span class="pstrut" style="height:3em;"></span><span class="stretchy" style="height:0.548em;min-width:1.6em;"><span class="brace-left" style="height:0.548em;"><svg width='400em' height='0.548em' viewBox='0 0 400000 548' preserveAspectRatio='xMinYMin slice'><path d='M6 548l-6-6v-35l6-11c56-104 135.3-181.3 238-232 57.3-28.7 117
 -45 179-50h399577v120H403c-43.3 7-81 15-113 26-100.7 33-179.7 91-237 174-2.7
@@ -149,104 +116,154 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
 <p><a href="http://mohu.org/info/symbols/symbols.htm">http://mohu.org/info/symbols/symbols.htm</a></p>
 <p><a href="https://www.jianshu.com/p/97ec8a3739f6">https://www.jianshu.com/p/97ec8a3739f6</a></p>
 
-            </article>
-          </div>
-          <div class='entry-meta-bottom'>
-            <div class="entry-categories">
-              <p>
-                <span>Categories</span>
-                
-                  
-              </p>
             </div>
-            <div class="entry-tags">
-              <p><span>Tags</span>
-              </p>
-            </div>
-          </div>
-          <div class="author-meta">
-            <div class="author">
-              <img alt='' src="https://www.thiswind.work/images/avatar.png?v=1574158898082" class='avatar avatar-72 photo' height='72' width='72'>
-              <span>WRITTEN BY: &nbsp;&nbsp;&nbsp;<a href='https://www.thiswind.work'></a> </span>
-            </div>
-            <div class="bio">
-              <p></p>
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-            </div>
-          </div>
+          </article>
         </div>
+        <div class="paper" data-aos="fade-in">
           
-            <nav class="navigation pagination" role="navigation">
-              <h2 class="screen-reader-text">Posts navigation</h2>
-              <div class="nav-links">
-                <a class="next page-numbers" href="https://www.thiswind.work/post/pandoc-citeproc">下一篇->pandoc-citeproc</a>
+            <div class="next-post">
+              <div class="next">
+                下一篇
               </div>
-            </nav>
+              <a href="https://www.thiswind.work/post/pandoc-citeproc">
+                <h3 class="post-title">
+                  pandoc-citeproc
+                </h3>
+              </a>
+            </div>
           
-      </div>
-      <section id="comments" class="comments">
+        </div>
         
-      </section>
+      </div>
+
+      <div class="sm-12 md-4 col sidebar">
+  <div class="paper info-container">
+    <img src="https://www.thiswind.work/images/avatar.png?v=1574159052706" class="no-responsive avatar">
+    <div class="text-muted">thiswind：笔记本</div>
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     </div>
   </div>
-  <footer id="site-footer" class="site-footer" role="contentinfo">
-    <h1>
-        <a href="https://www.thiswind.work"> thiswind </a>
-    </h1>
-    <p class="site-description">thiswind：笔记本</p>
-    <div id="menu-footer" class="menu-container menu-footer" role="navigation">
-        <div class="menu">
-            <ul id="menu-footer-items" class="menu-footer-items">
-            </ul>
-        </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      最新文章
     </div>
-    <ul class="social-media-icons">
+    <div class="row">
+      <ul>
         
-            
+          
+            <li>
+              <a href="https://www.thiswind.work/post/bash-input">bash input</a>
+            </li>
+          
         
-            
+          
+            <li>
+              <a href="https://www.thiswind.work/post/bilibili">bilibili</a>
+            </li>
+          
         
-            
+          
+            <li>
+              <a href="https://www.thiswind.work/post/shellcheck">shellcheck</a>
+            </li>
+          
         
-            
+          
+            <li>
+              <a href="https://www.thiswind.work/post/bash-fail-then-continue-fail-then-exit">bash fail then continue, fail then exit</a>
+            </li>
+          
         
-            
+          
+            <li>
+              <a href="https://www.thiswind.work/post/shell-loop">shell loop</a>
+            </li>
+          
         
-            
+          
+            <li>
+              <a href="https://www.thiswind.work/post/shell-if">shell if</a>
+            </li>
+          
         
-            
+          
+            <li>
+              <a href="https://www.thiswind.work/post/shell-test-not">shell test not</a>
+            </li>
+          
         
-            
+          
+            <li>
+              <a href="https://www.thiswind.work/post/ru-he-yong-cutming-ling-zhao-dao-zui-hou-yi-ge-zi-duan">如何用`cut`命令找到最后一个字段</a>
+            </li>
+          
         
-    </ul>
-    <div class="design-credit">
-        <p>@thiswind 2019</p>
+          
+            <li>
+              <a href="https://www.thiswind.work/post/latex-shu-xue-gong-shi">LaTeX数学公式</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://www.thiswind.work/post/pandoc-citeproc">pandoc-citeproc</a>
+            </li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </ul>
     </div>
-</footer>
-<script>
-    hljs.initHighlightingOnLoad()
-</script>
-<script src="https://www.thiswind.work/media/scripts/lib/jquery.min.js"></script>
-<script src="https://www.thiswind.work/media/scripts/lib/jquerymigrate.js"></script>
-<script src="https://www.thiswind.work/media/scripts/lib/production.min.js"></script>
-
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      标签列表
+    </div>
+    <div class="row">
+      
+    </div>
+  </div>
+  <div class="paper">
+    @thiswind 2019 | <a class="rss" href="https://www.thiswind.work/atom.xml" target="_blank">RSS</a>
+  </div>
 </div>
-</body>
-</html>
 
+
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+</script>
+
+
+
+
+  </body>
+</html>

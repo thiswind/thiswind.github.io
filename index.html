@@ -1,135 +1,96 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="robots" content="all,follow">
-<meta name="googlebot" content="index,follow,snippet,archive">
+    <meta charset="utf-8" >
+
 <title>thiswind</title>
-<link rel="shortcut icon" href="https://www.thiswind.work/favicon.ico?v=1574158898082">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-<link rel="stylesheet" href="https://www.thiswind.work/styles/main.css" type='text/css' media='all'>
+<meta name="description" content="thiswind：笔记本">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="shortcut icon" href="https://www.thiswind.work/favicon.ico?v=1574159052706">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://www.thiswind.work/styles/main.css">
+
 
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
   </head>
-  <body class="home blog ct-body standard">
-    <div id="overflow-container" class="overflow-container">
-    <a class="skip-content" href="#main">Skip to content</a>
-        <header id="site-header" class="site-header" role="banner">
-    <div class='top-navigation top-navigation-important'>
-        <div class='container'>
-            <div id="menu-secondary" class="menu-container menu-secondary" role="navigation">
-                <button id="toggle-secondary-navigation" class="toggle-secondary-navigation"><i class="fa fa-plus"></i></button>
-                <div class="menu">
-                    <ul id="menu-secondary-items" class="menu-secondary-items">
-                        
-                        
-                    </ul>
-                </div>
-            </div>
-            <ul class="social-media-icons">
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-            </ul>
-        </div>
-    </div>
-
-    <div class="container">
-        <div id="title-info" class="title-info">
-            <div id='site-title' class='site-title'>
-                <a href="https://www.thiswind.work">  thiswind </a>
-            </div>
-        </div>
-        <button id="toggle-navigation" class="toggle-navigation">
-            <i class="fa fa-bars"></i>
-        </button>
-        <div id="menu-primary-tracks" class="menu-primary-tracks"></div>
-        <div id="menu-primary" class="menu-container menu-primary" role="navigation">
-            <p class="site-description">thiswind：笔记本</p>
-            <div class="menu">
-                <ul id="menu-primary-items" class="menu-primary-items">
-                     
-                        
-                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
-                                <a href="/">首页</a>
-                            </li>
-                        
-                    
-                        
-                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
-                                <a href="/archives">归档</a>
-                            </li>
-                        
-                    
-                        
-                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
-                                <a href="/tags">标签</a>
-                            </li>
-                        
-                    
-                        
-                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
-                                <a href="/post/about">关于</a>
-                            </li>
-                        
-                    
-                </ul>
-            </div>
-        </div>
-    </div>
-
-
-</header>
-
-
-        <div id="main" class="main" role="main">
-  <h1 class="screen-reader-text">Posts</h1>
-  
-  <div id="loop-container" class="loop-container">
-    <div class="post type-post status-publish format-standard  hentry category-design tag-memories
-    tag-normal-post tag-standard-2 excerpt zoom full-without-featured
-      
-      even
-       excerpt">
-      
-      <div class="excerpt-container">
-        <div class="excerpt-meta">
-          <span class="date">  · 2019-11-19 ·</span> <span> / </span>
-          <span class="author">
-              <a href="https://www.thiswind.work" title="Posts by  thiswind" rel="author"> thiswind</a>
-          </span>
+  <body>
+    <nav class="navbar border fixed split-nav">
+  <div class="nav-brand">
+    <h3><a href="https://www.thiswind.work">thiswind</a></h3>
+  </div>
+  <div class="collapsible">
+    <input id="collapsible1" type="checkbox" name="collapsible1">
+    <button>
+      <label for="collapsible1">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+    </button>
+    <div class="collapsible-body">
+      <ul class="inline">
+        
+          <li>
             
+              <a href="/" class="menu">
+                首页
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/archives" class="menu">
+                归档
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/tags" class="menu">
+                标签
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/post/about" class="menu">
+                关于
+              </a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
 
-        </div>
-        <div class='excerpt-header'>
-          <h2 class='excerpt-title'>
-            <a href="https://www.thiswind.work/post/bash-input"> bash input </a>
-          </h2>
-        </div>
-        <div class='excerpt-content'>
-          <article>
-              <pre><code class="language-bash">[ONE]&gt; read name
+
+    <div id="top" class="row site">
+      <div class="sm-12 md-8 col">
+        <div class="paper">
+          
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://www.thiswind.work/post/bash-input">bash input</a>
+    </h2>
+    <p class="article-meta">
+      2019-11-19
+      
+    </p>
+    <p class="text-lead">
+      <pre><code class="language-bash">[ONE]&gt; read name
 aaaaa
 [ONE]&gt; echo $name
 aaaaa
@@ -144,70 +105,50 @@ aaaaa
 [ONE]&gt; 
 </code></pre>
 
-          </article>
-        </div>
-      </div>
+    </p>
+    <div class="row">
+      <a href="https://www.thiswind.work/post/bash-input" class="readmore-link">
+        <button>
+          Read More
+        </button>
+      </a>
     </div>
-  </div>
-  
-  <div id="loop-container" class="loop-container">
-    <div class="post type-post status-publish format-standard  hentry category-design tag-memories
-    tag-normal-post tag-standard-2 excerpt zoom full-without-featured
-      
-        odd
-       excerpt">
-      
-      <div class="excerpt-container">
-        <div class="excerpt-meta">
-          <span class="date">  · 2019-11-19 ·</span> <span> / </span>
-          <span class="author">
-              <a href="https://www.thiswind.work" title="Posts by  thiswind" rel="author"> thiswind</a>
-          </span>
-            
+  </article>
 
-        </div>
-        <div class='excerpt-header'>
-          <h2 class='excerpt-title'>
-            <a href="https://www.thiswind.work/post/bilibili"> bilibili </a>
-          </h2>
-        </div>
-        <div class='excerpt-content'>
-          <article>
-              <figure data-type="image" tabindex="1"><img src="https://i1.hdslb.com/bfs/archive/8017fb113b50de46d39a6c4de544f2d73af57453.jpg_160x100.jpg" alt=""></figure>
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://www.thiswind.work/post/bilibili">bilibili</a>
+    </h2>
+    <p class="article-meta">
+      2019-11-19
+      
+    </p>
+    <p class="text-lead">
+      <figure data-type="image" tabindex="1"><img src="https://i1.hdslb.com/bfs/archive/8017fb113b50de46d39a6c4de544f2d73af57453.jpg_160x100.jpg" alt=""></figure>
 <ul>
 <li><a href="https://space.bilibili.com/128710224">https://space.bilibili.com/128710224</a></li>
 </ul>
 
-          </article>
-        </div>
-      </div>
+    </p>
+    <div class="row">
+      <a href="https://www.thiswind.work/post/bilibili" class="readmore-link">
+        <button>
+          Read More
+        </button>
+      </a>
     </div>
-  </div>
-  
-  <div id="loop-container" class="loop-container">
-    <div class="post type-post status-publish format-standard  hentry category-design tag-memories
-    tag-normal-post tag-standard-2 excerpt zoom full-without-featured
-      
-      even
-       excerpt">
-      
-      <div class="excerpt-container">
-        <div class="excerpt-meta">
-          <span class="date">  · 2019-11-19 ·</span> <span> / </span>
-          <span class="author">
-              <a href="https://www.thiswind.work" title="Posts by  thiswind" rel="author"> thiswind</a>
-          </span>
-            
+  </article>
 
-        </div>
-        <div class='excerpt-header'>
-          <h2 class='excerpt-title'>
-            <a href="https://www.thiswind.work/post/shellcheck"> shellcheck </a>
-          </h2>
-        </div>
-        <div class='excerpt-content'>
-          <article>
-              <pre><code class="language-bash">shellcheck some.sh
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://www.thiswind.work/post/shellcheck">shellcheck</a>
+    </h2>
+    <p class="article-meta">
+      2019-11-19
+      
+    </p>
+    <p class="text-lead">
+      <pre><code class="language-bash">shellcheck some.sh
 </code></pre>
 <figure data-type="image" tabindex="1"><img src="https://github.com/koalaman/shellcheck/raw/master/doc/terminal.png" alt=""></figure>
 <ul>
@@ -215,36 +156,26 @@ aaaaa
 <li>Github    <a href="https://github.com/koalaman/shellcheck">https://github.com/koalaman/shellcheck</a></li>
 </ul>
 
-          </article>
-        </div>
-      </div>
+    </p>
+    <div class="row">
+      <a href="https://www.thiswind.work/post/shellcheck" class="readmore-link">
+        <button>
+          Read More
+        </button>
+      </a>
     </div>
-  </div>
-  
-  <div id="loop-container" class="loop-container">
-    <div class="post type-post status-publish format-standard  hentry category-design tag-memories
-    tag-normal-post tag-standard-2 excerpt zoom full-without-featured
-      
-        odd
-       excerpt">
-      
-      <div class="excerpt-container">
-        <div class="excerpt-meta">
-          <span class="date">  · 2019-11-19 ·</span> <span> / </span>
-          <span class="author">
-              <a href="https://www.thiswind.work" title="Posts by  thiswind" rel="author"> thiswind</a>
-          </span>
-            
+  </article>
 
-        </div>
-        <div class='excerpt-header'>
-          <h2 class='excerpt-title'>
-            <a href="https://www.thiswind.work/post/bash-fail-then-continue-fail-then-exit"> bash fail then continue, fail then exit </a>
-          </h2>
-        </div>
-        <div class='excerpt-content'>
-          <article>
-              <p>fail then continue</p>
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://www.thiswind.work/post/bash-fail-then-continue-fail-then-exit">bash fail then continue, fail then exit</a>
+    </h2>
+    <p class="article-meta">
+      2019-11-19
+      
+    </p>
+    <p class="text-lead">
+      <p>fail then continue</p>
 <pre><code class="language-bash"># process list of formulas that have been installed
 while read i ;  do
 
@@ -263,72 +194,52 @@ done
 <pre><code class="language-bash">some_command || exit
 </code></pre>
 
-          </article>
-        </div>
-      </div>
+    </p>
+    <div class="row">
+      <a href="https://www.thiswind.work/post/bash-fail-then-continue-fail-then-exit" class="readmore-link">
+        <button>
+          Read More
+        </button>
+      </a>
     </div>
-  </div>
-  
-  <div id="loop-container" class="loop-container">
-    <div class="post type-post status-publish format-standard  hentry category-design tag-memories
-    tag-normal-post tag-standard-2 excerpt zoom full-without-featured
-      
-      even
-       excerpt">
-      
-      <div class="excerpt-container">
-        <div class="excerpt-meta">
-          <span class="date">  · 2019-11-19 ·</span> <span> / </span>
-          <span class="author">
-              <a href="https://www.thiswind.work" title="Posts by  thiswind" rel="author"> thiswind</a>
-          </span>
-            
+  </article>
 
-        </div>
-        <div class='excerpt-header'>
-          <h2 class='excerpt-title'>
-            <a href="https://www.thiswind.work/post/shell-loop"> shell loop </a>
-          </h2>
-        </div>
-        <div class='excerpt-content'>
-          <article>
-              <pre><code class="language-bash">printf &quot;letters: &quot;
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://www.thiswind.work/post/shell-loop">shell loop</a>
+    </h2>
+    <p class="article-meta">
+      2019-11-19
+      
+    </p>
+    <p class="text-lead">
+      <pre><code class="language-bash">printf &quot;letters: &quot;
 for i in &quot;a&quot; &quot;b&quot; &quot;c&quot;; do
     printf &quot;%s,&quot; &quot;$i&quot;
 done
 printf &quot;\n&quot;
 </code></pre>
 
-          </article>
-        </div>
-      </div>
+    </p>
+    <div class="row">
+      <a href="https://www.thiswind.work/post/shell-loop" class="readmore-link">
+        <button>
+          Read More
+        </button>
+      </a>
     </div>
-  </div>
-  
-  <div id="loop-container" class="loop-container">
-    <div class="post type-post status-publish format-standard  hentry category-design tag-memories
-    tag-normal-post tag-standard-2 excerpt zoom full-without-featured
-      
-        odd
-       excerpt">
-      
-      <div class="excerpt-container">
-        <div class="excerpt-meta">
-          <span class="date">  · 2019-11-19 ·</span> <span> / </span>
-          <span class="author">
-              <a href="https://www.thiswind.work" title="Posts by  thiswind" rel="author"> thiswind</a>
-          </span>
-            
+  </article>
 
-        </div>
-        <div class='excerpt-header'>
-          <h2 class='excerpt-title'>
-            <a href="https://www.thiswind.work/post/shell-if"> shell if </a>
-          </h2>
-        </div>
-        <div class='excerpt-content'>
-          <article>
-              <pre><code class="language-bash">if test -f abc.txt; then
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://www.thiswind.work/post/shell-if">shell if</a>
+    </h2>
+    <p class="article-meta">
+      2019-11-19
+      
+    </p>
+    <p class="text-lead">
+      <pre><code class="language-bash">if test -f abc.txt; then
     ls -l abc.txt
 fi
 </code></pre>
@@ -338,36 +249,26 @@ fi
 fi
 </code></pre>
 
-          </article>
-        </div>
-      </div>
+    </p>
+    <div class="row">
+      <a href="https://www.thiswind.work/post/shell-if" class="readmore-link">
+        <button>
+          Read More
+        </button>
+      </a>
     </div>
-  </div>
-  
-  <div id="loop-container" class="loop-container">
-    <div class="post type-post status-publish format-standard  hentry category-design tag-memories
-    tag-normal-post tag-standard-2 excerpt zoom full-without-featured
-      
-      even
-       excerpt">
-      
-      <div class="excerpt-container">
-        <div class="excerpt-meta">
-          <span class="date">  · 2019-11-19 ·</span> <span> / </span>
-          <span class="author">
-              <a href="https://www.thiswind.work" title="Posts by  thiswind" rel="author"> thiswind</a>
-          </span>
-            
+  </article>
 
-        </div>
-        <div class='excerpt-header'>
-          <h2 class='excerpt-title'>
-            <a href="https://www.thiswind.work/post/shell-test-not"> shell test not </a>
-          </h2>
-        </div>
-        <div class='excerpt-content'>
-          <article>
-              <p>The test command syntax is as follows:</p>
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://www.thiswind.work/post/shell-test-not">shell test not</a>
+    </h2>
+    <p class="article-meta">
+      2019-11-19
+      
+    </p>
+    <p class="text-lead">
+      <p>The test command syntax is as follows:</p>
 <pre><code class="language-bash">! expression
 </code></pre>
 <p>OR</p>
@@ -386,36 +287,26 @@ then
 fi
 </code></pre>
 
-          </article>
-        </div>
-      </div>
+    </p>
+    <div class="row">
+      <a href="https://www.thiswind.work/post/shell-test-not" class="readmore-link">
+        <button>
+          Read More
+        </button>
+      </a>
     </div>
-  </div>
-  
-  <div id="loop-container" class="loop-container">
-    <div class="post type-post status-publish format-standard  hentry category-design tag-memories
-    tag-normal-post tag-standard-2 excerpt zoom full-without-featured
-      
-        odd
-       excerpt">
-      
-      <div class="excerpt-container">
-        <div class="excerpt-meta">
-          <span class="date">  · 2019-11-19 ·</span> <span> / </span>
-          <span class="author">
-              <a href="https://www.thiswind.work" title="Posts by  thiswind" rel="author"> thiswind</a>
-          </span>
-            
+  </article>
 
-        </div>
-        <div class='excerpt-header'>
-          <h2 class='excerpt-title'>
-            <a href="https://www.thiswind.work/post/ru-he-yong-cutming-ling-zhao-dao-zui-hou-yi-ge-zi-duan"> 如何用`cut`命令找到最后一个字段 </a>
-          </h2>
-        </div>
-        <div class='excerpt-content'>
-          <article>
-              <pre><code class="language-bash">pwd | rev | cut -d &quot;/&quot; -f 1 | rev
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://www.thiswind.work/post/ru-he-yong-cutming-ling-zhao-dao-zui-hou-yi-ge-zi-duan">如何用`cut`命令找到最后一个字段</a>
+    </h2>
+    <p class="article-meta">
+      2019-11-19
+      
+    </p>
+    <p class="text-lead">
+      <pre><code class="language-bash">pwd | rev | cut -d &quot;/&quot; -f 1 | rev
 </code></pre>
 <p>原理：</p>
 <ol>
@@ -424,36 +315,26 @@ fi
 <li>逆向，还原</li>
 </ol>
 
-          </article>
-        </div>
-      </div>
+    </p>
+    <div class="row">
+      <a href="https://www.thiswind.work/post/ru-he-yong-cutming-ling-zhao-dao-zui-hou-yi-ge-zi-duan" class="readmore-link">
+        <button>
+          Read More
+        </button>
+      </a>
     </div>
-  </div>
-  
-  <div id="loop-container" class="loop-container">
-    <div class="post type-post status-publish format-standard  hentry category-design tag-memories
-    tag-normal-post tag-standard-2 excerpt zoom full-without-featured
-      
-      even
-       excerpt">
-      
-      <div class="excerpt-container">
-        <div class="excerpt-meta">
-          <span class="date">  · 2019-11-16 ·</span> <span> / </span>
-          <span class="author">
-              <a href="https://www.thiswind.work" title="Posts by  thiswind" rel="author"> thiswind</a>
-          </span>
-            
+  </article>
 
-        </div>
-        <div class='excerpt-header'>
-          <h2 class='excerpt-title'>
-            <a href="https://www.thiswind.work/post/latex-shu-xue-gong-shi"> LaTeX数学公式 </a>
-          </h2>
-        </div>
-        <div class='excerpt-content'>
-          <article>
-              <p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>被减数</mtext><mo>−</mo><mtext>减数</mtext><mo>=</mo><mtext>差</mtext></mrow><annotation encoding="application/x-tex">\text{被减数}-\text{减数}=\text{差}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord text"><span class="mord cjk_fallback">被减数</span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord text"><span class="mord cjk_fallback">减数</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord text"><span class="mord cjk_fallback">差</span></span></span></span></span></p>
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://www.thiswind.work/post/latex-shu-xue-gong-shi">LaTeX数学公式</a>
+    </h2>
+    <p class="article-meta">
+      2019-11-16
+      
+    </p>
+    <p class="text-lead">
+      <p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>被减数</mtext><mo>−</mo><mtext>减数</mtext><mo>=</mo><mtext>差</mtext></mrow><annotation encoding="application/x-tex">\text{被减数}-\text{减数}=\text{差}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord text"><span class="mord cjk_fallback">被减数</span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord text"><span class="mord cjk_fallback">减数</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord text"><span class="mord cjk_fallback">差</span></span></span></span></span></p>
 <p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover><mover><mrow><mn>0</mn><mo separator="true">,</mo><mn>0</mn><mo separator="true">,</mo><mo>…</mo><mo separator="true">,</mo><mn>0</mn></mrow><mo stretchy="true">⏞</mo></mover><mtext>共n项</mtext></mover></mrow><annotation encoding="application/x-tex">\overbrace{0,0,\dots,0}^{\text{共n项}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.165211em;vertical-align:-0.19444em;"></span><span class="mord mover"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.970771em;"><span style="top:-3.29244em;"><span class="pstrut" style="height:3.29244em;"></span><span class="mord mover"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.29244em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">0</span></span></span><span class="svg-align" style="top:-3.74444em;"><span class="pstrut" style="height:3em;"></span><span class="stretchy" style="height:0.548em;min-width:1.6em;"><span class="brace-left" style="height:0.548em;"><svg width='400em' height='0.548em' viewBox='0 0 400000 548' preserveAspectRatio='xMinYMin slice'><path d='M6 548l-6-6v-35l6-11c56-104 135.3-181.3 238-232 57.3-28.7 117
 -45 179-50h399577v120H403c-43.3 7-81 15-113 26-100.7 33-179.7 91-237 174-2.7
  5-6 9-10 13-.7 1-7.3 1-20 1H6z'/></svg></span><span class="brace-center" style="height:0.548em;"><svg width='400em' height='0.548em' viewBox='0 0 400000 548' preserveAspectRatio='xMidYMin slice'><path d='M200428 334
@@ -478,97 +359,177 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">e</mi></mrow><annotation encoding="application/x-tex">\mathrm{e}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord"><span class="mord mathrm">e</span></span></span></span></span>\<br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">i</mi></mrow><annotation encoding="application/x-tex">\mathrm{i}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66786em;vertical-align:0em;"></span><span class="mord"><span class="mord mathrm">i</span></span></span></span></span></p>
 
-          </article>
-        </div>
-      </div>
+    </p>
+    <div class="row">
+      <a href="https://www.thiswind.work/post/latex-shu-xue-gong-shi" class="readmore-link">
+        <button>
+          Read More
+        </button>
+      </a>
     </div>
-  </div>
+  </article>
+
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://www.thiswind.work/post/pandoc-citeproc">pandoc-citeproc</a>
+    </h2>
+    <p class="article-meta">
+      2019-11-15
+      
+    </p>
+    <p class="text-lead">
+      <p>brew install pandoc-citeproc</p>
+
+    </p>
+    <div class="row">
+      <a href="https://www.thiswind.work/post/pandoc-citeproc" class="readmore-link">
+        <button>
+          Read More
+        </button>
+      </a>
+    </div>
+  </article>
+
+
+        </div>
+        
+        <div class="row flex-edges">
   
-  <div id="loop-container" class="loop-container">
-    <div class="post type-post status-publish format-standard  hentry category-design tag-memories
-    tag-normal-post tag-standard-2 excerpt zoom full-without-featured
-      
-        odd
-       excerpt">
-      
-      <div class="excerpt-container">
-        <div class="excerpt-meta">
-          <span class="date">  · 2019-11-15 ·</span> <span> / </span>
-          <span class="author">
-              <a href="https://www.thiswind.work" title="Posts by  thiswind" rel="author"> thiswind</a>
-          </span>
-            
-
-        </div>
-        <div class='excerpt-header'>
-          <h2 class='excerpt-title'>
-            <a href="https://www.thiswind.work/post/pandoc-citeproc"> pandoc-citeproc </a>
-          </h2>
-        </div>
-        <div class='excerpt-content'>
-          <article>
-              <p>brew install pandoc-citeproc</p>
-
-          </article>
-        </div>
-      </div>
-    </div>
-  </div>
+  
+    <a href="https://www.thiswind.work/page/2/" class="paper-btn">
+      下一页
+    </a>
   
 </div>
 
-        <nav class="navigation pagination" role="navigation">
-    <h2 class="screen-reader-text">Posts navigation</h2>
-    <div class="nav-links">
-        
-        
-             <a class="next page-numbers" href="https://www.thiswind.work/page/2/">下一页</a>
-        
-    </div>
-</nav>
-
-        <footer id="site-footer" class="site-footer" role="contentinfo">
-    <h1>
-        <a href="https://www.thiswind.work"> thiswind </a>
-    </h1>
-    <p class="site-description">thiswind：笔记本</p>
-    <div id="menu-footer" class="menu-container menu-footer" role="navigation">
-        <div class="menu">
-            <ul id="menu-footer-items" class="menu-footer-items">
-            </ul>
-        </div>
-    </div>
-    <ul class="social-media-icons">
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-    </ul>
-    <div class="design-credit">
-        <p>@thiswind 2019</p>
-    </div>
-</footer>
-<script>
-    hljs.initHighlightingOnLoad()
-</script>
-<script src="https://www.thiswind.work/media/scripts/lib/jquery.min.js"></script>
-<script src="https://www.thiswind.work/media/scripts/lib/jquerymigrate.js"></script>
-<script src="https://www.thiswind.work/media/scripts/lib/production.min.js"></script>
-
       </div>
+      
+      <div class="sm-12 md-4 col sidebar">
+  <div class="paper info-container">
+    <img src="https://www.thiswind.work/images/avatar.png?v=1574159052706" class="no-responsive avatar">
+    <div class="text-muted">thiswind：笔记本</div>
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      最新文章
+    </div>
+    <div class="row">
+      <ul>
+        
+          
+            <li>
+              <a href="https://www.thiswind.work/post/bash-input">bash input</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://www.thiswind.work/post/bilibili">bilibili</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://www.thiswind.work/post/shellcheck">shellcheck</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://www.thiswind.work/post/bash-fail-then-continue-fail-then-exit">bash fail then continue, fail then exit</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://www.thiswind.work/post/shell-loop">shell loop</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://www.thiswind.work/post/shell-if">shell if</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://www.thiswind.work/post/shell-test-not">shell test not</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://www.thiswind.work/post/ru-he-yong-cutming-ling-zhao-dao-zui-hou-yi-ge-zi-duan">如何用`cut`命令找到最后一个字段</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://www.thiswind.work/post/latex-shu-xue-gong-shi">LaTeX数学公式</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://www.thiswind.work/post/pandoc-citeproc">pandoc-citeproc</a>
+            </li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </ul>
+    </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      标签列表
+    </div>
+    <div class="row">
+      
+    </div>
+  </div>
+  <div class="paper">
+    @thiswind 2019 | <a class="rss" href="https://www.thiswind.work/atom.xml" target="_blank">RSS</a>
+  </div>
+</div>
+
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+</script>
+
+
+
+
   </body>
 </html>
-
