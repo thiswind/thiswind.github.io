@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.thiswind.work</id>
     <title>thiswind</title>
-    <updated>2019-11-20T04:44:36.722Z</updated>
+    <updated>2019-11-20T05:19:31.102Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://www.thiswind.work"/>
     <link rel="self" href="https://www.thiswind.work/atom.xml"/>
@@ -10,6 +10,17 @@
     <logo>https://www.thiswind.work/images/avatar.png</logo>
     <icon>https://www.thiswind.work/favicon.ico</icon>
     <rights>All rights reserved 2019, thiswind</rights>
+    <entry>
+        <title type="html"><![CDATA[小学时候看过的书]]></title>
+        <id>https://www.thiswind.work/post/wo-kan-guo-huo-zhe-xiang-kan-que-mei-you-mai-dao-de-shu</id>
+        <link href="https://www.thiswind.work/post/wo-kan-guo-huo-zhe-xiang-kan-que-mei-you-mai-dao-de-shu">
+        </link>
+        <updated>2019-11-20T05:15:01.000Z</updated>
+        <summary type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://www.thiswind.work/post-images/1574226936820.jpg" alt=""></figure>
+]]></summary>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://www.thiswind.work/post-images/1574226936820.jpg" alt=""></figure>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[bash input]]></title>
         <id>https://www.thiswind.work/post/bash-input</id>
@@ -305,17 +316,6 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
 <p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="bold">X</mi></mrow><annotation encoding="application/x-tex">\mathbf{X}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68611em;vertical-align:0em;"></span><span class="mord"><span class="mord mathbf">X</span></span></span></span></span>\<br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">e</mi></mrow><annotation encoding="application/x-tex">\mathrm{e}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord"><span class="mord mathrm">e</span></span></span></span></span>\<br>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">i</mi></mrow><annotation encoding="application/x-tex">\mathrm{i}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66786em;vertical-align:0em;"></span><span class="mord"><span class="mord mathrm">i</span></span></span></span></span></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[pandoc-citeproc]]></title>
-        <id>https://www.thiswind.work/post/pandoc-citeproc</id>
-        <link href="https://www.thiswind.work/post/pandoc-citeproc">
-        </link>
-        <updated>2019-11-15T14:12:58.000Z</updated>
-        <summary type="html"><![CDATA[<p>brew install pandoc-citeproc</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>brew install pandoc-citeproc</p>
 ]]></content>
     </entry>
 </feed>
