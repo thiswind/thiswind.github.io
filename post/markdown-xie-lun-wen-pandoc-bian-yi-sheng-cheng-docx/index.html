@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>shell if | thiswind</title>
+<title>Markdown写论文，Pandoc编译，生成Docx | thiswind</title>
 <meta name="description" content="thiswind：笔记本">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -96,23 +96,146 @@
       <div class="sm-12 md-8 col">
         <div class="paper">
           <article class="article">
-            <h1>shell if</h1>
+            <h1>Markdown写论文，Pandoc编译，生成Docx</h1>
             <p class="article-meta">
-              2019-11-19
+              2019-11-20
               
             </p>
             
             <div class="post-content">
-              <pre><code class="language-bash">if test -f abc.txt; then
-    ls -l abc.txt
-fi
+              <h2 id="目录结构">目录结构</h2>
+<pre><code class="language-bash">[ONE]&gt; tree -d
+.
+├── release
+└── src
 </code></pre>
-<p>OR</p>
-<pre><code class="language-bash">if [ -f abc.txt ]; then
-    ls -l abc.txt
-fi
+<p>源代码放在 <code>src</code> 目录当中<br>
+编译结果放在 <code>release</code> 目录当中</p>
+<h2 id="前提条件">前提条件</h2>
+<ul>
+<li><code>src/chinese-gb7714-2005-numeric.csl</code> : <a href="/post/zotero-style-repository/">下载</a></li>
+<li><code>src/my-reference.docx</code>   : 自己创建一个</li>
+</ul>
+<p>模板的创建方法：</p>
+<ol>
+<li>用一个空的 docx 文件作为模板，编译文本</li>
+<li>在编译出来的文本当中，根据需要修改各种样式的字体、字号、段落等</li>
+<li>将修改好的docx文件重命名为<code>my-reference.docx</code>，用作模板</li>
+</ol>
+<h2 id="bib格式的参考文献在markdown当中的引用方式"><code>.bib</code>格式的参考文献在markdown当中的引用方式</h2>
+<p><code>.bib</code> 文件必须和 <code>.md</code> 文件同名</p>
+<p>论文.bib</p>
+<pre><code class="language-bib">@article{吴爱华2019以,
+title={以 “新工科” 建设引领高等教育创新变革},
+author={吴爱华 and 杨秋波 and 郝杰},
+journal={高等工程教育研究},
+number={1},
+pages={1--7},
+year={2019}
+}
 </code></pre>
-<!-- more -->
+<p>论文.md</p>
+<pre><code class="language-markdown">这是引用了吴爱华关于新工科的论述[@article{吴爱华2019以]
+</code></pre>
+<h2 id="编译脚本">编译脚本</h2>
+<p>build.sh</p>
+<pre><code class="language-bash">#!/bin/bash
+
+for dep in &quot;pandoc&quot; &quot;pandoc-citeproc&quot; &quot;tree&quot;; do
+  printf &quot;check %s...&quot; &quot;$dep&quot;
+  if test -z &quot;$(command -v $dep)&quot;; then
+    printf &quot;Please Install %s&quot; &quot;$dep&quot;
+    exit
+  else
+    printf &quot;OK.&quot;
+  fi
+  printf &quot;\n&quot;
+done
+
+# store base path
+base=$(pwd)
+
+# define paths
+src=&quot;src&quot;
+build=&quot;build&quot;
+release=&quot;release&quot;
+
+# prepare dirs
+for dir in $build $release; do
+  rm -rf $dir
+  mkdir -p $dir
+done
+
+# copy sources to build
+cp -r $src/* $build/
+cp -r $src/.* $build/
+
+# cd into build to do build processes
+cd $build || exit
+
+# build each .md file with pandoc
+# NOTICE: each .md file must compair with a .bib file with the same name
+# - hello.md
+# - hello.bib
+#
+for name in $(/bin/ls | grep &quot;.md&quot;); do
+  name=$(echo &quot;$name&quot; | cut -d &quot;.&quot; -f 1)
+
+  if test ! -f &quot;$name&quot;.bib; then
+    touch &quot;$name&quot;.bib
+  fi
+
+  printf &quot;[%s] building&quot; &quot;$name&quot;
+
+  printf &quot; ... &quot;
+
+  #    --pdf-engine=xelatex \
+  pandoc \
+    --filter pandoc-citeproc \
+    --bibliography=&quot;$name&quot;.bib \
+    --csl=chinese-gb7714-2005-numeric.csl \
+    -f markdown \
+    -t docx \
+    --reference-doc=my-reference.docx \
+    -o &quot;$name&quot;.docx \
+    &quot;$name&quot;.md
+
+  if test -f &quot;$name&quot;.docx; then
+    printf &quot; OK. &quot;
+
+    mv &quot;$name&quot;.docx &quot;$base&quot;/&quot;$release&quot;/
+    printf &quot;(moved to release)\n&quot;
+  fi
+done
+
+cd &quot;$base&quot; || exit
+
+tree -N -h $release
+
+</code></pre>
+<h2 id="gitlab-持续集成脚本">Gitlab 持续集成脚本</h2>
+<p>.gitlab-ci.yml</p>
+<pre><code class="language-yaml">build:
+  image: ntwrkguru/pandoc-gitlab-ci
+  script:
+    - apt-get update &amp;&amp; apt-get install -y tree
+    - /bin/bash build.sh
+
+  # 为了本地运行，cache的路径必须和artifacts的路径一致
+  cache: &amp;build_artifact_cache
+    key: build
+    paths:
+      - release/
+
+  artifacts:
+    paths:
+      - release/
+</code></pre>
+<h2 id="本地运行-gitlab-runner-的命令">本地运行 gitlab-runner 的命令</h2>
+<p>command line</p>
+<pre><code class="language-bash">gitlab-runner exec docker --docker-volumes $(pwd)/cache:/cache build
+</code></pre>
+<p>输出结果会被打包放在: <code>$(pwd)/cache/.../cache.zip</code> 当中</p>
 
             </div>
           </article>
@@ -123,9 +246,9 @@ fi
               <div class="next">
                 下一篇
               </div>
-              <a href="https://www.thiswind.work/post/shell-test-not">
+              <a href="https://www.thiswind.work/post/wo-kan-guo-huo-zhe-xiang-kan-que-mei-you-mai-dao-de-shu">
                 <h3 class="post-title">
-                  shell test not
+                  书
                 </h3>
               </a>
             </div>
