@@ -7,7 +7,7 @@
 <meta name="description" content="thiswind：笔记本">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="https://www.thiswind.work/favicon.ico?v=1574235274202">
+<link rel="shortcut icon" href="https://www.thiswind.work/favicon.ico?v=1574265703853">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
@@ -90,6 +90,52 @@
       <div class="sm-12 md-8 col">
         <div class="paper">
           
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://www.thiswind.work/post/git-hui-guo-qu-hui-wei-lai">git 回过去，回未来</a>
+    </h2>
+    <p class="article-meta">
+      2019-11-21
+      
+    </p>
+    <p class="text-lead">
+      <p>HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令git reset --hard commit_id。<br>
+穿梭前，用git log可以查看提交历史，以便确定要回退到哪个版本。<br>
+要重返未来，用git reflog查看命令历史，以便确定要回到未来的哪个版本。</p>
+
+    </p>
+    <div class="row">
+      <a href="https://www.thiswind.work/post/git-hui-guo-qu-hui-wei-lai" class="readmore-link">
+        <button>
+          Read More
+        </button>
+      </a>
+    </div>
+  </article>
+
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://www.thiswind.work/post/git-status-zhong-wen-luan-ma">git status 中文乱码</a>
+    </h2>
+    <p class="article-meta">
+      2019-11-20
+      
+    </p>
+    <p class="text-lead">
+      <p>通过将Git配置变量 core.quotepath 设置为false，就可以解决中文文件名称在这些Git命令输出中的显示问题，示例：</p>
+<pre><code>$ git config --global core.quotepath false
+</code></pre>
+
+    </p>
+    <div class="row">
+      <a href="https://www.thiswind.work/post/git-status-zhong-wen-luan-ma" class="readmore-link">
+        <button>
+          Read More
+        </button>
+      </a>
+    </div>
+  </article>
+
   <article class="article">
     <h2 class="article-title">
       <a href="https://www.thiswind.work/post/markdown-xie-lun-wen-pandoc-bian-yi-sheng-cheng-docx">Markdown写论文，Pandoc编译，生成Docx</a>
@@ -331,72 +377,6 @@ fi
     </div>
   </article>
 
-  <article class="article">
-    <h2 class="article-title">
-      <a href="https://www.thiswind.work/post/shell-test-not">shell test not</a>
-    </h2>
-    <p class="article-meta">
-      2019-11-19
-      
-    </p>
-    <p class="text-lead">
-      <p>The test command syntax is as follows:</p>
-<pre><code class="language-bash">! expression
-</code></pre>
-<p>OR</p>
-<pre><code class="language-bash">[ ! expression ]
-</code></pre>
-<p>OR</p>
-<pre><code class="language-bash">if test ! condition
-then
-     command1
-     command2
-fi
-if [ ! condition ]
-then
-     command1
-     command2
-fi
-</code></pre>
-
-    </p>
-    <div class="row">
-      <a href="https://www.thiswind.work/post/shell-test-not" class="readmore-link">
-        <button>
-          Read More
-        </button>
-      </a>
-    </div>
-  </article>
-
-  <article class="article">
-    <h2 class="article-title">
-      <a href="https://www.thiswind.work/post/ru-he-yong-cutming-ling-zhao-dao-zui-hou-yi-ge-zi-duan">如何用`cut`命令找到最后一个字段</a>
-    </h2>
-    <p class="article-meta">
-      2019-11-19
-      
-    </p>
-    <p class="text-lead">
-      <pre><code class="language-bash">pwd | rev | cut -d &quot;/&quot; -f 1 | rev
-</code></pre>
-<p>原理：</p>
-<ol>
-<li>逆向</li>
-<li>切分，找到第一项</li>
-<li>逆向，还原</li>
-</ol>
-
-    </p>
-    <div class="row">
-      <a href="https://www.thiswind.work/post/ru-he-yong-cutming-ling-zhao-dao-zui-hou-yi-ge-zi-duan" class="readmore-link">
-        <button>
-          Read More
-        </button>
-      </a>
-    </div>
-  </article>
-
 
         </div>
         
@@ -413,7 +393,7 @@ fi
       
       <div class="sm-12 md-4 col sidebar">
   <div class="paper info-container">
-    <img src="https://www.thiswind.work/images/avatar.png?v=1574235274202" class="no-responsive avatar">
+    <img src="https://www.thiswind.work/images/avatar.png?v=1574265703853" class="no-responsive avatar">
     <div class="text-muted">thiswind：笔记本</div>
     <div class="social-container">
       
@@ -435,6 +415,18 @@ fi
     </div>
     <div class="row">
       <ul>
+        
+          
+            <li>
+              <a href="https://www.thiswind.work/post/git-hui-guo-qu-hui-wei-lai">git 回过去，回未来</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://www.thiswind.work/post/git-status-zhong-wen-luan-ma">git status 中文乱码</a>
+            </li>
+          
         
           
             <li>
@@ -485,15 +477,7 @@ fi
           
         
           
-            <li>
-              <a href="https://www.thiswind.work/post/shell-test-not">shell test not</a>
-            </li>
-          
         
-          
-            <li>
-              <a href="https://www.thiswind.work/post/ru-he-yong-cutming-ling-zhao-dao-zui-hou-yi-ge-zi-duan">如何用`cut`命令找到最后一个字段</a>
-            </li>
           
         
           
