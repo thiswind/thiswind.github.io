@@ -1,255 +1,349 @@
 <html>
-<head>
-  <meta charset="utf-8" />
-<meta name="description" content="" />
+  <head>
+    <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="robots" content="all,follow">
-<meta name="googlebot" content="index,follow,snippet,archive">
 <title>git status 中文乱码 | thiswind</title>
-<link rel="shortcut icon" href="https://www.thiswind.work/favicon.ico?v=1582788467101">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-<link rel="stylesheet" href="https://www.thiswind.work/styles/main.css" type='text/css' media='all'>
+<meta name="description" content="thiswind：笔记本" />
+<link rel="shortcut icon" href="https://www.thiswind.work/favicon.ico">
+<link rel="stylesheet" href="https://www.thiswind.work/styles/main.css">
 
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+<script src="https://www.thiswind.work/media/js/jquery.min.js"></script>
+<script src="https://www.thiswind.work/media/js/masonry.pkgd.min.js"></script>
+<script src="https://www.thiswind.work/media/js/aos.js"></script>
+<script src="https://www.thiswind.work/media/js/pace.min.js"></script>
+<script src="https://www.thiswind.work/media/js/view-image.min.js"></script>
+<script src="https://www.thiswind.work/media/js/jquery.magnific-popup.min.js"></script>
+<script src="https://www.thiswind.work/media/js/functions.js"></script>
+    <meta name="referrer" content="never">
+    <meta name="description" content="通过将Git配置变量 core.quotepath 设置为false，就可以解决中文文件名称在这些Git命令输出中的显示问题，示例：
+$ git config --global core.quotepath false
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 
-
-
-</head>
-<body class="home blog ct-body standard">
-<div id="overflow-container" class="overflow-container">
-  <a class="skip-content" href="#main">Skip to content</a>
-  <header id="site-header" class="site-header" role="banner">
-    <div class='top-navigation top-navigation-important'>
-        <div class='container'>
-            <div id="menu-secondary" class="menu-container menu-secondary" role="navigation">
-                <button id="toggle-secondary-navigation" class="toggle-secondary-navigation"><i class="fa fa-plus"></i></button>
-                <div class="menu">
-                    <ul id="menu-secondary-items" class="menu-secondary-items">
-                        
-                        
-                    </ul>
-                </div>
+..." />
+    <meta name="keywords" content="" />
+    <script src="https://www.thiswind.work/media/js/waterfall.min.js"></script>
+    <script src="https://www.thiswind.work/media/js/prism.min.js"></script>
+  </head>
+  <body>
+            <header id="header" class="grid-container">
+        <!-- start: .menu-wrapper -->
+        <div class="menu-mobile"> 
+          <i class="fa fa-reorder"></i>
+        </div>
+        <div class="menu-wrapper">
+          <div class="">
+            <div class="logo">
+              <a href="https://www.thiswind.work"><img src="" alt=""></a>
             </div>
-            <ul class="social-media-icons">
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-                    
-                
-            </ul>
-        </div>
-    </div>
+            <!-- start: .main-nav -->
 
-    <div class="container">
-        <div id="title-info" class="title-info">
-            <div id='site-title' class='site-title'>
-                <a href="https://www.thiswind.work">  thiswind </a>
+            <nav class="main-nav grid-container grid-parent">
+              <ul id="menu-header" class="menu gradient-effect">
+                <li class=""><a href="https://www.thiswind.work" class="menu">首页</a></li>
+                
+                  <li class="" >
+                    <a href="/" class="menu">
+                      首页
+                    </a>
+                  </li>
+                
+                  <li class="" >
+                    <a href="/archives" class="menu">
+                      归档
+                    </a>
+                  </li>
+                
+                  <li class="" >
+                    <a href="/tags" class="menu">
+                      标签
+                    </a>
+                  </li>
+                
+                  <li class="" >
+                    <a href="/post/about" class="menu">
+                      关于
+                    </a>
+                  </li>
+                
+                <li class="search-menu-item hide-on-mobile hide-on-tablet"><a href="#search-lightbox" class="lightbox mfp-inline"><i class="fa fa-search-line"></i></a></li>
+              </ul>
+            </nav>
+            <a href="#search-lightbox" class="lightbox epcl-search-button mfp-inline hide-on-tablet hide-on-desktop"><i class="fa fa-search-line"></i></a>
+            <!-- end: .main-nav -->
+            <div class="clear"></div>
+            <div class="border hide-on-tablet hide-on-mobile"></div>
+          </div>    
+          <div class="clear"></div>
+        </div>
+        <!-- end: .menu-wrapper -->
+        <div class="clear"></div>
+      </header>
+      <div class="hide-on-mobile hide-on-tablet hide-on-desktop">
+        <div id="search-lightbox" class="grid-container grid-small grid-parent mfp-hide">
+          <div class="search-wrapper section">
+            <form id="gridea-search-form" data-update="1582789348788" action="/search/index.html" class="search-form" _lpchecked="1">
+              <input type="text" name="q" id="s" value="" class="search-field" placeholder="搜点啥..." aria-label="搜点啥..." required="">
+              <button type="submit" class="submit" aria-label="Submit">
+                <i class="fa fa-search-line"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <main id="single" class="main grid-container fullcover no-sidebar aos-init aos-animate" data-aos="fade">
+
+        <div class="center content">
+          <div class="featured-image cover" style="background-image: url('');">
+            <div class="meta top"> 
+              <time class="meta-info" style="float:left;" datetime="2019-11-20"><i class="fa fa-calendar"></i><span class="lately">3 个月前</span></time>
+              
             </div>
-        </div>
-        <button id="toggle-navigation" class="toggle-navigation">
-            <i class="fa fa-bars"></i>
-        </button>
-        <div id="menu-primary-tracks" class="menu-primary-tracks"></div>
-        <div id="menu-primary" class="menu-container menu-primary" role="navigation">
-            <p class="site-description">thiswind：笔记本</p>
-            <div class="menu">
-                <ul id="menu-primary-items" class="menu-primary-items">
-                     
-                        
-                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
-                                <a href="/">首页</a>
-                            </li>
-                        
-                    
-                        
-                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
-                                <a href="/archives">归档</a>
-                            </li>
-                        
-                    
-                        
-                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
-                                <a href="/tags">标签</a>
-                            </li>
-                        
-                    
-                        
-                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
-                                <a href="/post/about">关于</a>
-                            </li>
-                        
-                    
-                </ul>
+            <div class="info">
+              <div class="tags ">
+                
+              </div>
+              <h1 class="title ularge white bold">git status 中文乱码</h1>
             </div>
-        </div>
-    </div>
+          </div>
+        </div>  
 
-
-</header>
-
-
-  <div id="main" class="main" role="main">
-    <div id="loop-container" class="loop-container">
-      <div class="post type-post status-publish format-standard has-post-thumbnail hentry category-design tag-design tag-standard-2 tag-tagalicious tag-travel entry full-without-featured odd excerpt-1">
-        
-
-        <div class="entry-meta">
-          <span class="date">· 2019-11-20 ·</span> <span> / </span>
-          <span class="author">
-            <a href="https://www.thiswind.work" title="" rel="author"> @thiswind 2019</a>
-          </span>
-          
-        </div>
-        <div class='entry-header'>
-          <h1 class='entry-title'>git status 中文乱码</h1>
-        </div>
-        <div class="entry-container">
-          <div class="entry-content">
-            <article>
-              <p>通过将Git配置变量 core.quotepath 设置为false，就可以解决中文文件名称在这些Git命令输出中的显示问题，示例：</p>
+        <div class="epcl-page-wrapper">
+          <div class="left-content grid-70 np-mobile">
+            <article class="main-article post">
+              <section class="post-content">
+                <div class="text">
+                  <p>通过将Git配置变量 core.quotepath 设置为false，就可以解决中文文件名称在这些Git命令输出中的显示问题，示例：</p>
 <pre><code>$ git config --global core.quotepath false
 </code></pre>
 <!-- more -->
 
+                </div>
+                <div class="clear"></div>
+              </section>
             </article>
-          </div>
-          <div class='entry-meta-bottom'>
-            <div class="entry-categories">
-              <p>
-                <span>Categories</span>
-                
-                  
-              </p>
-            </div>
-            <div class="entry-tags">
-              <p><span>Tags</span>
-              </p>
-            </div>
-          </div>
-          <div class="author-meta">
-            <div class="author">
-              <img alt='' src="https://www.thiswind.work/images/avatar.png?v=1582788467101" class='avatar avatar-72 photo' height='72' width='72'>
-              <span>WRITTEN BY: &nbsp;&nbsp;&nbsp;<a href='https://www.thiswind.work'></a> </span>
-            </div>
-            <div class="bio">
-              <p></p>
+            <div class="clear"></div>
+
+            <section class="related section">
               
-                
+              <article class="prev grid-50 tablet-grid-50 grid-parent">
+                <div class="thumb cover lazy loaded" style="background-image: url('https://www.thiswind.work/media/images/gridea.jpg');"></div>
+                 <a href="https://www.thiswind.work/post/git-hui-guo-qu-hui-wei-lai/" class="full-link"></a>
+                 <div class="info">
+                  <time datetime="2019-11-21">2019-11-21</time>
+                  <h4 class="title white no-margin">git 回过去，回未来</h4>
+                </div>
+                 <span class="epcl-button red">
+                  <img src="https://www.thiswind.work/media/images/left-arrow.svg" width="15" alt="Left Arrow">
+                </span>
+                <div class="overlay"></div>
+              </article>
               
-                
               
-                
+              <article class="next grid-50 tablet-grid-50 grid-parent">
+                <div class="thumb cover lazy loaded" style="background-image: url('https://www.thiswind.work/media/images/gridea.jpg');"></div>
+                 <a href="https://www.thiswind.work/post/markdown-xie-lun-wen-pandoc-bian-yi-sheng-cheng-docx/" class="full-link"></a>
+                 <div class="info">
+                  <time datetime="2019-11-20">2019-11-20</time>
+                  <h4 class="title white no-margin">Markdown写论文，Pandoc编译，生成Docx</h4>
+                </div>
+                 <span class="epcl-button red">
+                  <img src="https://www.thiswind.work/media/images/right-arrow.svg" width="15" alt="Left Arrow">
+                </span>
+                <div class="overlay"></div>
+              </article>
               
-                
+
+                <div class="clear"></div>
+            </section>
+
+              <div class="clear"></div>
               
+            
+              <div id="comments" class="bg-white hosted ">
                 
-              
-                
-              
-                
-              
-                
-              
-            </div>
-          </div>
-        </div>
-          
-            <nav class="navigation pagination" role="navigation">
-              <h2 class="screen-reader-text">Posts navigation</h2>
-              <div class="nav-links">
-                <a class="next page-numbers" href="https://www.thiswind.work/post/markdown-xie-lun-wen-pandoc-bian-yi-sheng-cheng-docx/">下一篇->Markdown写论文，Pandoc编译，生成Docx</a>
-              </div>
-            </nav>
-          
-      </div>
-      <section id="comments" class="comments">
-        
-          
-            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+                  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
 <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
 <div id="gitalk-container"></div>
+<div class="clear"></div>
 
 <script>
-
   var gitalk = new Gitalk({
     clientID: 'd48e8b01472c55f16765',
     clientSecret: '782222cbe7945d7e46322b65bc58e589e5887268',
     repo: 'thiswind.github.io',
     owner: 'thiswind',
     admin: ['thiswind'],
-    id: location.pathname,      // Ensure uniqueness and length less than 50
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
     distractionFreeMode: false  // Facebook-like distraction free mode
   })
 
   gitalk.render('gitalk-container')
-
 </script>
 
-          
+                
+                
+              </div>
+            
 
-          
-        
-      </section>
-    </div>
-  </div>
-  <footer id="site-footer" class="site-footer" role="contentinfo">
-    <h1>
-        <a href="https://www.thiswind.work"> thiswind </a>
-    </h1>
-    <p class="site-description">thiswind：笔记本</p>
-    <div id="menu-footer" class="menu-container menu-footer" role="navigation">
-        <div class="menu">
-            <ul id="menu-footer-items" class="menu-footer-items">
-            </ul>
+            </div>
+          </div>
+      </main>
+
+          <footer id="footer" class="grid-container">
+        <div class="widgets row gradient-effect">
+            <div class="default-sidebar border-effect">
+              <div class="grid-33 tablet-grid-50 mobile-grid-100">
+                <section id="tag_cloud-2" class="widget widget_epcl_posts_thumbs underline-effect">
+                  <h4 class="widget-title title white bordered">最新文章</h4>
+                  
+                  
+                  <article class="item post-0 post type-post status-publish format-standard has-post-thumbnail hentry">
+                    <a href="https://www.thiswind.work/post/biao-zhi-307-sheng-ji-dao-biao-zhi-5008-gt-2019-kuan-de-jia-shi-ti-yan/" class="thumb hover-effect">
+                      <span class="fullimage cover" style="display:block;border-radius:50%;background-image: url('');"></span>
+                    </a>
+                    <div class="info gradient-effect">
+                      <time datetime="2019-12-10">2019-12-10</time>
+                      <h4 class="title usmall">
+                        <a href="https://www.thiswind.work/post/biao-zhi-307-sheng-ji-dao-biao-zhi-5008-gt-2019-kuan-de-jia-shi-ti-yan/">标致307升级到标致5008 GT 2019款的驾驶体验</a>
+                      </h4>
+                    </div>
+                    <div class="clear"></div>
+                  </article>
+                  
+                  
+                  
+                  <article class="item post-1 post type-post status-publish format-standard has-post-thumbnail hentry">
+                    <a href="https://www.thiswind.work/post/git-hui-guo-qu-hui-wei-lai/" class="thumb hover-effect">
+                      <span class="fullimage cover" style="display:block;border-radius:50%;background-image: url('');"></span>
+                    </a>
+                    <div class="info gradient-effect">
+                      <time datetime="2019-11-21">2019-11-21</time>
+                      <h4 class="title usmall">
+                        <a href="https://www.thiswind.work/post/git-hui-guo-qu-hui-wei-lai/">git 回过去，回未来</a>
+                      </h4>
+                    </div>
+                    <div class="clear"></div>
+                  </article>
+                  
+                  
+                  
+                  <article class="item post-2 post type-post status-publish format-standard has-post-thumbnail hentry">
+                    <a href="https://www.thiswind.work/post/git-status-zhong-wen-luan-ma/" class="thumb hover-effect">
+                      <span class="fullimage cover" style="display:block;border-radius:50%;background-image: url('');"></span>
+                    </a>
+                    <div class="info gradient-effect">
+                      <time datetime="2019-11-20">2019-11-20</time>
+                      <h4 class="title usmall">
+                        <a href="https://www.thiswind.work/post/git-status-zhong-wen-luan-ma/">git status 中文乱码</a>
+                      </h4>
+                    </div>
+                    <div class="clear"></div>
+                  </article>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  <div class="clear"></div>
+                </section>
+              </div>
+
+              <div class="grid-33 tablet-grid-50 mobile-grid-100">
+                <section id="tag_cloud-2" class="widget widget_tag_cloud underline-effect">
+                  <h4 class="widget-title title white bordered">标签云</h4>
+                  <div class="tagcloud">
+                    
+                  </div>
+                  <div class="clear"></div>
+                </section>
+              </div>
+
+              <div class="grid-33 tablet-grid-50 mobile-grid-100">
+                <section id="epcl_about-2" class="widget widget_epcl_about underline-effect">
+                  <h4 class="widget-title title white bordered">关于我</h4>
+                  <div class="avatar">
+                    <a href="" class="translate-effect thumb"><span class="fullimage cover" style="background-image: url(https://www.thiswind.work/images/avatar.png);"></span></a>
+                  </div>
+                  <div class="info">
+                    <h4 class="title small author-name gradient-effect no-margin"><a href="">thiswind</a></h4>
+                    <p class="founder">thiswind：笔记本</p>
+                    <div class="social">
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                    </div> 
+                  </div>
+                  <div class="clear"></div>
+                  </section>
+              </div>
+
+            </div>
+            <div class="clear"></div>
         </div>
-    </div>
-    <ul class="social-media-icons">
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-    </ul>
-    <div class="design-credit">
-        <p>@thiswind 2019</p>
-    </div>
-</footer>
-<script>
-    hljs.initHighlightingOnLoad()
-</script>
-<script src="https://www.thiswind.work/media/scripts/lib/jquery.min.js"></script>
-<script src="https://www.thiswind.work/media/scripts/lib/jquerymigrate.js"></script>
-<script src="https://www.thiswind.work/media/scripts/lib/production.min.js"></script>
 
-</div>
-</body>
+        <div class="logo">
+          <a href="https://www.thiswind.work"><img src="" alt=""></a>
+        </div>
+        <p class="published border-effect">
+          ©2019 共 20 篇文章
+          <br/>
+          Theme <a href="https://gridea.dev/" target="_blank">「breek」</a> Powered by <a href="https://gridea.dev/" target="_blank">「Gridea」</a>
+        </p>
+        
+        <a href="javascript:void(0)" id="back-to-top" class="epcl-button dark" style="display:none">
+          <i class="fa fa-arrow"></i>
+        </a>
+    </footer>
+    
+    <div class="clear"></div>
+
+        
+
+      
+    <script src="https://www.thiswind.work/media/js/functions-post.js"></script>
+
+    </div>
+    <!-- end: #wrapper -->
+  </body>
 </html>
-
