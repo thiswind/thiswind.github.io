@@ -27,7 +27,7 @@ twitter_username: thiswindme
 github_username:  thiswind
 
 # comes with hacker theme
-show_downloads: true
+show_downloads: false
 
 # Build settings
 # theme: minima
