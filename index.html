@@ -4,6 +4,10 @@
 
 layout: default
 ---
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
 <div>
     {% for post in site.posts %}
     <div>
@@ -11,9 +15,28 @@ layout: default
         <h5>{{ post.date | date: "%Y-%m-%d" }}</h5>
         <p>
             {{ post.excerpt | truncate: 160 }}<span><a href="{{ post.url }}">Read more</a></span>
-            
+
         </p>
-        
+
     </div>
     {% endfor %}
+</div>
+
+<div style="text-align: center;">
+    <a href="/about/">About</a>
+
+    <div id="gitalk-container"></div>
+    <script>
+        const gitalk = new Gitalk({
+            clientID: 'd48e8b01472c55f16765',
+            clientSecret: '34bdba1a963f22d7378e358dc699a4402e034802',
+            repo: 'thiswind.github.io',      // The repository of store comments,
+            owner: 'thiswind',
+            admin: ['thiswind'],
+            id: location.href,      // Ensure uniqueness and length less than 50
+            distractionFreeMode: false  // Facebook-like distraction free mode
+        })
+
+        gitalk.render('gitalk-container')
+    </script>
 </div>
