@@ -20,17 +20,21 @@
 
 title: Thiswind
 email: thiswind@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Thinking.
+description: Thinking in my way.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.thiswind.work" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: thiswindme
 github_username:  thiswind
 
+# comes with hacker theme
+show_downloads: true
+
 # Build settings
-theme: minima
+# theme: minima
+remote_theme: pages-themes/hacker@v0.2.0
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme # add this line to the plugins list if you already have one
 
 # Exclude from processing.
 # The following items will not be processed, by default.
