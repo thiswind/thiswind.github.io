@@ -29,7 +29,7 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"sissel.shopify-liquid",
+				"timdmackey.mechanic-liquid",
 				"fisheva.eva-theme",
 				"GitHub.copilot-nightly",
 				"rebornix.ruby"
