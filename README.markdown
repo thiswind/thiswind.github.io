@@ -1,3 +1,3 @@
 # [Thiswind](https://www.thiswind.work)
 
-Thin in my way.
+Thinking in my way.
