@@ -10,3 +10,12 @@ fi
 if [ -f Gemfile ]; then
     bundle install
 fi
+
+if which tldr > /dev/null; then
+    echo "installing tldr..."
+    mkdir -p /home/vscode/.local/share/
+    tldr -u
+    echo "tldr installed"
+else
+    echo "tldr is not installed. Please install it to use the tldr command."
+fi
