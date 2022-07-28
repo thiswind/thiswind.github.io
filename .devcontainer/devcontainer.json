@@ -31,15 +31,13 @@
 			"extensions": [
 				"timdmackey.mechanic-liquid",
 				"fisheva.eva-theme",
-				"GitHub.copilot-nightly",
 				"rebornix.ruby",
 				"GitHub.vscode-pull-request-github",
 				"gitpod.gitpod-remote-ssh",
 				"znck.grammarly",
 				"redhat.vscode-yaml",
 				"michelemelluso.gitignore",
-				"mbessey.vscode-rufo",
-				"wingrunr21.vscode-ruby"
+				"GitHub.copilot"
 			]
 		}
 	}
