@@ -33,3 +33,5 @@ end
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 gem "webrick"
 gem 'faraday-retry'
+
+gem "jekyll-assets", "~> 2.4"

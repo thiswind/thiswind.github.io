@@ -7,6 +7,4 @@ categories: diary
 
 # 柠檬和薄荷
 
-![柠檬和薄荷](image.png)
-
-![小猫](kitten.jpeg)
+![alt text](/assets/images/柠檬薄荷.png)

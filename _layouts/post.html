@@ -19,14 +19,19 @@ layout: default
 <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 <script>
   const gitalk = new Gitalk({
-    clientID: 'd48e8b01472c55f16765',
-    clientSecret: '34bdba1a963f22d7378e358dc699a4402e034802',
-    repo: 'thiswind.github.io',      // The repository of store comments,
-    owner: 'thiswind',
-    admin: ['thiswind'],
-    id: location.pathname,      // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-  })
+    clientID: 'd48e8b01472c55f16765',  // 替换为你的 GitHub OAuth clientID
+    clientSecret: '34bdba1a963f22d7378e358dc699a4402e034802',  // 替换为你的 GitHub OAuth clientSecret
+    repo: 'thiswind.github.io',  // 评论存储的仓库
+    owner: 'thiswind',  // 仓库的拥有者
+    admin: ['thiswind'],  // GitHub 用户名，评论的管理员
+    id: location.pathname,  // 使用文章路径作为评论的 Issue ID
+    distractionFreeMode: false,  // 是否开启无干扰模式
+    labels: ['Gitalk'],  // 给生成的 Issue 添加标签
+    language: 'zh-CN',  // 设置语言为中文
+  });
 
-  gitalk.render('gitalk-container')
+  gitalk.render('gitalk-container');
+</script>
+
+gitalk.render('gitalk-container')
 </script>
