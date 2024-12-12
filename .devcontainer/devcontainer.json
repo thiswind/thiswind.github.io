@@ -30,14 +30,10 @@
 		"vscode": {
 			"extensions": [
 				"timdmackey.mechanic-liquid",
-				"fisheva.eva-theme",
-				"rebornix.ruby",
 				"GitHub.vscode-pull-request-github",
-				"gitpod.gitpod-remote-ssh",
-				"znck.grammarly",
 				"redhat.vscode-yaml",
 				"michelemelluso.gitignore",
-				"GitHub.copilot"
+				"Shopify.ruby-lsp"
 			]
 		}
 	}
