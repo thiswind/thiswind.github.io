@@ -6,11 +6,8 @@ permalink: /mygpts/
 
 # Welcome to My GPTs Page
 
-This is the page where I share all things related to GPTs!
 
-## My GPT Models
-
-### Zaina （Chinese、Arabic）
+- ## Zaina （Chinese、Arabic）
 
 Fluent Chinese-Arabic translator for daily use.
 
@@ -20,7 +17,7 @@ Fluent Chinese-Arabic translator for daily use.
 
 ---
 
-### Zaina (Arabic, English )
+- ## Zaina (Arabic, English )
 
 Zaina provides smooth, culturally aware English-Arabic translations for everyday conversations.
 
@@ -30,7 +27,7 @@ Zaina provides smooth, culturally aware English-Arabic translations for everyday
 
 ---
 
-### Hakim （Dictation Polisher)
+- ## Hakim （Dictation Polisher)
 
 Turn the oral content into fluent and professional written text
 
