@@ -20,7 +20,7 @@
 	"forwardPorts": [4000],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "bash run.sh",
+	"postCreateCommand": "bash run.sh"
 
 	// Configure tool-specific properties.
 	// "customizations": {},
