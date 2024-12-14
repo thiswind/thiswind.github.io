@@ -25,12 +25,3 @@ Zaina provides smooth, culturally aware English-Arabic translations for everyday
 
 [Unlock the experience now!](https://chatgpt.com/g/g-673b1f7347288191be080f68e585cd78-zaina-arabic-english)
 
----
-
-- ## Hakim （Dictation Polisher)
-
-Turn the oral content into fluent and professional written text
-
-<img src="/assets/images/Hakim.png" alt="Hakim (Dictation Polisher)" style="width:40%;"/>
-
-[Unlock the experience now!](https://chatgpt.com/g/g-673a99dcec048191b718de4c731dfcde-hakim-dictation-polisher)
