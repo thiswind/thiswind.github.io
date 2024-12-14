@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: my_post
 title:  "柠檬和薄荷"
 date:   2024-12-12 22:57:00 +0800
 ---
