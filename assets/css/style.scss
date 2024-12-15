@@ -2,6 +2,7 @@
 ---
 @import "{{ site.theme }}";
 
+
 /* 标题对照显示：上下排列 */
 .bilingual-title {
   text-align: center;
@@ -44,7 +45,7 @@
 /* 图片样式：响应式宽度 */
 .post-image {
   display: block;
-  margin: 0 auto;
+  margin: 0;
   border-radius: 5px;
   background-color: #444;
   border: 1px solid #555;
@@ -67,4 +68,19 @@
 .tags em {
   font-style: normal;
   color: #f92672;
+}
+
+a {
+  color: #a6e22e; /* 默认链接颜色 */
+  text-decoration: none;
+}
+
+a.active {
+  color: #ffffff; /* 高亮链接颜色 */
+  font-weight: bold; /* 加粗显示 */
+  border-bottom: 2px solid #ffffff; /* 底部边框高亮 */
+}
+
+a:hover {
+  text-decoration: underline; /* 鼠标悬停时添加下划线 */
 }
