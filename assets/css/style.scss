@@ -84,3 +84,10 @@ a.active {
 a:hover {
   text-decoration: underline; /* 鼠标悬停时添加下划线 */
 }
+
+.read_more {
+  color: #a6e22e; /* 高亮链接颜色 */
+  // font-weight: bold; /* 加粗显示 */
+  font-style: italic;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
