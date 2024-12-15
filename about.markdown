@@ -1,5 +1,5 @@
 ---
-layout: my_default
+layout: default
 title: About
 permalink: /post/about/
 ---
