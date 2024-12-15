@@ -20,6 +20,8 @@ tags: ["饮品", "柠檬"]
   </div>
 </div>
 
+<!--more-->
+
 <div class="bilingual">
   <div class="zh">
     薄荷的味道非常清新，我很喜欢。
@@ -29,4 +31,4 @@ tags: ["饮品", "柠檬"]
   </div>
 </div>
 
-<!--more-->
+
