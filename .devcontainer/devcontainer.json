@@ -17,10 +17,10 @@
 	// "features": {},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [4000],
+	// "forwardPorts": [4000],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "bash run.sh"
+	// "postCreateCommand": "bash run.sh"
 
 	// Configure tool-specific properties.
 	// "customizations": {},
