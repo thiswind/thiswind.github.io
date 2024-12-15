@@ -38,13 +38,13 @@
       {{ content }}
     </section>
 
-    <footer>
-      <!-- gitalk -->
+    <!-- gitalk -->
+    <section>
       {% unless page.url == "/" %}
       <hr>
       {% include gitalk.html %}
       {% endunless %}
-    </footer>
+    </section>
   </div>
 </body>
 
