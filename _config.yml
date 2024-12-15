@@ -44,4 +44,4 @@ repository: thiswind/thiswind.github.io
 
 author: thiswind
 
-excerpt_separator: ""
+excerpt_separator: "<!--more-->"

@@ -8,6 +8,8 @@ tags: ["饮品", "柠檬"]
 
 <img src="/assets/images/柠檬薄荷.png" alt="柠檬和薄荷" class="post-image">
 
+<!--more-->
+
 <!-- 双语内容上下显示 -->
 <div class="bilingual">
   <div class="zh">
