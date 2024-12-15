@@ -1,0 +1,70 @@
+---
+---
+@import "{{ site.theme }}";
+
+/* 标题对照显示：上下排列 */
+.bilingual-title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 20px 0;
+  color: #a6e22e; /* 标题绿色 */
+}
+
+.bilingual-title .zh,
+.bilingual-title .ar {
+  display: block;
+  margin: 5px 0;
+}
+
+/* 双语内容容器：上下排列 */
+.bilingual {
+  display: block;
+  margin: 20px 0;
+  padding: 15px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #2b2b2b;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.bilingual .zh,
+.bilingual .ar {
+  margin: 10px 0;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #e0e0e0;
+}
+
+.bilingual .ar {
+  direction: rtl;
+  text-align: right;
+  font-family: "Geeza Pro", "Arial", sans-serif;
+}
+
+/* 图片样式：响应式宽度 */
+.post-image {
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: #444;
+  border: 1px solid #555;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  width: 40%; /* 默认宽度：PC、iPad 等宽屏设备 */
+
+  /* 小屏幕（手机） */
+  @media (max-width: 768px) {
+    width: 80%; /* 手机屏幕上显示 80% 宽度 */
+  }
+}
+
+/* 标签样式 */
+.tags {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #a6e22e;
+}
+
+.tags em {
+  font-style: normal;
+  color: #f92672;
+}

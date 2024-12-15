@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<!-- 日期和标题 -->
+<small>{{ page.date | date: "%-d %B %Y" }}</small>
+
+<!-- 标题对照显示 -->
+<h1 class="bilingual-title">
+  <span class="zh">{{ page.title }}</span>
+  <span class="ar" dir="rtl">{{ page.title_ar }}</span>
+</h1>
+
+<!-- 作者信息 -->
+<p class="view">by {{ page.author | default: site.author }}</p>
+
+<!-- 博文内容：上下对照显示 -->
+<div class="bilingual">
+  <div class="zh">
+    {{ content }}
+  </div>
+  <div class="ar" dir="rtl">
+    {{ content_ar }}
+  </div>
+</div>
+
+<!-- 标签 -->
+{% if page.tags %}
+  <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
+{% endif %}

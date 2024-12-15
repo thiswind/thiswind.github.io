@@ -1,11 +1,28 @@
 ---
-layout: my_post
-title:  "柠檬和薄荷"
-date:   2024-12-12 22:57:00 +0800
+layout: post
+title: "柠檬和薄荷"
+title_ar: "الليمون والنعناع"
+date: 2024-12-12 22:57:00 +0800
+tags: ["饮品", "柠檬"]
 ---
 
-# 柠檬和薄荷
+<img src="/assets/images/柠檬薄荷.png" alt="柠檬和薄荷" class="post-image">
 
-![alt text](/assets/images/柠檬薄荷.png)
+<!-- 双语内容上下显示 -->
+<div class="bilingual">
+  <div class="zh">
+    我的柠檬很大，放了2个，实在太酸了。下次我只能放半个柠檬。😂
+  </div>
+  <div class="ar" dir="rtl">
+    لقد كان الليمون الذي أضفته كبيرًا جدًا، وضعت اثنين منه، فكان طعمه حامضًا للغاية. في المرة القادمة، سأكتفي بنصف ليمونة فقط. 😂
+  </div>
+</div>
 
-我的柠檬很大，放了2个，实在太酸了。下次我只能放半个柠檬。😂
+<div class="bilingual">
+  <div class="zh">
+    薄荷的味道非常清新，我很喜欢。
+  </div>
+  <div class="ar" dir="rtl">
+    طعم النعناع منعش للغاية، وأحببته كثيرًا.
+  </div>
+</div>
