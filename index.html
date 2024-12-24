@@ -11,7 +11,7 @@ layout: default
         <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
         <h5>{{ post.date | date: "%Y-%m-%d" }}</h5>
         <p>
-            {{ post.excerpt | truncate: 1600 }}<span><a href="{{ post.url }}" class="read_more">Read more</a></span>
+            {{ post.excerpt | truncate: 16000 }}<span><a href="{{ post.url }}" class="read_more">Read more</a></span>
         </p>
     </div>
 
