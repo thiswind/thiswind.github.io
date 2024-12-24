@@ -8,7 +8,8 @@
 		"vscode": {
 			"extensions": [
 				"rjmacarthy.twinny",
-				"github.vscode-github-actions"
+				"github.vscode-github-actions",
+				"Dedsec727.jekyll-run"
 			]
 		}
 	},
