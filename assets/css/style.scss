@@ -9,6 +9,12 @@
   --font-size-base: 16px;
   --font-size-small: 14px;
   --font-size-large: 18px;
+  --nav-height: 60px;
+  --nav-icon-size: 24px;
+  --color-primary: #a6e22e;
+  --color-background: #2b2b2b;
+  --color-text: #e0e0e0;
+  --color-border: #444;
 }
 
 @media (max-width: 768px) {
@@ -17,6 +23,11 @@
     --font-size-base: 15px;
     --font-size-small: 13px;
     --font-size-large: 17px;
+  }
+
+  /* 为底部导航腾出空间 */
+  body {
+    padding-bottom: calc(var(--nav-height) + 20px);
   }
 }
 
@@ -195,5 +206,60 @@ pre {
     flex-direction: column;
     gap: 15px;
     margin: 20px 0;
+  }
+}
+
+/* 移动端导航栏 */
+.mobile-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: var(--nav-height);
+  background-color: var(--color-background);
+  border-top: 1px solid var(--color-border);
+  z-index: 1000;
+  padding: 0 10px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text);
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  min-width: 64px;
+  
+  &:hover, &.active {
+    color: var(--color-primary);
+    background-color: rgba(166, 226, 46, 0.1);
+  }
+  
+  span {
+    font-size: var(--font-size-small);
+    margin-top: 4px;
+  }
+}
+
+.nav-icon {
+  width: var(--nav-icon-size);
+  height: var(--nav-icon-size);
+  fill: currentColor;
+}
+
+/* 添加安全区域支持 */
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+  .mobile-nav {
+    padding-bottom: env(safe-area-inset-bottom);
+    height: calc(var(--nav-height) + env(safe-area-inset-bottom));
   }
 }

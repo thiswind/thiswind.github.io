@@ -1,9 +1,26 @@
-<div style="text-align: center;">
-    <a href="/" class="{% if page.url == '/' %}active{% endif %}">Blog</a>
-    <span> | </span>
-    <a href="/mygpts/" class="{% if page.url == '/mygpts/' %}active{% endif %}">GPTs</a>
-    <span> | </span>
-    <a href="/post/about/" class="{% if page.url == '/post/about/' %}active{% endif %}">About</a>
-    <span> | </span>
-    <a href="https://www.hobe.chat" target="_blank">Hobe</a>
-</div>
+<nav class="mobile-nav">
+    <a href="/" class="nav-item {% if page.url == '/' %}active{% endif %}">
+        <svg class="nav-icon" viewBox="0 0 24 24">
+            <path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" />
+        </svg>
+        <span>Blog</span>
+    </a>
+    <a href="/mygpts/" class="nav-item {% if page.url == '/mygpts/' %}active{% endif %}">
+        <svg class="nav-icon" viewBox="0 0 24 24">
+            <path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4M12,6A6,6 0 0,1 18,12A6,6 0 0,1 12,18A6,6 0 0,1 6,12A6,6 0 0,1 12,6M12,8A4,4 0 0,0 8,12A4,4 0 0,0 12,16A4,4 0 0,0 16,12A4,4 0 0,0 12,8Z" />
+        </svg>
+        <span>GPTs</span>
+    </a>
+    <a href="/post/about/" class="nav-item {% if page.url == '/post/about/' %}active{% endif %}">
+        <svg class="nav-icon" viewBox="0 0 24 24">
+            <path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" />
+        </svg>
+        <span>About</span>
+    </a>
+    <a href="https://www.hobe.chat" target="_blank" class="nav-item">
+        <svg class="nav-icon" viewBox="0 0 24 24">
+            <path d="M12,2C6.48,2 2,6.48 2,12C2,17.52 6.48,22 12,22C17.52,22 22,17.52 22,12C22,6.48 17.52,2 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M11,7H13V13H11V7M11,15H13V17H11V15Z" />
+        </svg>
+        <span>Hobe</span>
+    </a>
+</nav>
