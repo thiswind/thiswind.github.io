@@ -46,6 +46,15 @@
   [dir="rtl"] {
     @apply font-ar;
     font-family: "Noto Naskh Arabic", "Tajawal", system-ui, sans-serif;
+    text-align: right;
+  }
+  
+  /* 阿拉伯语页面标题样式 */
+  [dir="rtl"] .post-title,
+  [dir="rtl"] h1,
+  [dir="rtl"] h2,
+  [dir="rtl"] h3 {
+    text-align: right;
   }
 
   h1, h2, h3, h4, h5, h6 {

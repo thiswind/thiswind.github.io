@@ -22,7 +22,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="{{ '/favicon-32x32.png' | relative_url }}">
   <link rel="icon" type="image/png" sizes="16x16" href="{{ '/favicon-16x16.png' | relative_url }}">
 </head>
-<body>
+<body class="{% if page.lang == 'ar' %}font-ar{% endif %}">
 
   <!-- 顶部固定导航栏（完整版） -->
   <header class="site-header">
@@ -33,25 +33,37 @@
           {{ site.title }}
         </a>
         <p class="site-subtitle">
-          <span class="ui-zh">Thinking in my way.</span>
-          <span class="ui-ar">أفكاري بطريقتي.</span>
+          {% if page.lang == 'ar' %}
+            أفكاري بطريقتي.
+          {% else %}
+            Thinking in my way.
+          {% endif %}
         </p>
       </div>
 
       <!-- 导航菜单 -->
       <nav class="site-nav">
-        <a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}">
-          <span class="ui-zh">🏠 博客</span>
-          <span class="ui-ar">🏠 المدونة</span>
-        </a>
-        <a href="{{ '/mygpts/' | relative_url }}" class="nav-link {% if page.url == '/mygpts/' %}active{% endif %}">
-          <span class="ui-zh">🤖 GPTs</span>
-          <span class="ui-ar">🤖 الذكاء الاصطناعي</span>
-        </a>
-        <a href="{{ '/post/about/' | relative_url }}" class="nav-link {% if page.url == '/post/about/' %}active{% endif %}">
-          <span class="ui-zh">👤 关于</span>
-          <span class="ui-ar">👤 حول</span>
-        </a>
+        {% if page.lang == 'ar' %}
+          <a href="{{ '/ar/' | relative_url }}" class="nav-link {% if page.url == '/ar/' %}active{% endif %}">
+            🏠 الرئيسية
+          </a>
+          <a href="{{ '/ar/mygpts/' | relative_url }}" class="nav-link">
+            🤖 الذكاء الاصطناعي
+          </a>
+          <a href="{{ '/ar/post/about/' | relative_url }}" class="nav-link">
+            👤 حول
+          </a>
+        {% else %}
+          <a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}">
+            🏠 博客
+          </a>
+          <a href="{{ '/mygpts/' | relative_url }}" class="nav-link {% if page.url == '/mygpts/' %}active{% endif %}">
+            🤖 GPTs
+          </a>
+          <a href="{{ '/post/about/' | relative_url }}" class="nav-link {% if page.url == '/post/about/' %}active{% endif %}">
+            👤 关于
+          </a>
+        {% endif %}
       </nav>
     </div>
   </header>
@@ -61,21 +73,19 @@
     {{ content }}
   </main>
 
-  <!-- 底部胶囊工具条（精巧版） -->
+  <!-- 底部胶囊工具条 -->
   <div class="tool-bar-wrapper">
     <div class="tool-bar">
       <!-- 中文 -->
-      <button id="btn-zh" class="tool-btn active" onclick="setLanguage('zh')">
-        <span class="tool-btn-icon">🇨🇳</span>
-        <span class="ui-zh">中文</span>
-        <span class="ui-ar">الصينية</span>
+      <button id="btn-zh" class="tool-btn {% if page.lang != 'ar' %}active{% endif %}" onclick="switchLanguage('zh')">
+        🇨🇳
+        {% if page.lang == 'ar' %}الصينية{% else %}中文{% endif %}
       </button>
 
       <!-- 阿拉伯语 -->
-      <button id="btn-ar" class="tool-btn" onclick="setLanguage('ar')">
-        <span class="tool-btn-icon">🇵🇸</span>
-        <span class="ui-zh">عربي</span>
-        <span class="ui-ar">العربية</span>
+      <button id="btn-ar" class="tool-btn {% if page.lang == 'ar' %}active{% endif %}" onclick="switchLanguage('ar')">
+        🇵🇸
+        {% if page.lang == 'ar' %}العربية{% else %}عربي{% endif %}
       </button>
 
       <!-- 分隔线 -->
@@ -140,8 +150,39 @@
 
 
     // ============================================
-    // 2. 语言自动检测与切换（包含所有框架 UI）
+    // 2. 语言 URL 跳转逻辑
     // ============================================
+    function getTargetLanguageUrl(targetLang) {
+      const path = window.location.pathname;
+      
+      // 当前是阿拉伯语页面
+      if (path.startsWith('/ar/')) {
+        if (targetLang === 'zh') {
+          // /ar/posts/xxx -> /posts/xxx
+          // /ar/ -> /
+          return path.replace(/^\/ar/, '') || '/';
+        }
+      } else {
+        // 当前是中文页面
+        if (targetLang === 'ar') {
+          if (path === '/' || path === '') {
+            return '/ar/';
+          }
+          // /posts/xxx -> /ar/posts/xxx
+          return '/ar' + path;
+        }
+      }
+      return null; // 已是目标语言，无需跳转
+    }
+
+    function switchLanguage(lang) {
+      const targetUrl = getTargetLanguageUrl(lang);
+      if (targetUrl) {
+        localStorage.setItem('preferred-language', lang);
+        window.location.href = targetUrl;
+      }
+    }
+
     function getBrowserLanguage() {
       const lang = navigator.language || navigator.userLanguage;
       if (lang.startsWith('ar')) {
@@ -150,35 +191,9 @@
       return 'zh';
     }
 
-    function setLanguage(lang) {
-      const html = document.documentElement;
-      
-      // 更新按钮状态
-      document.getElementById('btn-zh').classList.remove('active');
-      document.getElementById('btn-ar').classList.remove('active');
-      document.getElementById('btn-' + lang).classList.add('active');
-      
-      // 设置 HTML 标签属性
-      if (lang === 'ar') {
-        html.setAttribute('dir', 'rtl');
-        html.setAttribute('lang', 'ar');
-        // 显示阿拉伯语 UI，隐藏中文 UI
-        document.querySelectorAll('.ui-zh').forEach(el => el.style.display = 'none');
-        document.querySelectorAll('.ui-ar').forEach(el => el.style.display = 'inline');
-      } else {
-        html.setAttribute('dir', 'ltr');
-        html.setAttribute('lang', 'zh-CN');
-        // 显示中文 UI，隐藏阿拉伯语 UI
-        document.querySelectorAll('.ui-ar').forEach(el => el.style.display = 'none');
-        document.querySelectorAll('.ui-zh').forEach(el => el.style.display = 'inline');
-      }
-      
-      localStorage.setItem('preferred-language', lang);
-    }
-
 
     // ============================================
-    // 3. 返回顶部按钮显示控制
+    // 3. 返回顶部按钮
     // ============================================
     function initBackToTop() {
       const backToTopBtn = document.getElementById('back-to-top');
@@ -200,15 +215,6 @@
     // ============================================
     document.addEventListener('DOMContentLoaded', () => {
       initTheme();
-      
-      const savedLang = localStorage.getItem('preferred-language');
-      if (savedLang) {
-        setLanguage(savedLang);
-      } else {
-        const browserLang = getBrowserLanguage();
-        setLanguage(browserLang);
-      }
-      
       initBackToTop();
     });
   </script>

@@ -1,47 +1,29 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you: 
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
 title: Thiswind
 email: thiswind@gmail.com
 description: Thinking in my way.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://myblog.thiswind.work" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: ""
+url: "https://myblog.thiswind.work"
 twitter_username: thiswindme
 github_username:  thiswind
 
-# comes with hacker theme
 show_downloads: false
 
-# Build settings
-# theme: minima
+# 双语言集合配置
+collections:
+  posts:
+    output: true
+    permalink: /posts/:name/
+  posts_ar:
+    output: true
+    permalink: /ar/posts/:name/
+
 remote_theme: pages-themes/hacker@v0.2.0
 plugins:
   - jekyll-feed
-  - jekyll-remote-theme # add this line to the plugins list if you already have one
+  - jekyll-remote-theme
   - jekyll-assets
 
-
 timezone: Asia/Shanghai
-
 repository: thiswind/thiswind.github.io
-
 author: thiswind
-
 excerpt_separator: "<!--more-->"
