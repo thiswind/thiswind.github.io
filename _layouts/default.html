@@ -24,15 +24,29 @@
 </head>
 <body>
 
-  <!-- 顶部固定导航栏 -->
+  <!-- 顶部固定导航栏（完整版） -->
   <header class="site-header">
     <div class="site-header-inner">
-      <div>
+      <!-- Logo & 标题 -->
+      <div class="site-brand">
         <a href="{{ '/' | relative_url }}" class="site-title">
           {{ site.title }}
         </a>
         <p class="site-subtitle">{{ site.description }}</p>
       </div>
+
+      <!-- 导航菜单 -->
+      <nav class="site-nav">
+        <a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}">
+          🏠 博客
+        </a>
+        <a href="{{ '/mygpts/' | relative_url }}" class="nav-link {% if page.url == '/mygpts/' %}active{% endif %}">
+          🤖 GPTs
+        </a>
+        <a href="{{ '/post/about/' | relative_url }}" class="nav-link {% if page.url == '/post/about/' %}active{% endif %}">
+          👤 关于
+        </a>
+      </nav>
     </div>
   </header>
 
@@ -41,29 +55,31 @@
     {{ content }}
   </main>
 
-  <!-- 底部固定工具条 -->
-  <nav class="tool-bar">
-    <div class="tool-bar-inner">
+  <!-- 底部胶囊工具条（小巧版） -->
+  <div class="tool-bar-wrapper">
+    <div class="tool-bar">
       <!-- 中文 -->
       <button id="btn-zh" class="tool-btn active" onclick="setLanguage('zh')">
         <span class="tool-btn-icon">🇨🇳</span>
-        <span class="tool-btn-label">中文</span>
+        <span>中文</span>
       </button>
 
       <!-- 阿拉伯语 -->
       <button id="btn-ar" class="tool-btn" onclick="setLanguage('ar')">
         <span class="tool-btn-icon">🇵🇸</span>
-        <span class="tool-btn-label">عربي</span>
+        <span>عربي</span>
       </button>
+
+      <!-- 分隔线 -->
+      <div class="w-px h-5 mx-1" style="background-color: var(--border-color);"></div>
 
       <!-- 主题切换 -->
       <button id="theme-toggle" class="tool-btn" onclick="toggleTheme()">
-        <span id="icon-sun" class="tool-btn-icon">☀️</span>
-        <span id="icon-moon" class="tool-btn-icon hidden">🌙</span>
-        <span id="theme-label" class="tool-btn-label">主题</span>
+        <span id="icon-sun">☀️</span>
+        <span id="icon-moon" class="hidden">🌙</span>
       </button>
     </div>
-  </nav>
+  </div>
 
   <!-- 返回顶部按钮 -->
   <button id="back-to-top" class="back-to-top opacity-0" onclick="window.scrollTo({top:0,behavior:'smooth'})">
@@ -77,8 +93,6 @@
     function getThemeByTimezone() {
       const now = new Date();
       const hour = now.getHours();
-      // 早上7点到晚上7点：浅色主题
-      // 晚上7点到早上7点：深色主题
       return (hour >= 7 && hour < 19) ? 'light' : 'dark';
     }
 
@@ -86,7 +100,6 @@
       const html = document.documentElement;
       html.setAttribute('data-theme', theme);
       
-      // 切换图标
       const sunIcon = document.getElementById('icon-sun');
       const moonIcon = document.getElementById('icon-moon');
       
@@ -98,7 +111,6 @@
         moonIcon.classList.add('hidden');
       }
       
-      // 保存到 localStorage
       localStorage.setItem('preferred-theme', theme);
     }
 
@@ -108,7 +120,6 @@
       setTheme(newTheme);
     }
 
-    // 初始化主题
     function initTheme() {
       const savedTheme = localStorage.getItem('preferred-theme');
       if (savedTheme) {
@@ -133,13 +144,10 @@
 
     function setLanguage(lang) {
       const html = document.documentElement;
-      const body = document.body;
       
       // 更新按钮状态
-      document.querySelectorAll('.tool-btn').forEach(btn => {
-        if (btn.id === 'theme-toggle') return;
-        btn.classList.remove('active');
-      });
+      document.getElementById('btn-zh').classList.remove('active');
+      document.getElementById('btn-ar').classList.remove('active');
       document.getElementById('btn-' + lang).classList.add('active');
       
       // 设置 HTML 标签属性
@@ -151,7 +159,6 @@
         html.setAttribute('lang', 'zh-CN');
       }
       
-      // 保存到 localStorage
       localStorage.setItem('preferred-language', lang);
     }
 
