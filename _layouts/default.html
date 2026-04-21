@@ -22,51 +22,52 @@
   <link rel="icon" type="image/png" sizes="32x32" href="{{ '/favicon-32x32.png' | relative_url }}">
   <link rel="icon" type="image/png" sizes="16x16" href="{{ '/favicon-16x16.png' | relative_url }}">
 </head>
-<body class="pb-24 lang-both"> <!-- 默认双语模式 -->
+<body>
 
-  <!-- 主题切换按钮 -->
-  <button id="theme-toggle" class="theme-toggle" aria-label="切换主题">
-    <svg id="icon-sun" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-      <circle cx="12" cy="12" r="5"></circle>
-      <line x1="12" y1="1" x2="12" y2="3"></line>
-      <line x1="12" y1="21" x2="12" y2="23"></line>
-      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-      <line x1="1" y1="12" x2="3" y2="12"></line>
-      <line x1="21" y1="12" x2="23" y2="12"></line>
-      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-    </svg>
-    <svg id="icon-moon" class="w-5 h-5 hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-    </svg>
-  </button>
-
-  <!-- 顶部标题栏 -->
+  <!-- 顶部固定导航栏 -->
   <header class="site-header">
-    <div class="max-w-md mx-auto px-4 py-3 flex items-center justify-between">
+    <div class="site-header-inner">
       <div>
-        <a href="{{ '/' | relative_url }}" style="color: var(--accent);" class="text-xl font-bold">
+        <a href="{{ '/' | relative_url }}" class="site-title">
           {{ site.title }}
         </a>
-        <p class="text-xs mt-0.5" style="color: var(--text-muted);">{{ site.description }}</p>
+        <p class="site-subtitle">{{ site.description }}</p>
       </div>
     </div>
   </header>
 
   <!-- 主要内容区 -->
-  <main class="max-w-md mx-auto px-4 py-6 article-content">
+  <main class="max-w-md mx-auto px-4 py-6">
     {{ content }}
   </main>
 
-  <!-- 底部导航 -->
-  {% include mobile-nav.html %}
+  <!-- 底部固定工具条 -->
+  <nav class="tool-bar">
+    <div class="tool-bar-inner">
+      <!-- 中文 -->
+      <button id="btn-zh" class="tool-btn active" onclick="setLanguage('zh')">
+        <span class="tool-btn-icon">🇨🇳</span>
+        <span class="tool-btn-label">中文</span>
+      </button>
+
+      <!-- 阿拉伯语 -->
+      <button id="btn-ar" class="tool-btn" onclick="setLanguage('ar')">
+        <span class="tool-btn-icon">🇵🇸</span>
+        <span class="tool-btn-label">عربي</span>
+      </button>
+
+      <!-- 主题切换 -->
+      <button id="theme-toggle" class="tool-btn" onclick="toggleTheme()">
+        <span id="icon-sun" class="tool-btn-icon">☀️</span>
+        <span id="icon-moon" class="tool-btn-icon hidden">🌙</span>
+        <span id="theme-label" class="tool-btn-label">主题</span>
+      </button>
+    </div>
+  </nav>
 
   <!-- 返回顶部按钮 -->
-  <button id="back-to-top" class="back-to-top opacity-0">
-    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-      <path d="M5 15l7-7 7 7" />
-    </svg>
+  <button id="back-to-top" class="back-to-top opacity-0" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    ↑
   </button>
 
   <script>
@@ -78,11 +79,7 @@
       const hour = now.getHours();
       // 早上7点到晚上7点：浅色主题
       // 晚上7点到早上7点：深色主题
-      if (hour >= 7 && hour < 19) {
-        return 'light';
-      } else {
-        return 'dark';
-      }
+      return (hour >= 7 && hour < 19) ? 'light' : 'dark';
     }
 
     function setTheme(theme) {
@@ -113,19 +110,14 @@
 
     // 初始化主题
     function initTheme() {
-      // 先检查用户是否有手动保存的偏好
       const savedTheme = localStorage.getItem('preferred-theme');
       if (savedTheme) {
         setTheme(savedTheme);
       } else {
-        // 没有手动设置，用时区时间自动判断
         const autoTheme = getThemeByTimezone();
         setTheme(autoTheme);
       }
     }
-
-    // 主题切换按钮事件
-    document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
 
 
     // ============================================
@@ -133,22 +125,22 @@
     // ============================================
     function getBrowserLanguage() {
       const lang = navigator.language || navigator.userLanguage;
-      // 检测阿拉伯语
       if (lang.startsWith('ar')) {
         return 'ar';
       }
-      // 默认中文
       return 'zh';
     }
 
     function setLanguage(lang) {
-      const body = document.body;
       const html = document.documentElement;
+      const body = document.body;
       
-      // 移除旧的语言类
-      body.classList.remove('lang-both', 'lang-zh', 'lang-ar');
-      // 添加新的语言类
-      body.classList.add('lang-' + lang);
+      // 更新按钮状态
+      document.querySelectorAll('.tool-btn').forEach(btn => {
+        if (btn.id === 'theme-toggle') return;
+        btn.classList.remove('active');
+      });
+      document.getElementById('btn-' + lang).classList.add('active');
       
       // 设置 HTML 标签属性
       if (lang === 'ar') {
@@ -159,23 +151,13 @@
         html.setAttribute('lang', 'zh-CN');
       }
       
-      // 更新按钮状态
-      document.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.classList.remove('active');
-      });
-      
-      const activeBtn = document.getElementById('lang-' + lang);
-      if (activeBtn) {
-        activeBtn.classList.add('active');
-      }
-      
       // 保存到 localStorage
       localStorage.setItem('preferred-language', lang);
     }
 
 
     // ============================================
-    // 3. 返回顶部按钮
+    // 3. 返回顶部按钮显示控制
     // ============================================
     function initBackToTop() {
       const backToTopBtn = document.getElementById('back-to-top');
@@ -189,10 +171,6 @@
           backToTopBtn.classList.add('opacity-0');
         }
       });
-      
-      backToTopBtn.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      });
     }
 
 
@@ -200,21 +178,16 @@
     // 页面初始化
     // ============================================
     document.addEventListener('DOMContentLoaded', () => {
-      // 初始化主题
       initTheme();
       
-      // 初始化语言（优先用保存的，否则用浏览器检测）
       const savedLang = localStorage.getItem('preferred-language');
       if (savedLang) {
         setLanguage(savedLang);
       } else {
-        // 自动检测浏览器语言
         const browserLang = getBrowserLanguage();
-        // 如果是阿拉伯语浏览器，默认只显示阿拉伯语；否则默认只显示中文
         setLanguage(browserLang);
       }
       
-      // 初始化返回顶部
       initBackToTop();
     });
   </script>

@@ -2,36 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-/* CSS 变量定义 - 同时支持明暗主题 */
+/* CSS 变量定义 - 伊斯兰绿 + 沙色主题 */
 :root {
-  --bg-primary: #fbf8f4;
-  --bg-secondary: #f5efe6;
-  --bg-card: rgba(255, 255, 255, 0.8);
-  --text-primary: #2f241f;
-  --text-secondary: #574238;
-  --text-muted: #7f5e4d;
-  --border-color: #d7c7b3;
-  --accent: #dbb707;
-  --accent-light: #f2d00f;
+  --bg-primary: #fefcf3;    /* 浅色沙色 */
+  --bg-secondary: #fdf8e1;
+  --bg-card: rgba(255, 255, 255, 0.9);
+  --text-primary: #1f1704;  /* 深褐色 */
+  --text-secondary: #70511e;
+  --text-muted: #85611f;
+  --border-color: #f3e387;
+  --accent: #22c55e;        /* 伊斯兰绿 */
+  --accent-light: #4ade80;
 }
 
 /* 深色主题 */
 [data-theme="dark"] {
-  --bg-primary: #2f241f;
-  --bg-secondary: #3d2e26;
-  --bg-card: rgba(55, 42, 34, 0.8);
-  --text-primary: #fbf8f4;
-  --text-secondary: #f5efe6;
-  --text-muted: #c4ab91;
-  --border-color: #574238;
-  --accent: #f2d00f;
-  --accent-light: #dbb707;
+  --bg-primary: #1f1704;    /* 深褐色背景 */
+  --bg-secondary: #2e2309;
+  --bg-card: rgba(46, 35, 9, 0.8);
+  --text-primary: #fefcf3;  /* 浅色文字 */
+  --text-secondary: #fdf8e1;
+  --text-muted: #e9d057;
+  --border-color: #70511e;
+  --accent: #4ade80;        /* 明亮的绿 */
+  --accent-light: #86efac;
 }
 
 /* 基础层：全局样式 */
 @layer base {
   html {
     scroll-behavior: smooth;
+    padding-top: 64px;   /* 顶部导航栏高度 */
+    padding-bottom: 70px; /* 底部工具条高度 */
   }
 
   body {
@@ -61,77 +63,104 @@
   }
 }
 
-/* 组件层：可复用组件 */
+/* 组件层 */
 @layer components {
-  /* 双语段落卡片 */
-  .bilingual-card {
-    @apply rounded-xl p-5 mb-4 border backdrop-blur-sm transition-all duration-300;
+  /* ========================================
+     顶部固定导航栏
+     ======================================== */
+  .site-header {
+    @apply fixed top-0 left-0 right-0 z-50 backdrop-blur-lg border-b transition-all duration-300;
     background-color: var(--bg-card);
     border-color: var(--border-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
 
-  .bilingual-card .zh-section {
+  .site-header-inner {
+    @apply max-w-md mx-auto px-4 py-3 flex items-center justify-between;
+  }
+
+  .site-title {
+    @apply text-xl font-bold;
+    color: var(--accent);
+  }
+
+  .site-subtitle {
+    @apply text-xs;
+    color: var(--text-muted);
+  }
+
+  /* ========================================
+     底部固定工具条
+     ======================================== */
+  .tool-bar {
+    @apply fixed bottom-0 left-0 right-0 z-50 backdrop-blur-lg border-t transition-colors duration-300;
+    background-color: var(--bg-card);
+    border-color: var(--border-color);
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .tool-bar-inner {
+    @apply max-w-md mx-auto flex items-center justify-around py-2 px-2;
+  }
+
+  .tool-btn {
+    @apply flex flex-col items-center justify-center px-4 py-2 rounded-xl transition-all duration-200;
+    color: var(--text-muted);
+    min-width: 80px;
+  }
+
+  .tool-btn:hover {
+    background-color: rgba(34, 197, 94, 0.1);
+  }
+
+  .tool-btn.active {
+    color: var(--accent);
+    background-color: rgba(34, 197, 94, 0.15);
+  }
+
+  .tool-btn-icon {
+    @apply text-2xl mb-1;
+  }
+
+  .tool-btn-label {
+    @apply text-xs font-medium;
+  }
+
+  /* ========================================
+     双语段落卡片 - 单语言显示
+     ======================================== */
+  .bilingual-card {
+    @apply rounded-xl p-5 mb-4 border transition-all duration-300;
+    background-color: var(--bg-card);
+    border-color: var(--border-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  }
+
+  .zh-section, .ar-section {
     @apply leading-relaxed;
     color: var(--text-primary);
   }
 
-  .bilingual-card .ar-section {
-    @apply mt-4 pt-4 leading-relaxed font-ar;
-    border-top: 1px solid var(--border-color);
-    color: var(--text-secondary);
-    direction: rtl;
-    text-align: right;
-  }
+  /* 默认隐藏阿拉伯语（中文模式） */
+  .ar-section { display: none; }
 
-  /* 只显示中文时 */
-  .lang-zh .ar-section { display: none; }
-  .lang-zh .zh-section { margin-top: 0; padding-top: 0; border-top: none; }
+  /* RTL 模式（阿拉伯语模式）显示阿拉伯语，隐藏中文 */
+  [dir="rtl"] .ar-section { display: block; }
+  [dir="rtl"] .zh-section { display: none; }
 
-  /* 只显示阿拉伯语时 */
-  .lang-ar .zh-section { display: none; }
-  .lang-ar .ar-section { margin-top: 0; padding-top: 0; border-top: none; }
-
-  /* 旧结构兼容 */
-  .lang-zh .ar-content { display: none; }
-  .lang-ar .zh-content { display: none; }
-
-  /* 底部导航栏 - 移动端固定 */
-  .mobile-nav {
-    @apply fixed bottom-0 left-0 right-0 backdrop-blur-lg border-t z-50 pb-safe transition-colors duration-300;
-    background-color: rgba(47, 36, 31, 0.95);
-    border-color: var(--border-color);
-  }
-
-  [data-theme="light"] .mobile-nav {
-    background-color: rgba(251, 248, 244, 0.95);
-  }
-
-  .nav-item {
-    @apply flex flex-col items-center justify-center py-2 px-3 transition-all duration-200;
-    color: var(--text-muted);
-  }
-
-  .nav-item.active {
-    color: var(--accent);
-  }
-
-  .nav-icon {
-    @apply w-6 h-6 mb-1;
-  }
-
-  .nav-label {
-    @apply text-xs font-medium;
-  }
-
-  /* 文章卡片 */
+  /* ========================================
+     文章卡片
+     ======================================== */
   .post-card {
-    @apply rounded-xl p-5 mb-4 border transition-all duration-300 hover:scale-[1.02];
+    @apply rounded-xl p-5 mb-4 border transition-all duration-300 hover:scale-[1.01];
     background-color: var(--bg-card);
     border-color: var(--border-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   }
 
   .post-card:hover {
     border-color: var(--accent);
+    box-shadow: 0 4px 12px rgba(34, 197, 94, 0.1);
   }
 
   .post-title {
@@ -149,7 +178,9 @@
     color: var(--text-secondary);
   }
 
-  /* 标签 */
+  /* ========================================
+     标签
+     ======================================== */
   .tag {
     @apply inline-block px-3 py-1 text-xs font-medium rounded-full mr-2 mb-2 transition-all;
     background-color: var(--bg-secondary);
@@ -160,109 +191,35 @@
     color: var(--accent);
   }
 
-  /* 语言切换按钮组 */
-  .lang-toggle-group {
-    @apply flex justify-center gap-2 p-1 rounded-xl mb-6;
-    background-color: var(--bg-secondary);
-  }
-
-  .lang-btn {
-    @apply flex-1 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300;
-    color: var(--text-muted);
-  }
-
-  .lang-btn.active {
-    @apply shadow-md;
-    background-color: var(--accent);
-    color: #2f241f;
-  }
-
-  /* 主题切换按钮 */
-  .theme-toggle {
-    @apply fixed top-4 right-4 z-50 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg;
-    background-color: var(--bg-card);
-    border: 1px solid var(--border-color);
-    color: var(--accent);
-  }
-
-  .theme-toggle:hover {
-    transform: scale(1.1);
-  }
-
-  /* 顶部标题栏 */
-  .site-header {
-    @apply sticky top-0 z-40 backdrop-blur-lg border-b transition-colors duration-300;
-    background-color: rgba(47, 36, 31, 0.9);
-    border-color: var(--border-color);
-  }
-
-  [data-theme="light"] .site-header {
-    background-color: rgba(251, 248, 244, 0.9);
-  }
-
-  /* 文章图片 */
-  .post-image {
-    @apply max-w-full h-auto my-6 mx-auto rounded-xl shadow-lg;
-    border: 1px solid var(--border-color);
-  }
-
-  /* 返回顶部按钮 */
-  .back-to-top {
-    @apply fixed bottom-20 right-4 w-10 h-10 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 z-40;
-    background-color: var(--accent);
-    color: #2f241f;
-  }
-
-  /* 文章内容样式 */
-  .article-content h2 {
-    @apply text-xl font-bold mt-8 mb-4;
-    color: var(--text-primary);
-  }
-
-  .article-content h3 {
-    @apply text-lg font-bold mt-6 mb-3;
-    color: var(--text-primary);
-  }
-
-  .article-content ul, .article-content ol {
-    @apply my-4 ml-6 space-y-2;
-  }
-
-  .article-content li {
-    @apply leading-relaxed;
-    color: var(--text-secondary);
-  }
-
-  .article-content code {
-    @apply px-2 py-1 rounded text-sm font-mono;
-    background-color: var(--bg-secondary);
-  }
-
-  .article-content pre {
-    @apply p-4 rounded-xl my-6 overflow-x-auto text-sm;
-    background-color: var(--bg-secondary);
-  }
-
-  .article-content blockquote {
-    @apply border-l-4 pl-4 my-6 italic;
-    border-color: var(--accent);
-    color: var(--text-muted);
-  }
-
-  /* 欢迎卡片 */
+  /* ========================================
+     欢迎卡片
+     ======================================== */
   .welcome-card {
-    @apply rounded-xl p-6 border mb-6;
-    background: linear-gradient(135deg, rgba(219, 183, 7, 0.2), rgba(242, 208, 15, 0.1));
-    border-color: rgba(219, 183, 7, 0.3);
+    @apply rounded-xl p-5 border mb-6;
+    background: linear-gradient(135deg, rgba(34, 197, 94, 0.1), rgba(74, 222, 128, 0.05));
+    border-color: rgba(34, 197, 94, 0.2);
+  }
+
+  /* ========================================
+     文章图片
+     ======================================== */
+  .post-image {
+    @apply max-w-full h-auto my-6 mx-auto rounded-xl shadow-md;
+    border: 1px solid var(--border-color);
+  }
+
+  /* ========================================
+     返回顶部按钮
+     ======================================== */
+  .back-to-top {
+    @apply fixed bottom-24 right-4 w-10 h-10 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 z-40;
+    background-color: var(--accent);
+    color: #fff;
   }
 }
 
 /* 工具层 */
 @layer utilities {
-  .pb-safe {
-    padding-bottom: env(safe-area-inset-bottom, 20px);
-  }
-
   .content-auto {
     content-visibility: auto;
   }
