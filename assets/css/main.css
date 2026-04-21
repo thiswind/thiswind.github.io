@@ -85,11 +85,15 @@
 
   /* 只显示中文时 */
   .lang-zh .ar-section { display: none; }
-  .lang-zh .ar-section + .zh-section { margin-top: 0; padding-top: 0; border-top: none; }
+  .lang-zh .zh-section { margin-top: 0; padding-top: 0; border-top: none; }
 
   /* 只显示阿拉伯语时 */
   .lang-ar .zh-section { display: none; }
   .lang-ar .ar-section { margin-top: 0; padding-top: 0; border-top: none; }
+
+  /* 旧结构兼容 */
+  .lang-zh .ar-content { display: none; }
+  .lang-ar .zh-content { display: none; }
 
   /* 底部导航栏 - 移动端固定 */
   .mobile-nav {
