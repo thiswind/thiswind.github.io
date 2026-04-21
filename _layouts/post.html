@@ -4,15 +4,18 @@ layout: default
 
 <!-- 文章标题区 -->
 <div class="mb-8 text-center">
-  <h1 class="text-2xl font-bold mb-2" style="color: var(--text-primary);">{{ page.title }}</h1>
-  
-  {% if page.title_ar %}
-    <h2 class="text-xl font-bold font-ar mb-4" style="color: var(--accent);">{{ page.title_ar }}</h2>
-  {% endif %}
+  <h1 class="text-2xl font-bold mb-4" style="color: var(--text-primary);">{{ page.title }}</h1>
   
   <p class="text-sm" style="color: var(--text-muted);">
     <time datetime="{{ page.date | date_to_xmlschema }}">
-      {{ page.date | date: "%Y年%m月%d日" }}
+      {% if page.lang == 'ar' %}
+        {% assign m = page.date | date: "%m" %}
+        {% assign day = page.date | date: "%d" %}
+        {% assign year = page.date | date: "%Y" %}
+        {{ day }} {{ site.data.arabic_months[m] }} {{ year }}
+      {% else %}
+        {{ page.date | date: "%Y年%m月%d日" }}
+      {% endif %}
     </time>
   </p>
   

@@ -1,24 +1,22 @@
 ---
 layout: default
+lang: zh
 ---
 
 <!-- 欢迎语 -->
 <div class="welcome-card">
   <h1 class="text-xl font-bold mb-2" style="color: var(--accent);">
-    <span class="ui-zh">欢迎来到我的博客</span>
-    <span class="ui-ar">مرحبا بكم في مدونتي</span>
+    欢迎来到我的博客
   </h1>
   <p class="text-sm leading-relaxed" style="color: var(--text-secondary);">
-    <span class="ui-zh">用中文和阿拉伯语记录思考、探索与发现。</span>
-    <span class="ui-ar">تسجيل الأفكار والاستكشاف والاكتشافات باللغتين الصينية والعربية.</span>
+    用中文记录思考、探索与发现。
   </p>
 </div>
 
 <!-- 文章列表 -->
 <div>
   <h2 class="text-lg font-bold mb-4" style="color: var(--text-primary);">
-    <span class="ui-zh">最新文章</span>
-    <span class="ui-ar">أحدث المقالات</span>
+    最新文章
   </h2>
   
   {% for post in site.posts %}
@@ -27,12 +25,6 @@ layout: default
         <h3 class="post-title group-hover:opacity-80">
           {{ post.title }}
         </h3>
-        
-        {% if post.title_ar %}
-          <p class="font-ar text-base mb-2" style="color: var(--accent);">
-            {{ post.title_ar }}
-          </p>
-        {% endif %}
         
         <p class="post-date">
           {{ post.date | date: "%Y年%m月%d日" }}

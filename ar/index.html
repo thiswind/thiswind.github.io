@@ -28,7 +28,10 @@ permalink: /ar/
         </h3>
         
         <p class="post-date">
-          {{ post.date | date: "%Y-%m-%d" }}
+          {% assign m = post.date | date: "%m" %}
+          {% assign day = post.date | date: "%d" %}
+          {% assign year = post.date | date: "%Y" %}
+          {{ day }} {{ site.data.arabic_months[m] }} {{ year }}
         </p>
         
         <p class="post-excerpt">
