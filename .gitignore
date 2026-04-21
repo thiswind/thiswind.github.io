@@ -1,7 +1,10 @@
-_site
-.sass-cache
-.jekyll-cache
+_site/
+.sass-cache/
+.jekyll-cache/
 .jekyll-metadata
-vendor
-Gemfile.lock
-.env
+vendor/
+.bundle/
+node_modules/
+npm-debug.log
+.DS_Store
+Thumbs.db

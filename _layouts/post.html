@@ -2,29 +2,44 @@
 layout: default
 ---
 
-<!-- 日期和标题 -->
-<small>{{ page.date | date: "%-d %B %Y" }}</small>
-
-<!-- 标题对照显示 -->
-<h1 class="bilingual-title">
-  <span class="zh">{{ page.title }}</span>
-  <span class="ar" dir="rtl">{{ page.title_ar }}</span>
-</h1>
-
-<!-- 作者信息 -->
-<p class="view">by {{ page.author | default: site.author }}</p>
-
-<!-- 博文内容：上下对照显示 -->
-<div class="bilingual">
-  <div class="zh">
-    {{ content }}
-  </div>
-  <div class="ar" dir="rtl">
-    {{ content_ar }}
-  </div>
+<!-- 语言切换按钮组 -->
+<div class="lang-toggle-group">
+  <button id="lang-both" class="lang-btn active" onclick="setLanguage('both')">
+    双语
+  </button>
+  <button id="lang-zh" class="lang-btn" onclick="setLanguage('zh')">
+    中文
+  </button>
+  <button id="lang-ar" class="lang-btn font-ar" onclick="setLanguage('ar')">
+    عربي
+  </button>
 </div>
 
-<!-- 标签 -->
-{% if page.tags %}
-  <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
-{% endif %}
+<!-- 文章标题区 -->
+<div class="mb-8 text-center">
+  <h1 class="text-2xl font-bold mb-2" style="color: var(--text-primary);">{{ page.title }}</h1>
+  
+  {% if page.title_ar %}
+    <h2 class="text-xl font-bold font-ar mb-4" style="color: var(--accent);">{{ page.title_ar }}</h2>
+  {% endif %}
+  
+  <p class="text-sm" style="color: var(--text-muted);">
+    <time datetime="{{ page.date | date_to_xmlschema }}">
+      {{ page.date | date: "%Y年%m月%d日" }}
+    </time>
+  </p>
+  
+  <!-- 标签 -->
+  {% if page.tags %}
+    <div class="mt-4">
+      {% for tag in page.tags %}
+        <span class="tag">{{ tag }}</span>
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>
+
+<!-- 文章内容 -->
+<article class="article-content">
+  {{ content }}
+</article>

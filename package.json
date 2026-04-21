@@ -1,0 +1,12 @@
+{
+  "name": "thiswind-blog",
+  "version": "2.0.0",
+  "description": "Bilingual Chinese-Arabic blog",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./assets/css/main.css -o ./assets/css/dist.css --watch",
+    "build": "npx tailwindcss -i ./assets/css/main.css -o ./assets/css/dist.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+}
