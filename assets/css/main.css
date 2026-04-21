@@ -115,20 +115,21 @@
   }
 
   /* ========================================
-     底部胶囊工具条（小巧版）
+     底部胶囊工具条（精巧版 - 80% 尺寸 + 悬浮阴影）
      ======================================== */
   .tool-bar-wrapper {
-    @apply fixed bottom-4 left-0 right-0 z-50 flex justify-center px-4;
+    @apply fixed bottom-5 left-0 right-0 z-50 flex justify-center px-4;
   }
 
   .tool-bar {
-    @apply flex items-center gap-1 px-2 py-1.5 rounded-full backdrop-blur-lg border shadow-lg transition-all duration-300;
+    @apply flex items-center gap-0.5 px-1.5 py-1 rounded-full backdrop-blur-lg border transition-all duration-300;
     background-color: var(--bg-card);
     border-color: var(--border-color);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2), 0 2px 10px rgba(0, 0, 0, 0.12);
   }
 
   .tool-btn {
-    @apply flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium transition-all duration-200;
+    @apply flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-medium transition-all duration-200;
     color: var(--text-muted);
   }
 
@@ -142,7 +143,7 @@
   }
 
   .tool-btn-icon {
-    @apply text-base;
+    @apply text-sm;
   }
 
   /* ========================================

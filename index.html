@@ -4,18 +4,22 @@ layout: default
 
 <!-- 欢迎语 -->
 <div class="welcome-card">
-  <h1 class="text-xl font-bold mb-2" style="color: var(--accent);">欢迎来到我的博客</h1>
+  <h1 class="text-xl font-bold mb-2" style="color: var(--accent);">
+    <span class="ui-zh">欢迎来到我的博客</span>
+    <span class="ui-ar">مرحبا بكم في مدونتي</span>
+  </h1>
   <p class="text-sm leading-relaxed" style="color: var(--text-secondary);">
-    用中文和阿拉伯语记录思考、探索与发现。
-  </p>
-  <p class="font-ar text-sm leading-relaxed mt-2" style="color: var(--text-secondary);">
-    تسجيل الأفكار والاستكشاف والاكتشافات باللغتين الصينية والعربية.
+    <span class="ui-zh">用中文和阿拉伯语记录思考、探索与发现。</span>
+    <span class="ui-ar">تسجيل الأفكار والاستكشاف والاكتشافات باللغتين الصينية والعربية.</span>
   </p>
 </div>
 
 <!-- 文章列表 -->
 <div>
-  <h2 class="text-lg font-bold mb-4" style="color: var(--text-primary);">最新文章</h2>
+  <h2 class="text-lg font-bold mb-4" style="color: var(--text-primary);">
+    <span class="ui-zh">最新文章</span>
+    <span class="ui-ar">أحدث المقالات</span>
+  </h2>
   
   {% for post in site.posts %}
     <a href="{{ post.url }}" class="block post-card group">

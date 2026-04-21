@@ -32,19 +32,25 @@
         <a href="{{ '/' | relative_url }}" class="site-title">
           {{ site.title }}
         </a>
-        <p class="site-subtitle">{{ site.description }}</p>
+        <p class="site-subtitle">
+          <span class="ui-zh">Thinking in my way.</span>
+          <span class="ui-ar">أفكاري بطريقتي.</span>
+        </p>
       </div>
 
       <!-- 导航菜单 -->
       <nav class="site-nav">
         <a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}">
-          🏠 博客
+          <span class="ui-zh">🏠 博客</span>
+          <span class="ui-ar">🏠 المدونة</span>
         </a>
         <a href="{{ '/mygpts/' | relative_url }}" class="nav-link {% if page.url == '/mygpts/' %}active{% endif %}">
-          🤖 GPTs
+          <span class="ui-zh">🤖 GPTs</span>
+          <span class="ui-ar">🤖 الذكاء الاصطناعي</span>
         </a>
         <a href="{{ '/post/about/' | relative_url }}" class="nav-link {% if page.url == '/post/about/' %}active{% endif %}">
-          👤 关于
+          <span class="ui-zh">👤 关于</span>
+          <span class="ui-ar">👤 حول</span>
         </a>
       </nav>
     </div>
@@ -55,19 +61,21 @@
     {{ content }}
   </main>
 
-  <!-- 底部胶囊工具条（小巧版） -->
+  <!-- 底部胶囊工具条（精巧版） -->
   <div class="tool-bar-wrapper">
     <div class="tool-bar">
       <!-- 中文 -->
       <button id="btn-zh" class="tool-btn active" onclick="setLanguage('zh')">
         <span class="tool-btn-icon">🇨🇳</span>
-        <span>中文</span>
+        <span class="ui-zh">中文</span>
+        <span class="ui-ar">الصينية</span>
       </button>
 
       <!-- 阿拉伯语 -->
       <button id="btn-ar" class="tool-btn" onclick="setLanguage('ar')">
         <span class="tool-btn-icon">🇵🇸</span>
-        <span>عربي</span>
+        <span class="ui-zh">عربي</span>
+        <span class="ui-ar">العربية</span>
       </button>
 
       <!-- 分隔线 -->
@@ -132,7 +140,7 @@
 
 
     // ============================================
-    // 2. 语言自动检测与切换
+    // 2. 语言自动检测与切换（包含所有框架 UI）
     // ============================================
     function getBrowserLanguage() {
       const lang = navigator.language || navigator.userLanguage;
@@ -154,9 +162,15 @@
       if (lang === 'ar') {
         html.setAttribute('dir', 'rtl');
         html.setAttribute('lang', 'ar');
+        // 显示阿拉伯语 UI，隐藏中文 UI
+        document.querySelectorAll('.ui-zh').forEach(el => el.style.display = 'none');
+        document.querySelectorAll('.ui-ar').forEach(el => el.style.display = 'inline');
       } else {
         html.setAttribute('dir', 'ltr');
         html.setAttribute('lang', 'zh-CN');
+        // 显示中文 UI，隐藏阿拉伯语 UI
+        document.querySelectorAll('.ui-ar').forEach(el => el.style.display = 'none');
+        document.querySelectorAll('.ui-zh').forEach(el => el.style.display = 'inline');
       }
       
       localStorage.setItem('preferred-language', lang);
