@@ -44,27 +44,39 @@ sources:
       ru:
         path: _posts_ru/2026-05-29-welcome.md
         source_hash: sha256:2c1fab70af6cde3ca6530579fc98eccf1ebf09877167de377a46cda69e7db4f0
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2026-05-29-welcome/ru.yml
         locked: false
+        translation_hash: sha256:2122e257442c8c9f8ad6b82c21bdc8d10c4ba7bc314cc68aaa9e46c133fa5b92
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T05:06:39.098832+00:00'
       fa:
         path: _posts_fa/2026-05-29-welcome.md
         source_hash: sha256:2c1fab70af6cde3ca6530579fc98eccf1ebf09877167de377a46cda69e7db4f0
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2026-05-29-welcome/fa.yml
         locked: false
+        translation_hash: sha256:04b4476f0fa3a2975c32f3d64d977aaeb0e054f1c5d1fec1a0a33d93f1704ac3
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T05:06:39.101815+00:00'
       ar:
         path: _posts_ar/2026-05-29-welcome.md
         source_hash: sha256:2c1fab70af6cde3ca6530579fc98eccf1ebf09877167de377a46cda69e7db4f0
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2026-05-29-welcome/ar.yml
         locked: false
         dialect: damascus_levantine
+        translation_hash: sha256:a1243138a4f601e46a0b328cecf15084a55d934dcc412987e1372f2259a178e9
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T05:06:39.104803+00:00'
       tr:
         path: _posts_tr/2026-05-29-welcome.md
         source_hash: sha256:2c1fab70af6cde3ca6530579fc98eccf1ebf09877167de377a46cda69e7db4f0
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2026-05-29-welcome/tr.yml
         locked: false
+        translation_hash: sha256:d8192f21695e51a85e304e1ae35316d6ad092566666c2eea1f98fa07caa3a055
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T05:06:39.107717+00:00'
     date: 2026-05-29 10:00:00 +0800
     title: 欢迎来到我的个人博客
