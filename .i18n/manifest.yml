@@ -1576,3 +1576,59 @@ sources:
         locked: false
     date: '2015-08-22 05:24:26+00:00'
     title: Mac OS X 删除 Docker Toolbox 的办法
+  2015-08-15-tree-命令中文乱码问题的解决:
+    source_path: _posts/2015-08-15-Tree-命令中文乱码问题的解决.md
+    source_hash: sha256:a6dd19ade2f1c5bd079c66ad7d2563dcda748f7d255036e766ee3046130948f5
+    source_status: active
+    translations:
+      th:
+        path: _posts_th/2015-08-15-Tree-命令中文乱码问题的解决.md
+        source_hash: sha256:a6dd19ade2f1c5bd079c66ad7d2563dcda748f7d255036e766ee3046130948f5
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-15-tree-命令中文乱码问题的解决/th.yml
+        locked: false
+      my:
+        path: _posts_my/2015-08-15-Tree-命令中文乱码问题的解决.md
+        source_hash: sha256:a6dd19ade2f1c5bd079c66ad7d2563dcda748f7d255036e766ee3046130948f5
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-15-tree-命令中文乱码问题的解决/my.yml
+        locked: false
+      km:
+        path: _posts_km/2015-08-15-Tree-命令中文乱码问题的解决.md
+        source_hash: sha256:a6dd19ade2f1c5bd079c66ad7d2563dcda748f7d255036e766ee3046130948f5
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-15-tree-命令中文乱码问题的解决/km.yml
+        locked: false
+      lo:
+        path: _posts_lo/2015-08-15-Tree-命令中文乱码问题的解决.md
+        source_hash: sha256:a6dd19ade2f1c5bd079c66ad7d2563dcda748f7d255036e766ee3046130948f5
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-15-tree-命令中文乱码问题的解决/lo.yml
+        locked: false
+      ru:
+        path: _posts_ru/2015-08-15-Tree-命令中文乱码问题的解决.md
+        source_hash: sha256:a6dd19ade2f1c5bd079c66ad7d2563dcda748f7d255036e766ee3046130948f5
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-15-tree-命令中文乱码问题的解决/ru.yml
+        locked: false
+      fa:
+        path: _posts_fa/2015-08-15-Tree-命令中文乱码问题的解决.md
+        source_hash: sha256:a6dd19ade2f1c5bd079c66ad7d2563dcda748f7d255036e766ee3046130948f5
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-15-tree-命令中文乱码问题的解决/fa.yml
+        locked: false
+      ar:
+        path: _posts_ar/2015-08-15-Tree-命令中文乱码问题的解决.md
+        source_hash: sha256:a6dd19ade2f1c5bd079c66ad7d2563dcda748f7d255036e766ee3046130948f5
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-15-tree-命令中文乱码问题的解决/ar.yml
+        locked: false
+        dialect: damascus_levantine
+      tr:
+        path: _posts_tr/2015-08-15-Tree-命令中文乱码问题的解决.md
+        source_hash: sha256:a6dd19ade2f1c5bd079c66ad7d2563dcda748f7d255036e766ee3046130948f5
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-15-tree-命令中文乱码问题的解决/tr.yml
+        locked: false
+    date: '2015-08-15 06:04:11+00:00'
+    title: Tree 命令中文乱码问题的解决
