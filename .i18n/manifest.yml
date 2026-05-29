@@ -480,3 +480,59 @@ sources:
         updated_at: '2026-05-29T08:12:48.149181+00:00'
     date: 2025-01-25 00:52:48 +0800
     title: 因为自己淋过雨，所以想给别人撑把伞
+  2015-09-20-治愈:
+    source_path: _posts/2015-09-20-治愈.md
+    source_hash: sha256:7ff2866e87a923e4c1513afed972bebd2b2cb1240efff87ec34ce9aab3aa9a1b
+    source_status: active
+    translations:
+      th:
+        path: _posts_th/2015-09-20-治愈.md
+        source_hash: sha256:7ff2866e87a923e4c1513afed972bebd2b2cb1240efff87ec34ce9aab3aa9a1b
+        status: missing
+        analysis_path: .i18n/analysis/2015-09-20-治愈/th.yml
+        locked: false
+      my:
+        path: _posts_my/2015-09-20-治愈.md
+        source_hash: sha256:7ff2866e87a923e4c1513afed972bebd2b2cb1240efff87ec34ce9aab3aa9a1b
+        status: missing
+        analysis_path: .i18n/analysis/2015-09-20-治愈/my.yml
+        locked: false
+      km:
+        path: _posts_km/2015-09-20-治愈.md
+        source_hash: sha256:7ff2866e87a923e4c1513afed972bebd2b2cb1240efff87ec34ce9aab3aa9a1b
+        status: missing
+        analysis_path: .i18n/analysis/2015-09-20-治愈/km.yml
+        locked: false
+      lo:
+        path: _posts_lo/2015-09-20-治愈.md
+        source_hash: sha256:7ff2866e87a923e4c1513afed972bebd2b2cb1240efff87ec34ce9aab3aa9a1b
+        status: missing
+        analysis_path: .i18n/analysis/2015-09-20-治愈/lo.yml
+        locked: false
+      ru:
+        path: _posts_ru/2015-09-20-治愈.md
+        source_hash: sha256:7ff2866e87a923e4c1513afed972bebd2b2cb1240efff87ec34ce9aab3aa9a1b
+        status: missing
+        analysis_path: .i18n/analysis/2015-09-20-治愈/ru.yml
+        locked: false
+      fa:
+        path: _posts_fa/2015-09-20-治愈.md
+        source_hash: sha256:7ff2866e87a923e4c1513afed972bebd2b2cb1240efff87ec34ce9aab3aa9a1b
+        status: missing
+        analysis_path: .i18n/analysis/2015-09-20-治愈/fa.yml
+        locked: false
+      ar:
+        path: _posts_ar/2015-09-20-治愈.md
+        source_hash: sha256:7ff2866e87a923e4c1513afed972bebd2b2cb1240efff87ec34ce9aab3aa9a1b
+        status: missing
+        analysis_path: .i18n/analysis/2015-09-20-治愈/ar.yml
+        locked: false
+        dialect: damascus_levantine
+      tr:
+        path: _posts_tr/2015-09-20-治愈.md
+        source_hash: sha256:7ff2866e87a923e4c1513afed972bebd2b2cb1240efff87ec34ce9aab3aa9a1b
+        status: missing
+        analysis_path: .i18n/analysis/2015-09-20-治愈/tr.yml
+        locked: false
+    date: '2015-09-20 10:59:54+00:00'
+    title: 治愈
