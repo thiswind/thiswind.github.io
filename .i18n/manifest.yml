@@ -640,3 +640,59 @@ sources:
         updated_at: '2026-05-29T09:26:26.259588+00:00'
     date: '2015-08-17 05:59:57+00:00'
     title: 乾园餐厅
+  2015-08-15-自由软件:
+    source_path: _posts/2015-08-15-自由软件.md
+    source_hash: sha256:21eb04656c810904a50d181e9ea8783bd4b535b3f59db7d33b734a77b37e23ec
+    source_status: active
+    translations:
+      th:
+        path: _posts_th/2015-08-15-自由软件.md
+        source_hash: sha256:21eb04656c810904a50d181e9ea8783bd4b535b3f59db7d33b734a77b37e23ec
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-15-自由软件/th.yml
+        locked: false
+      my:
+        path: _posts_my/2015-08-15-自由软件.md
+        source_hash: sha256:21eb04656c810904a50d181e9ea8783bd4b535b3f59db7d33b734a77b37e23ec
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-15-自由软件/my.yml
+        locked: false
+      km:
+        path: _posts_km/2015-08-15-自由软件.md
+        source_hash: sha256:21eb04656c810904a50d181e9ea8783bd4b535b3f59db7d33b734a77b37e23ec
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-15-自由软件/km.yml
+        locked: false
+      lo:
+        path: _posts_lo/2015-08-15-自由软件.md
+        source_hash: sha256:21eb04656c810904a50d181e9ea8783bd4b535b3f59db7d33b734a77b37e23ec
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-15-自由软件/lo.yml
+        locked: false
+      ru:
+        path: _posts_ru/2015-08-15-自由软件.md
+        source_hash: sha256:21eb04656c810904a50d181e9ea8783bd4b535b3f59db7d33b734a77b37e23ec
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-15-自由软件/ru.yml
+        locked: false
+      fa:
+        path: _posts_fa/2015-08-15-自由软件.md
+        source_hash: sha256:21eb04656c810904a50d181e9ea8783bd4b535b3f59db7d33b734a77b37e23ec
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-15-自由软件/fa.yml
+        locked: false
+      ar:
+        path: _posts_ar/2015-08-15-自由软件.md
+        source_hash: sha256:21eb04656c810904a50d181e9ea8783bd4b535b3f59db7d33b734a77b37e23ec
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-15-自由软件/ar.yml
+        locked: false
+        dialect: damascus_levantine
+      tr:
+        path: _posts_tr/2015-08-15-自由软件.md
+        source_hash: sha256:21eb04656c810904a50d181e9ea8783bd4b535b3f59db7d33b734a77b37e23ec
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-15-自由软件/tr.yml
+        locked: false
+    date: '2015-08-15 04:54:59+00:00'
+    title: 自由软件
