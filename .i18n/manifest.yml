@@ -1296,3 +1296,59 @@ sources:
         locked: false
     date: '2015-08-24 17:07:02+00:00'
     title: InfluxDB的查询语句必须用单引号
+  2015-08-25-各种bin路径的区别:
+    source_path: _posts/2015-08-25-各种BIN路径的区别.md
+    source_hash: sha256:ea6437636aeeb377ffba2c95ecb1e9198128c7be15901054f0d18c83fff5ac63
+    source_status: active
+    translations:
+      th:
+        path: _posts_th/2015-08-25-各种BIN路径的区别.md
+        source_hash: sha256:ea6437636aeeb377ffba2c95ecb1e9198128c7be15901054f0d18c83fff5ac63
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-25-各种bin路径的区别/th.yml
+        locked: false
+      my:
+        path: _posts_my/2015-08-25-各种BIN路径的区别.md
+        source_hash: sha256:ea6437636aeeb377ffba2c95ecb1e9198128c7be15901054f0d18c83fff5ac63
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-25-各种bin路径的区别/my.yml
+        locked: false
+      km:
+        path: _posts_km/2015-08-25-各种BIN路径的区别.md
+        source_hash: sha256:ea6437636aeeb377ffba2c95ecb1e9198128c7be15901054f0d18c83fff5ac63
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-25-各种bin路径的区别/km.yml
+        locked: false
+      lo:
+        path: _posts_lo/2015-08-25-各种BIN路径的区别.md
+        source_hash: sha256:ea6437636aeeb377ffba2c95ecb1e9198128c7be15901054f0d18c83fff5ac63
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-25-各种bin路径的区别/lo.yml
+        locked: false
+      ru:
+        path: _posts_ru/2015-08-25-各种BIN路径的区别.md
+        source_hash: sha256:ea6437636aeeb377ffba2c95ecb1e9198128c7be15901054f0d18c83fff5ac63
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-25-各种bin路径的区别/ru.yml
+        locked: false
+      fa:
+        path: _posts_fa/2015-08-25-各种BIN路径的区别.md
+        source_hash: sha256:ea6437636aeeb377ffba2c95ecb1e9198128c7be15901054f0d18c83fff5ac63
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-25-各种bin路径的区别/fa.yml
+        locked: false
+      ar:
+        path: _posts_ar/2015-08-25-各种BIN路径的区别.md
+        source_hash: sha256:ea6437636aeeb377ffba2c95ecb1e9198128c7be15901054f0d18c83fff5ac63
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-25-各种bin路径的区别/ar.yml
+        locked: false
+        dialect: damascus_levantine
+      tr:
+        path: _posts_tr/2015-08-25-各种BIN路径的区别.md
+        source_hash: sha256:ea6437636aeeb377ffba2c95ecb1e9198128c7be15901054f0d18c83fff5ac63
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-25-各种bin路径的区别/tr.yml
+        locked: false
+    date: '2015-08-25 05:52:42+00:00'
+    title: 各种BIN路径的区别
