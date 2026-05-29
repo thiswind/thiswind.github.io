@@ -488,51 +488,75 @@ sources:
       th:
         path: _posts_th/2015-09-20-治愈.md
         source_hash: sha256:7ff2866e87a923e4c1513afed972bebd2b2cb1240efff87ec34ce9aab3aa9a1b
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-09-20-治愈/th.yml
         locked: false
+        translation_hash: sha256:f4b9153d35a4c674365a06d3e57b7c24790d721a9783daf388c5f90aa553f2e4
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:02:30.805980+00:00'
       my:
         path: _posts_my/2015-09-20-治愈.md
         source_hash: sha256:7ff2866e87a923e4c1513afed972bebd2b2cb1240efff87ec34ce9aab3aa9a1b
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-09-20-治愈/my.yml
         locked: false
+        translation_hash: sha256:907b87f228948b56e7e7894421d74aa8fd2d8df87507ae88ad0f1de39eb00f56
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:02:30.808140+00:00'
       km:
         path: _posts_km/2015-09-20-治愈.md
         source_hash: sha256:7ff2866e87a923e4c1513afed972bebd2b2cb1240efff87ec34ce9aab3aa9a1b
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-09-20-治愈/km.yml
         locked: false
+        translation_hash: sha256:9926cf9a0ba088bb98f24fdcc7feb3f2063089c0ebf322525de2575f6e8b0385
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:02:30.810240+00:00'
       lo:
         path: _posts_lo/2015-09-20-治愈.md
         source_hash: sha256:7ff2866e87a923e4c1513afed972bebd2b2cb1240efff87ec34ce9aab3aa9a1b
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-09-20-治愈/lo.yml
         locked: false
+        translation_hash: sha256:9f59b4eab92bac9002aa2c6af4942c99d4125333a7476d1fcbe72e0f0468f088
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:02:30.812320+00:00'
       ru:
         path: _posts_ru/2015-09-20-治愈.md
         source_hash: sha256:7ff2866e87a923e4c1513afed972bebd2b2cb1240efff87ec34ce9aab3aa9a1b
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-09-20-治愈/ru.yml
         locked: false
+        translation_hash: sha256:a283c49b366b03e3c8b210600a2ddb7a966ed6014d140079448a9603531a756d
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:02:30.814431+00:00'
       fa:
         path: _posts_fa/2015-09-20-治愈.md
         source_hash: sha256:7ff2866e87a923e4c1513afed972bebd2b2cb1240efff87ec34ce9aab3aa9a1b
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-09-20-治愈/fa.yml
         locked: false
+        translation_hash: sha256:235cd4f58397d775c692dac55b4064e806666cb3b571f029aac05e57625a27db
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:02:30.816545+00:00'
       ar:
         path: _posts_ar/2015-09-20-治愈.md
         source_hash: sha256:7ff2866e87a923e4c1513afed972bebd2b2cb1240efff87ec34ce9aab3aa9a1b
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-09-20-治愈/ar.yml
         locked: false
         dialect: damascus_levantine
+        translation_hash: sha256:97ee6b8fcdaa0e51e95663f0de9ce82805c8084ef721f39050392cd5c32ffa3a
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:02:30.818611+00:00'
       tr:
         path: _posts_tr/2015-09-20-治愈.md
         source_hash: sha256:7ff2866e87a923e4c1513afed972bebd2b2cb1240efff87ec34ce9aab3aa9a1b
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-09-20-治愈/tr.yml
         locked: false
+        translation_hash: sha256:a3533e5c123c3e68b26c3803e5296f5d873efc28a24fb593c6c3b9567f21fb49
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:02:30.820699+00:00'
     date: '2015-09-20 10:59:54+00:00'
     title: 治愈
