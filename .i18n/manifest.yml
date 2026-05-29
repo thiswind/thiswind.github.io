@@ -1408,3 +1408,59 @@ sources:
         locked: false
     date: '2015-08-24 13:26:22+00:00'
     title: DNSMasq and DNSCrypt in one Docker
+  2015-08-17-circle-ci-中docker-compose-版本问题:
+    source_path: _posts/2015-08-17-Circle-CI-中docker-compose-版本问题.md
+    source_hash: sha256:ff8cd8a977d2b86f8b5560b81f405bfc4645fc351fddda967f03e096ec13ec9f
+    source_status: active
+    translations:
+      th:
+        path: _posts_th/2015-08-17-Circle-CI-中docker-compose-版本问题.md
+        source_hash: sha256:ff8cd8a977d2b86f8b5560b81f405bfc4645fc351fddda967f03e096ec13ec9f
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-17-circle-ci-中docker-compose-版本问题/th.yml
+        locked: false
+      my:
+        path: _posts_my/2015-08-17-Circle-CI-中docker-compose-版本问题.md
+        source_hash: sha256:ff8cd8a977d2b86f8b5560b81f405bfc4645fc351fddda967f03e096ec13ec9f
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-17-circle-ci-中docker-compose-版本问题/my.yml
+        locked: false
+      km:
+        path: _posts_km/2015-08-17-Circle-CI-中docker-compose-版本问题.md
+        source_hash: sha256:ff8cd8a977d2b86f8b5560b81f405bfc4645fc351fddda967f03e096ec13ec9f
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-17-circle-ci-中docker-compose-版本问题/km.yml
+        locked: false
+      lo:
+        path: _posts_lo/2015-08-17-Circle-CI-中docker-compose-版本问题.md
+        source_hash: sha256:ff8cd8a977d2b86f8b5560b81f405bfc4645fc351fddda967f03e096ec13ec9f
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-17-circle-ci-中docker-compose-版本问题/lo.yml
+        locked: false
+      ru:
+        path: _posts_ru/2015-08-17-Circle-CI-中docker-compose-版本问题.md
+        source_hash: sha256:ff8cd8a977d2b86f8b5560b81f405bfc4645fc351fddda967f03e096ec13ec9f
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-17-circle-ci-中docker-compose-版本问题/ru.yml
+        locked: false
+      fa:
+        path: _posts_fa/2015-08-17-Circle-CI-中docker-compose-版本问题.md
+        source_hash: sha256:ff8cd8a977d2b86f8b5560b81f405bfc4645fc351fddda967f03e096ec13ec9f
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-17-circle-ci-中docker-compose-版本问题/fa.yml
+        locked: false
+      ar:
+        path: _posts_ar/2015-08-17-Circle-CI-中docker-compose-版本问题.md
+        source_hash: sha256:ff8cd8a977d2b86f8b5560b81f405bfc4645fc351fddda967f03e096ec13ec9f
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-17-circle-ci-中docker-compose-版本问题/ar.yml
+        locked: false
+        dialect: damascus_levantine
+      tr:
+        path: _posts_tr/2015-08-17-Circle-CI-中docker-compose-版本问题.md
+        source_hash: sha256:ff8cd8a977d2b86f8b5560b81f405bfc4645fc351fddda967f03e096ec13ec9f
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-17-circle-ci-中docker-compose-版本问题/tr.yml
+        locked: false
+    date: '2015-08-17 15:04:26+00:00'
+    title: Circle CI 中docker-compose 版本问题
