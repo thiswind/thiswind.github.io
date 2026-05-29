@@ -13,6 +13,7 @@ from markdown_protect import protect_markdown, restore_markdown
 from prompts import ANALYSIS_SYSTEM, TRANSLATION_SYSTEM, analysis_prompt, translation_prompt
 
 TRANSLATABLE_STATUSES = {"pending", "missing", "stale", "failed"}
+TRANSLATABLE_FRONTMATTER_FIELDS = ("title", "description", "excerpt")
 
 
 def read_previous_analysis(path: Path):
@@ -30,16 +31,6 @@ def write_analysis(path: Path, content: str):
     return path.read_text(encoding="utf-8")
 
 
-def translate_frontmatter_field(value, lang, lang_config, analysis_yaml):
-    if not value:
-        return value
-    result = complete([
-        {"role": "system", "content": TRANSLATION_SYSTEM},
-        {"role": "user", "content": f"Target language: {lang_config['name']} ({lang}).\nTarget style: {lang_config['style']}\nAnalysis:\n{analysis_yaml}\n\nRewrite this front matter field naturally and return only the rewritten text:\n{value}"},
-    ])
-    return result.strip().strip('"')
-
-
 def translate_one(manifest, source_id, lang, translation):
     source_record = manifest["sources"][source_id]
     source_path = ROOT / source_record["source_path"]
@@ -49,6 +40,7 @@ def translate_one(manifest, source_id, lang, translation):
     source_post = load_post(source_path)
     previous_analysis = read_previous_analysis(ROOT / translation["analysis_path"])
 
+    print(f"analyzing {source_id} -> {lang}", flush=True)
     analysis = complete([
         {"role": "system", "content": ANALYSIS_SYSTEM},
         {"role": "user", "content": analysis_prompt(source_post.content, dict(source_post.metadata), lang, lang_config, previous_analysis)},
@@ -56,16 +48,21 @@ def translate_one(manifest, source_id, lang, translation):
     analysis_yaml = write_analysis(ROOT / translation["analysis_path"], analysis)
 
     protected_body, protected = protect_markdown(source_post.content)
-    translated_body = complete([
+    frontmatter_fields = {field: source_post.metadata.get(field) for field in TRANSLATABLE_FRONTMATTER_FIELDS if field in source_post.metadata}
+    print(f"rewriting {source_id} -> {lang}", flush=True)
+    translated_yaml = complete([
         {"role": "system", "content": TRANSLATION_SYSTEM},
-        {"role": "user", "content": translation_prompt(protected_body, analysis_yaml, lang, lang_config)},
+        {"role": "user", "content": translation_prompt(protected_body, frontmatter_fields, analysis_yaml, lang, lang_config)},
     ], temperature=0.2)
-    translated_body = restore_markdown(translated_body, protected)
+    translated_payload = yaml.safe_load(translated_yaml)
+    if not isinstance(translated_payload, dict) or not translated_payload.get("body"):
+        raise ValueError("translation response must be a YAML mapping with a body field")
+    translated_body = restore_markdown(str(translated_payload["body"]), protected)
 
     metadata = build_translated_metadata(source_post, lang, lang_config, Path(source_record["source_path"]), source_hash)
-    for field in ("title", "description", "excerpt"):
+    for field in TRANSLATABLE_FRONTMATTER_FIELDS:
         if field in source_post.metadata:
-            metadata[field] = translate_frontmatter_field(source_post.metadata[field], lang, lang_config, analysis_yaml)
+            metadata[field] = translated_payload.get(field) or source_post.metadata[field]
     metadata["translation_updated_at"] = datetime.now(timezone.utc).isoformat()
 
     translated_post = frontmatter.Post(translated_body, **metadata)
