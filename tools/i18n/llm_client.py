@@ -9,7 +9,7 @@ def get_client():
     api_key = os.environ.get("LLM_API_KEY")
     if not api_key:
         raise RuntimeError("LLM_API_KEY is required")
-    return OpenAI(api_key=api_key, base_url=LLM_BASE_URL, timeout=90.0, max_retries=1)
+    return OpenAI(api_key=api_key, base_url=LLM_BASE_URL, timeout=300.0, max_retries=1)
 
 
 def complete(messages, temperature=0.25):
