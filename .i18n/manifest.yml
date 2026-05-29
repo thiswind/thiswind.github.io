@@ -17,9 +17,12 @@ sources:
       my:
         path: _posts_my/2026-05-29-welcome.md
         source_hash: sha256:2c1fab70af6cde3ca6530579fc98eccf1ebf09877167de377a46cda69e7db4f0
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2026-05-29-welcome/my.yml
         locked: false
+        translation_hash: sha256:e824c2dd75bc3fa9e6bc6a9ec46a04fd6f90a56a1b326055d6a6abaea113a579
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T04:44:16.142365+00:00'
       km:
         path: _posts_km/2026-05-29-welcome.md
         source_hash: sha256:2c1fab70af6cde3ca6530579fc98eccf1ebf09877167de377a46cda69e7db4f0
