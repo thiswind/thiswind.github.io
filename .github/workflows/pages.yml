@@ -5,6 +5,12 @@ on:
     branches:
       - main
   workflow_dispatch:
+    inputs:
+      translate:
+        description: Run LLM translation before build
+        required: false
+        default: true
+        type: boolean
 
 permissions:
   contents: write
@@ -43,12 +49,21 @@ jobs:
       - name: Sync source posts
         run: python tools/i18n/sync_posts.py
 
+      - name: Check translation secret
+        if: ${{ github.event_name == 'push' || inputs.translate }}
+        env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+        run: |
+          test -n "$LLM_API_KEY" || { echo "LLM_API_KEY repository secret is required for translation"; exit 1; }
+
       - name: Translate posts
+        if: ${{ github.event_name == 'push' || inputs.translate }}
         env:
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
         run: python tools/i18n/translate_posts.py
 
       - name: Commit generated translations
+        if: ${{ github.event_name == 'push' || inputs.translate }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
