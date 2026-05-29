@@ -8,9 +8,12 @@ sources:
       th:
         path: _posts_th/2026-05-29-welcome.md
         source_hash: sha256:2c1fab70af6cde3ca6530579fc98eccf1ebf09877167de377a46cda69e7db4f0
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2026-05-29-welcome/th.yml
         locked: false
+        translation_hash: sha256:d30c314392aa93cfbfbcfae1e9ada249b60e5942f6f9a89c9d80119e06a99bb8
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T04:29:15.586724+00:00'
       my:
         path: _posts_my/2026-05-29-welcome.md
         source_hash: sha256:2c1fab70af6cde3ca6530579fc98eccf1ebf09877167de377a46cda69e7db4f0
