@@ -8,7 +8,7 @@ sources:
       th:
         path: _posts_th/2026-05-29-welcome.md
         source_hash: sha256:2c1fab70af6cde3ca6530579fc98eccf1ebf09877167de377a46cda69e7db4f0
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2026-05-29-welcome/th.yml
         locked: false
         translation_hash: sha256:d30c314392aa93cfbfbcfae1e9ada249b60e5942f6f9a89c9d80119e06a99bb8
@@ -17,7 +17,7 @@ sources:
       my:
         path: _posts_my/2026-05-29-welcome.md
         source_hash: sha256:2c1fab70af6cde3ca6530579fc98eccf1ebf09877167de377a46cda69e7db4f0
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2026-05-29-welcome/my.yml
         locked: false
         translation_hash: sha256:e824c2dd75bc3fa9e6bc6a9ec46a04fd6f90a56a1b326055d6a6abaea113a579
@@ -26,7 +26,7 @@ sources:
       km:
         path: _posts_km/2026-05-29-welcome.md
         source_hash: sha256:2c1fab70af6cde3ca6530579fc98eccf1ebf09877167de377a46cda69e7db4f0
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2026-05-29-welcome/km.yml
         locked: false
         translation_hash: sha256:8d1fdd373d25c3d7d9c92e8a955d0e0655101298f96935178adc80c80f9282ec
@@ -35,7 +35,7 @@ sources:
       lo:
         path: _posts_lo/2026-05-29-welcome.md
         source_hash: sha256:2c1fab70af6cde3ca6530579fc98eccf1ebf09877167de377a46cda69e7db4f0
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2026-05-29-welcome/lo.yml
         locked: false
         translation_hash: sha256:7bb277b2fd71af96d24d400b5e1d3b6dac55f5bbe0483df9988cae3953222e66
@@ -44,7 +44,7 @@ sources:
       ru:
         path: _posts_ru/2026-05-29-welcome.md
         source_hash: sha256:2c1fab70af6cde3ca6530579fc98eccf1ebf09877167de377a46cda69e7db4f0
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2026-05-29-welcome/ru.yml
         locked: false
         translation_hash: sha256:2122e257442c8c9f8ad6b82c21bdc8d10c4ba7bc314cc68aaa9e46c133fa5b92
@@ -53,7 +53,7 @@ sources:
       fa:
         path: _posts_fa/2026-05-29-welcome.md
         source_hash: sha256:2c1fab70af6cde3ca6530579fc98eccf1ebf09877167de377a46cda69e7db4f0
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2026-05-29-welcome/fa.yml
         locked: false
         translation_hash: sha256:04b4476f0fa3a2975c32f3d64d977aaeb0e054f1c5d1fec1a0a33d93f1704ac3
@@ -62,7 +62,7 @@ sources:
       ar:
         path: _posts_ar/2026-05-29-welcome.md
         source_hash: sha256:2c1fab70af6cde3ca6530579fc98eccf1ebf09877167de377a46cda69e7db4f0
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2026-05-29-welcome/ar.yml
         locked: false
         dialect: damascus_levantine
@@ -72,7 +72,7 @@ sources:
       tr:
         path: _posts_tr/2026-05-29-welcome.md
         source_hash: sha256:2c1fab70af6cde3ca6530579fc98eccf1ebf09877167de377a46cda69e7db4f0
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2026-05-29-welcome/tr.yml
         locked: false
         translation_hash: sha256:d8192f21695e51a85e304e1ae35316d6ad092566666c2eea1f98fa07caa3a055
@@ -88,7 +88,7 @@ sources:
       th:
         path: _posts_th/2024-12-12-柠檬和薄荷.md
         source_hash: sha256:25b8549edb7b96d3d67bde27873e64957663cd13c0ac84a3740b6f51025f04b5
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2024-12-12-lemon-mint/th.yml
         locked: false
         translation_hash: sha256:bee4be034343200ac8567172d94d07cc7d9a30830a5b80dfd4ede30b0ab2812e
@@ -97,7 +97,7 @@ sources:
       my:
         path: _posts_my/2024-12-12-柠檬和薄荷.md
         source_hash: sha256:25b8549edb7b96d3d67bde27873e64957663cd13c0ac84a3740b6f51025f04b5
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2024-12-12-lemon-mint/my.yml
         locked: false
         translation_hash: sha256:999b4aa8a2e73327774908c9f543403d7b27ebd8365a36c7adebd40f6e9c5f50
@@ -106,7 +106,7 @@ sources:
       km:
         path: _posts_km/2024-12-12-柠檬和薄荷.md
         source_hash: sha256:25b8549edb7b96d3d67bde27873e64957663cd13c0ac84a3740b6f51025f04b5
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2024-12-12-lemon-mint/km.yml
         locked: false
         translation_hash: sha256:70ecc67739f2ae2b1296c01ccf82781fe0401bf109bc4bf28a93b345f1435b2e
@@ -115,7 +115,7 @@ sources:
       lo:
         path: _posts_lo/2024-12-12-柠檬和薄荷.md
         source_hash: sha256:25b8549edb7b96d3d67bde27873e64957663cd13c0ac84a3740b6f51025f04b5
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2024-12-12-lemon-mint/lo.yml
         locked: false
         translation_hash: sha256:a55d7713d0e45f6281e5c574c31c2a281bf6c3646ec0834de445063204aaeb8b
@@ -124,7 +124,7 @@ sources:
       ru:
         path: _posts_ru/2024-12-12-柠檬和薄荷.md
         source_hash: sha256:25b8549edb7b96d3d67bde27873e64957663cd13c0ac84a3740b6f51025f04b5
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2024-12-12-lemon-mint/ru.yml
         locked: false
         translation_hash: sha256:9083d85f1b6d88a5f8e422ccc164ac728b74ad7455151fa20e901d504edb4fcd
@@ -133,7 +133,7 @@ sources:
       fa:
         path: _posts_fa/2024-12-12-柠檬和薄荷.md
         source_hash: sha256:25b8549edb7b96d3d67bde27873e64957663cd13c0ac84a3740b6f51025f04b5
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2024-12-12-lemon-mint/fa.yml
         locked: false
         translation_hash: sha256:753bee6d8c511419483aedc16a8da84def4db4faf3aae7fa654f8c6373fbb900
@@ -142,7 +142,7 @@ sources:
       ar:
         path: _posts_ar/2024-12-12-柠檬和薄荷.md
         source_hash: sha256:25b8549edb7b96d3d67bde27873e64957663cd13c0ac84a3740b6f51025f04b5
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2024-12-12-lemon-mint/ar.yml
         locked: false
         dialect: damascus_levantine
@@ -152,7 +152,7 @@ sources:
       tr:
         path: _posts_tr/2024-12-12-柠檬和薄荷.md
         source_hash: sha256:25b8549edb7b96d3d67bde27873e64957663cd13c0ac84a3740b6f51025f04b5
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2024-12-12-lemon-mint/tr.yml
         locked: false
         translation_hash: sha256:103bcd322da8d1b1397d0af83662ba02a6d56237817b649d803b462717f11519
@@ -168,7 +168,7 @@ sources:
       th:
         path: _posts_th/2024-12-21-artemisinin-contribution.md
         source_hash: sha256:95fb15d6c198a62f95214b483edda564068a00b9df47d7e57ff7bd78069cf013
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2024-12-21-artemisinin-contribution/th.yml
         locked: false
         translation_hash: sha256:87b4c4b9cd07ba1a4f9766198073dd7a53bb7ded89caed722c0dd30415806216
@@ -177,7 +177,7 @@ sources:
       my:
         path: _posts_my/2024-12-21-artemisinin-contribution.md
         source_hash: sha256:95fb15d6c198a62f95214b483edda564068a00b9df47d7e57ff7bd78069cf013
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2024-12-21-artemisinin-contribution/my.yml
         locked: false
         translation_hash: sha256:c3a5778b4cb1886313942446463b839311a2c84cfedc0480b5146e27bd998b91
@@ -186,7 +186,7 @@ sources:
       km:
         path: _posts_km/2024-12-21-artemisinin-contribution.md
         source_hash: sha256:95fb15d6c198a62f95214b483edda564068a00b9df47d7e57ff7bd78069cf013
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2024-12-21-artemisinin-contribution/km.yml
         locked: false
         translation_hash: sha256:f89328384bf4881a6188890d988e8288a3eaff14456f736a8b0a3cbd43d066ac
@@ -195,7 +195,7 @@ sources:
       lo:
         path: _posts_lo/2024-12-21-artemisinin-contribution.md
         source_hash: sha256:95fb15d6c198a62f95214b483edda564068a00b9df47d7e57ff7bd78069cf013
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2024-12-21-artemisinin-contribution/lo.yml
         locked: false
         translation_hash: sha256:2ce21128497783e02e2ee5c16599b88d31837f8610ebad0b3a732ebaac585183
@@ -204,7 +204,7 @@ sources:
       ru:
         path: _posts_ru/2024-12-21-artemisinin-contribution.md
         source_hash: sha256:95fb15d6c198a62f95214b483edda564068a00b9df47d7e57ff7bd78069cf013
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2024-12-21-artemisinin-contribution/ru.yml
         locked: false
         translation_hash: sha256:68b8af9b4a0d5c1ffd3aaa42fbd13eb941de60b52a2fe3b472d1a56fb8fd1de5
@@ -213,7 +213,7 @@ sources:
       fa:
         path: _posts_fa/2024-12-21-artemisinin-contribution.md
         source_hash: sha256:95fb15d6c198a62f95214b483edda564068a00b9df47d7e57ff7bd78069cf013
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2024-12-21-artemisinin-contribution/fa.yml
         locked: false
         translation_hash: sha256:48741eccbb24db8eb3c37884cf800cf8ba6cbd418531acc5fc4bdd4dbc2bd0e4
@@ -222,7 +222,7 @@ sources:
       ar:
         path: _posts_ar/2024-12-21-artemisinin-contribution.md
         source_hash: sha256:95fb15d6c198a62f95214b483edda564068a00b9df47d7e57ff7bd78069cf013
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2024-12-21-artemisinin-contribution/ar.yml
         locked: false
         dialect: damascus_levantine
@@ -232,7 +232,7 @@ sources:
       tr:
         path: _posts_tr/2024-12-21-artemisinin-contribution.md
         source_hash: sha256:95fb15d6c198a62f95214b483edda564068a00b9df47d7e57ff7bd78069cf013
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2024-12-21-artemisinin-contribution/tr.yml
         locked: false
         translation_hash: sha256:58a0ddaa9d812451aeba15baf5819f743a5b053e93b4c2ebefdc4b15d2126e37
@@ -248,7 +248,7 @@ sources:
       th:
         path: _posts_th/2024-12-23-peach-and-pit-puzzle.md
         source_hash: sha256:f5881bd6504553598f74a81fe9bb3b43c4810662128763cd0f7659c680c7b3e2
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2024-12-23-peach-and-pit-puzzle/th.yml
         locked: false
         translation_hash: sha256:8f9e693ff20311ce18eaf4591f10506b53dbcfdd8963778769901cbe74a9bd2b
@@ -257,7 +257,7 @@ sources:
       my:
         path: _posts_my/2024-12-23-peach-and-pit-puzzle.md
         source_hash: sha256:f5881bd6504553598f74a81fe9bb3b43c4810662128763cd0f7659c680c7b3e2
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2024-12-23-peach-and-pit-puzzle/my.yml
         locked: false
         translation_hash: sha256:b742a9ac6c41db744e1fdafcfe8fbc19661712da4234e749c5cf693c1de34ff9
@@ -266,7 +266,7 @@ sources:
       km:
         path: _posts_km/2024-12-23-peach-and-pit-puzzle.md
         source_hash: sha256:f5881bd6504553598f74a81fe9bb3b43c4810662128763cd0f7659c680c7b3e2
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2024-12-23-peach-and-pit-puzzle/km.yml
         locked: false
         translation_hash: sha256:bc613c3496d7269462266caffa183bfc3f50508f01f4fc5ed94dcdf66fe069b6
@@ -275,7 +275,7 @@ sources:
       lo:
         path: _posts_lo/2024-12-23-peach-and-pit-puzzle.md
         source_hash: sha256:f5881bd6504553598f74a81fe9bb3b43c4810662128763cd0f7659c680c7b3e2
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2024-12-23-peach-and-pit-puzzle/lo.yml
         locked: false
         translation_hash: sha256:456d0e2282e3f55ed9ac87103d53424126bc3bc9e565ce9400c4d4dce12d9f6e
@@ -284,7 +284,7 @@ sources:
       ru:
         path: _posts_ru/2024-12-23-peach-and-pit-puzzle.md
         source_hash: sha256:f5881bd6504553598f74a81fe9bb3b43c4810662128763cd0f7659c680c7b3e2
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2024-12-23-peach-and-pit-puzzle/ru.yml
         locked: false
         translation_hash: sha256:3e65129f0ef2fbf37c4b8a29ba365ed73399d574c0ff5e649074dff376fa74d8
@@ -293,7 +293,7 @@ sources:
       fa:
         path: _posts_fa/2024-12-23-peach-and-pit-puzzle.md
         source_hash: sha256:f5881bd6504553598f74a81fe9bb3b43c4810662128763cd0f7659c680c7b3e2
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2024-12-23-peach-and-pit-puzzle/fa.yml
         locked: false
         translation_hash: sha256:eacf91dcfbc601f26384b13eedecc9a058452f2ba9679e1c5e8ad4ac8e17ea68
@@ -302,7 +302,7 @@ sources:
       ar:
         path: _posts_ar/2024-12-23-peach-and-pit-puzzle.md
         source_hash: sha256:f5881bd6504553598f74a81fe9bb3b43c4810662128763cd0f7659c680c7b3e2
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2024-12-23-peach-and-pit-puzzle/ar.yml
         locked: false
         dialect: damascus_levantine
@@ -312,7 +312,7 @@ sources:
       tr:
         path: _posts_tr/2024-12-23-peach-and-pit-puzzle.md
         source_hash: sha256:f5881bd6504553598f74a81fe9bb3b43c4810662128763cd0f7659c680c7b3e2
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2024-12-23-peach-and-pit-puzzle/tr.yml
         locked: false
         translation_hash: sha256:2f740459663207edcaacc48ebe9977462640c6d40efa97168ebb512a7869ca9b
@@ -328,7 +328,7 @@ sources:
       th:
         path: _posts_th/2024-12-24-Pale-Blue-Dot.md
         source_hash: sha256:da56d7e0986768dc6777a946b862ccd553458cb4fd9c315ba0935fd933e63c30
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2024-12-24-pale-blue-dot/th.yml
         locked: false
         translation_hash: sha256:09fc771bd80f4145bf639d21ca0f3e8a878f7027db23371c30a4d8a678cdff14
@@ -337,7 +337,7 @@ sources:
       my:
         path: _posts_my/2024-12-24-Pale-Blue-Dot.md
         source_hash: sha256:da56d7e0986768dc6777a946b862ccd553458cb4fd9c315ba0935fd933e63c30
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2024-12-24-pale-blue-dot/my.yml
         locked: false
         translation_hash: sha256:ec8b5d91e47ea5978a10cd29ea4393bb016ad4c22fe6fdcffd309fd6affe40c1
@@ -346,7 +346,7 @@ sources:
       km:
         path: _posts_km/2024-12-24-Pale-Blue-Dot.md
         source_hash: sha256:da56d7e0986768dc6777a946b862ccd553458cb4fd9c315ba0935fd933e63c30
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2024-12-24-pale-blue-dot/km.yml
         locked: false
         translation_hash: sha256:b2198cb8f17c36502e766a3f0badb725fcf74d9b75fc305b4ba10fe53f6e89eb
@@ -355,7 +355,7 @@ sources:
       lo:
         path: _posts_lo/2024-12-24-Pale-Blue-Dot.md
         source_hash: sha256:da56d7e0986768dc6777a946b862ccd553458cb4fd9c315ba0935fd933e63c30
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2024-12-24-pale-blue-dot/lo.yml
         locked: false
         translation_hash: sha256:b2074b98a1e17dcda733e5706e54d5bf3aae427fef4008d7c42b4dd0e5cfe701
@@ -364,7 +364,7 @@ sources:
       ru:
         path: _posts_ru/2024-12-24-Pale-Blue-Dot.md
         source_hash: sha256:da56d7e0986768dc6777a946b862ccd553458cb4fd9c315ba0935fd933e63c30
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2024-12-24-pale-blue-dot/ru.yml
         locked: false
         translation_hash: sha256:636989c6353c61c029e45f767d031050787d4452d79a9a22b082612167e667d2
@@ -373,7 +373,7 @@ sources:
       fa:
         path: _posts_fa/2024-12-24-Pale-Blue-Dot.md
         source_hash: sha256:da56d7e0986768dc6777a946b862ccd553458cb4fd9c315ba0935fd933e63c30
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2024-12-24-pale-blue-dot/fa.yml
         locked: false
         translation_hash: sha256:c705eedaeeb485382330a597541ad2fb36a236f18f0f6e57625f490d9be2c3d3
@@ -382,7 +382,7 @@ sources:
       ar:
         path: _posts_ar/2024-12-24-Pale-Blue-Dot.md
         source_hash: sha256:da56d7e0986768dc6777a946b862ccd553458cb4fd9c315ba0935fd933e63c30
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2024-12-24-pale-blue-dot/ar.yml
         locked: false
         dialect: damascus_levantine
@@ -392,7 +392,7 @@ sources:
       tr:
         path: _posts_tr/2024-12-24-Pale-Blue-Dot.md
         source_hash: sha256:da56d7e0986768dc6777a946b862ccd553458cb4fd9c315ba0935fd933e63c30
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2024-12-24-pale-blue-dot/tr.yml
         locked: false
         translation_hash: sha256:d476544b205d6bb38ca8d9c6857378ba0df6d71cd57f8d4cbfeecdecf7d7fe21
@@ -408,7 +408,7 @@ sources:
       th:
         path: _posts_th/2025-01-25-umbrella-for-others.md
         source_hash: sha256:140468d47d6d4467d7045b830a7e7eb7d43ff120219ed90b61db007353bf3545
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2025-01-25-umbrella-for-others/th.yml
         locked: false
         translation_hash: sha256:a93e9956ff1537947f15076fc1c5d6459bee6239152fc205337507a9d00c9757
@@ -417,7 +417,7 @@ sources:
       my:
         path: _posts_my/2025-01-25-umbrella-for-others.md
         source_hash: sha256:140468d47d6d4467d7045b830a7e7eb7d43ff120219ed90b61db007353bf3545
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2025-01-25-umbrella-for-others/my.yml
         locked: false
         translation_hash: sha256:9c6e7bcc0321a5c94daa15b281b25fc46c660b4ac5b0b4d805e6833f763ea386
@@ -426,7 +426,7 @@ sources:
       km:
         path: _posts_km/2025-01-25-umbrella-for-others.md
         source_hash: sha256:140468d47d6d4467d7045b830a7e7eb7d43ff120219ed90b61db007353bf3545
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2025-01-25-umbrella-for-others/km.yml
         locked: false
         translation_hash: sha256:4002ea55effc9075cc09c769cfc8b11daebcf37d53cefc4a47ec9733de7528d2
@@ -435,7 +435,7 @@ sources:
       lo:
         path: _posts_lo/2025-01-25-umbrella-for-others.md
         source_hash: sha256:140468d47d6d4467d7045b830a7e7eb7d43ff120219ed90b61db007353bf3545
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2025-01-25-umbrella-for-others/lo.yml
         locked: false
         translation_hash: sha256:5415099bd0dfd16037f269cb62993a065aaf3663a7979836c6813a359d93acc9
@@ -444,7 +444,7 @@ sources:
       ru:
         path: _posts_ru/2025-01-25-umbrella-for-others.md
         source_hash: sha256:140468d47d6d4467d7045b830a7e7eb7d43ff120219ed90b61db007353bf3545
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2025-01-25-umbrella-for-others/ru.yml
         locked: false
         translation_hash: sha256:9988ad1fcdb1dc4f67afdb733ea0e656d86787a3752029bbe009c25a8aab699b
@@ -453,7 +453,7 @@ sources:
       fa:
         path: _posts_fa/2025-01-25-umbrella-for-others.md
         source_hash: sha256:140468d47d6d4467d7045b830a7e7eb7d43ff120219ed90b61db007353bf3545
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2025-01-25-umbrella-for-others/fa.yml
         locked: false
         translation_hash: sha256:048884f91d9ce9150435daee0affdb5af26a19642fa993ea3efd9f0a99b011a6
@@ -462,7 +462,7 @@ sources:
       ar:
         path: _posts_ar/2025-01-25-umbrella-for-others.md
         source_hash: sha256:140468d47d6d4467d7045b830a7e7eb7d43ff120219ed90b61db007353bf3545
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2025-01-25-umbrella-for-others/ar.yml
         locked: false
         dialect: damascus_levantine
@@ -472,7 +472,7 @@ sources:
       tr:
         path: _posts_tr/2025-01-25-umbrella-for-others.md
         source_hash: sha256:140468d47d6d4467d7045b830a7e7eb7d43ff120219ed90b61db007353bf3545
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2025-01-25-umbrella-for-others/tr.yml
         locked: false
         translation_hash: sha256:8919564e2d3b526c779585e79b2ab989a6f8ff95b4f9411c52779b3758db6a62
@@ -488,7 +488,7 @@ sources:
       th:
         path: _posts_th/2015-09-20-治愈.md
         source_hash: sha256:7ff2866e87a923e4c1513afed972bebd2b2cb1240efff87ec34ce9aab3aa9a1b
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2015-09-20-治愈/th.yml
         locked: false
         translation_hash: sha256:f4b9153d35a4c674365a06d3e57b7c24790d721a9783daf388c5f90aa553f2e4
@@ -497,7 +497,7 @@ sources:
       my:
         path: _posts_my/2015-09-20-治愈.md
         source_hash: sha256:7ff2866e87a923e4c1513afed972bebd2b2cb1240efff87ec34ce9aab3aa9a1b
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2015-09-20-治愈/my.yml
         locked: false
         translation_hash: sha256:907b87f228948b56e7e7894421d74aa8fd2d8df87507ae88ad0f1de39eb00f56
@@ -506,7 +506,7 @@ sources:
       km:
         path: _posts_km/2015-09-20-治愈.md
         source_hash: sha256:7ff2866e87a923e4c1513afed972bebd2b2cb1240efff87ec34ce9aab3aa9a1b
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2015-09-20-治愈/km.yml
         locked: false
         translation_hash: sha256:9926cf9a0ba088bb98f24fdcc7feb3f2063089c0ebf322525de2575f6e8b0385
@@ -515,7 +515,7 @@ sources:
       lo:
         path: _posts_lo/2015-09-20-治愈.md
         source_hash: sha256:7ff2866e87a923e4c1513afed972bebd2b2cb1240efff87ec34ce9aab3aa9a1b
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2015-09-20-治愈/lo.yml
         locked: false
         translation_hash: sha256:9f59b4eab92bac9002aa2c6af4942c99d4125333a7476d1fcbe72e0f0468f088
@@ -524,7 +524,7 @@ sources:
       ru:
         path: _posts_ru/2015-09-20-治愈.md
         source_hash: sha256:7ff2866e87a923e4c1513afed972bebd2b2cb1240efff87ec34ce9aab3aa9a1b
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2015-09-20-治愈/ru.yml
         locked: false
         translation_hash: sha256:a283c49b366b03e3c8b210600a2ddb7a966ed6014d140079448a9603531a756d
@@ -533,7 +533,7 @@ sources:
       fa:
         path: _posts_fa/2015-09-20-治愈.md
         source_hash: sha256:7ff2866e87a923e4c1513afed972bebd2b2cb1240efff87ec34ce9aab3aa9a1b
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2015-09-20-治愈/fa.yml
         locked: false
         translation_hash: sha256:235cd4f58397d775c692dac55b4064e806666cb3b571f029aac05e57625a27db
@@ -542,7 +542,7 @@ sources:
       ar:
         path: _posts_ar/2015-09-20-治愈.md
         source_hash: sha256:7ff2866e87a923e4c1513afed972bebd2b2cb1240efff87ec34ce9aab3aa9a1b
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2015-09-20-治愈/ar.yml
         locked: false
         dialect: damascus_levantine
@@ -552,7 +552,7 @@ sources:
       tr:
         path: _posts_tr/2015-09-20-治愈.md
         source_hash: sha256:7ff2866e87a923e4c1513afed972bebd2b2cb1240efff87ec34ce9aab3aa9a1b
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2015-09-20-治愈/tr.yml
         locked: false
         translation_hash: sha256:a3533e5c123c3e68b26c3803e5296f5d873efc28a24fb593c6c3b9567f21fb49
@@ -568,7 +568,7 @@ sources:
       th:
         path: _posts_th/2015-08-17-乾园餐厅.md
         source_hash: sha256:eb809dfd66e31c346b84ec364e181ab8c09fc4aa86e1011b6fbcb109259b7180
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2015-08-17-乾园餐厅/th.yml
         locked: false
         translation_hash: sha256:b4f7fa4847b75046df9c360a1417053504ede28e5dce75f9b1df0a7822758940
@@ -577,7 +577,7 @@ sources:
       my:
         path: _posts_my/2015-08-17-乾园餐厅.md
         source_hash: sha256:eb809dfd66e31c346b84ec364e181ab8c09fc4aa86e1011b6fbcb109259b7180
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2015-08-17-乾园餐厅/my.yml
         locked: false
         translation_hash: sha256:627d746d31bf833380dffcb7bb8e66a4693dd5bfd9679a0850ce8592c56899ce
@@ -586,7 +586,7 @@ sources:
       km:
         path: _posts_km/2015-08-17-乾园餐厅.md
         source_hash: sha256:eb809dfd66e31c346b84ec364e181ab8c09fc4aa86e1011b6fbcb109259b7180
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2015-08-17-乾园餐厅/km.yml
         locked: false
         translation_hash: sha256:5b4a04b671dbafa214948a65fa557c95ab7ebf1b8f681a5c272c03afabeac757
@@ -595,7 +595,7 @@ sources:
       lo:
         path: _posts_lo/2015-08-17-乾园餐厅.md
         source_hash: sha256:eb809dfd66e31c346b84ec364e181ab8c09fc4aa86e1011b6fbcb109259b7180
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2015-08-17-乾园餐厅/lo.yml
         locked: false
         translation_hash: sha256:a43e8ed14ae69d498531cc07b2862fa210159bd24172ce3f2c74896b96d65a29
@@ -604,7 +604,7 @@ sources:
       ru:
         path: _posts_ru/2015-08-17-乾园餐厅.md
         source_hash: sha256:eb809dfd66e31c346b84ec364e181ab8c09fc4aa86e1011b6fbcb109259b7180
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2015-08-17-乾园餐厅/ru.yml
         locked: false
         translation_hash: sha256:18d3fa3709c28bf0f4b860170df1794e25ad9bab2c19f6c6d3b8f6f62f73e8f8
@@ -613,7 +613,7 @@ sources:
       fa:
         path: _posts_fa/2015-08-17-乾园餐厅.md
         source_hash: sha256:eb809dfd66e31c346b84ec364e181ab8c09fc4aa86e1011b6fbcb109259b7180
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2015-08-17-乾园餐厅/fa.yml
         locked: false
         translation_hash: sha256:942b39c80a66bc0853ab26c2d0ae457fa9a930b258110f4788c154c438cf830b
@@ -622,7 +622,7 @@ sources:
       ar:
         path: _posts_ar/2015-08-17-乾园餐厅.md
         source_hash: sha256:eb809dfd66e31c346b84ec364e181ab8c09fc4aa86e1011b6fbcb109259b7180
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2015-08-17-乾园餐厅/ar.yml
         locked: false
         dialect: damascus_levantine
@@ -632,7 +632,7 @@ sources:
       tr:
         path: _posts_tr/2015-08-17-乾园餐厅.md
         source_hash: sha256:eb809dfd66e31c346b84ec364e181ab8c09fc4aa86e1011b6fbcb109259b7180
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2015-08-17-乾园餐厅/tr.yml
         locked: false
         translation_hash: sha256:800cf6d6ab58e077053382a9acbd2694a79f17959761b3c11a154c150d17cc56
@@ -648,7 +648,7 @@ sources:
       th:
         path: _posts_th/2015-08-15-自由软件.md
         source_hash: sha256:21eb04656c810904a50d181e9ea8783bd4b535b3f59db7d33b734a77b37e23ec
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2015-08-15-自由软件/th.yml
         locked: false
         translation_hash: sha256:1ede8e5a3efc448d863cb7c2426d1b352456caedc078cffac0afe3c23b86220d
@@ -657,7 +657,7 @@ sources:
       my:
         path: _posts_my/2015-08-15-自由软件.md
         source_hash: sha256:21eb04656c810904a50d181e9ea8783bd4b535b3f59db7d33b734a77b37e23ec
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2015-08-15-自由软件/my.yml
         locked: false
         translation_hash: sha256:8fae498e49210d4ec80a6354cde5dad6b12080fcd1f3f5015eeaba7d9dd9aa64
@@ -666,7 +666,7 @@ sources:
       km:
         path: _posts_km/2015-08-15-自由软件.md
         source_hash: sha256:21eb04656c810904a50d181e9ea8783bd4b535b3f59db7d33b734a77b37e23ec
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2015-08-15-自由软件/km.yml
         locked: false
         translation_hash: sha256:12e020b9d5aea84275364d0f20137b49d6ac1b843d892fb26070a1849c588179
@@ -675,7 +675,7 @@ sources:
       lo:
         path: _posts_lo/2015-08-15-自由软件.md
         source_hash: sha256:21eb04656c810904a50d181e9ea8783bd4b535b3f59db7d33b734a77b37e23ec
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2015-08-15-自由软件/lo.yml
         locked: false
         translation_hash: sha256:b71ad5d791b54da878905ab5aea5ba14cea0ddc4a479f959cdd8c4422e6e7461
@@ -684,7 +684,7 @@ sources:
       ru:
         path: _posts_ru/2015-08-15-自由软件.md
         source_hash: sha256:21eb04656c810904a50d181e9ea8783bd4b535b3f59db7d33b734a77b37e23ec
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2015-08-15-自由软件/ru.yml
         locked: false
         translation_hash: sha256:ba6f5dad94197e993d9fbed5ba2498078080c28d78918d7c0fe80d65a8e59900
@@ -693,7 +693,7 @@ sources:
       fa:
         path: _posts_fa/2015-08-15-自由软件.md
         source_hash: sha256:21eb04656c810904a50d181e9ea8783bd4b535b3f59db7d33b734a77b37e23ec
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2015-08-15-自由软件/fa.yml
         locked: false
         translation_hash: sha256:91712e680af23e9c8125a2a056043a5c12304b4e8c2dbf95fcad96cbd3156ab5
@@ -702,7 +702,7 @@ sources:
       ar:
         path: _posts_ar/2015-08-15-自由软件.md
         source_hash: sha256:21eb04656c810904a50d181e9ea8783bd4b535b3f59db7d33b734a77b37e23ec
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2015-08-15-自由软件/ar.yml
         locked: false
         dialect: damascus_levantine
@@ -712,7 +712,7 @@ sources:
       tr:
         path: _posts_tr/2015-08-15-自由软件.md
         source_hash: sha256:21eb04656c810904a50d181e9ea8783bd4b535b3f59db7d33b734a77b37e23ec
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2015-08-15-自由软件/tr.yml
         locked: false
         translation_hash: sha256:b6fef7af71f89fa5166332e47e4720848767be4475feb3ce598a786bd9fac687
@@ -728,7 +728,7 @@ sources:
       th:
         path: _posts_th/2015-08-17-yaml格式在markdown当中的写法.md
         source_hash: sha256:3249f233733ce7c7082ea99d6beea56f8ddae1d5a6362de9f151583a9d153ae4
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2015-08-17-yaml格式在markdown当中的写法/th.yml
         locked: false
         translation_hash: sha256:67b689d36c5ed5c46a90bb85d97de47594f7de486c95bd720c96d79f2cf6e5ee
@@ -737,7 +737,7 @@ sources:
       my:
         path: _posts_my/2015-08-17-yaml格式在markdown当中的写法.md
         source_hash: sha256:3249f233733ce7c7082ea99d6beea56f8ddae1d5a6362de9f151583a9d153ae4
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2015-08-17-yaml格式在markdown当中的写法/my.yml
         locked: false
         translation_hash: sha256:582f80f952718f28e49feb5170b950be42170ddda59ca39ebcba283e6dd5d749
@@ -746,7 +746,7 @@ sources:
       km:
         path: _posts_km/2015-08-17-yaml格式在markdown当中的写法.md
         source_hash: sha256:3249f233733ce7c7082ea99d6beea56f8ddae1d5a6362de9f151583a9d153ae4
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2015-08-17-yaml格式在markdown当中的写法/km.yml
         locked: false
         translation_hash: sha256:4879d33cf4d748eb9a718a94da4b8fc6532721356ecdc2dfea2a12a4171949bc
@@ -755,7 +755,7 @@ sources:
       lo:
         path: _posts_lo/2015-08-17-yaml格式在markdown当中的写法.md
         source_hash: sha256:3249f233733ce7c7082ea99d6beea56f8ddae1d5a6362de9f151583a9d153ae4
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2015-08-17-yaml格式在markdown当中的写法/lo.yml
         locked: false
         translation_hash: sha256:7361084a00bb77c467ccc6548b8e2c97500a73fd4579932234452d9291975025
@@ -764,7 +764,7 @@ sources:
       ru:
         path: _posts_ru/2015-08-17-yaml格式在markdown当中的写法.md
         source_hash: sha256:3249f233733ce7c7082ea99d6beea56f8ddae1d5a6362de9f151583a9d153ae4
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2015-08-17-yaml格式在markdown当中的写法/ru.yml
         locked: false
         translation_hash: sha256:7948300e28ab6c0da5b1ca026f9ba43a30264f37654491a753da3ddffff695d3
@@ -773,7 +773,7 @@ sources:
       fa:
         path: _posts_fa/2015-08-17-yaml格式在markdown当中的写法.md
         source_hash: sha256:3249f233733ce7c7082ea99d6beea56f8ddae1d5a6362de9f151583a9d153ae4
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2015-08-17-yaml格式在markdown当中的写法/fa.yml
         locked: false
         translation_hash: sha256:d46677d3dd7beae9f72e87bad9992817a4f6ef7026da85cba4ff84343e5fca30
@@ -782,7 +782,7 @@ sources:
       ar:
         path: _posts_ar/2015-08-17-yaml格式在markdown当中的写法.md
         source_hash: sha256:3249f233733ce7c7082ea99d6beea56f8ddae1d5a6362de9f151583a9d153ae4
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2015-08-17-yaml格式在markdown当中的写法/ar.yml
         locked: false
         dialect: damascus_levantine
@@ -792,7 +792,7 @@ sources:
       tr:
         path: _posts_tr/2015-08-17-yaml格式在markdown当中的写法.md
         source_hash: sha256:3249f233733ce7c7082ea99d6beea56f8ddae1d5a6362de9f151583a9d153ae4
-        status: active
+        status: missing
         analysis_path: .i18n/analysis/2015-08-17-yaml格式在markdown当中的写法/tr.yml
         locked: false
         translation_hash: sha256:03cb1ff9560bd4b4d0c30ecdcdd2a087d0ea1ce84bbdf5a00c681832523f5ee8
@@ -960,3 +960,59 @@ sources:
         updated_at: '2026-05-29T09:33:28.961369+00:00'
     date: '2015-08-15 06:12:05+00:00'
     title: bash临时取消alias的办法
+  2015-08-21-大数据分析是人机共同体:
+    source_path: _posts/2015-08-21-大数据分析是人机共同体.md
+    source_hash: sha256:ec27945437d369f92915cbcd408d72d38c7faeee23b3e882fd955148d09b1498
+    source_status: active
+    translations:
+      th:
+        path: _posts_th/2015-08-21-大数据分析是人机共同体.md
+        source_hash: sha256:ec27945437d369f92915cbcd408d72d38c7faeee23b3e882fd955148d09b1498
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-21-大数据分析是人机共同体/th.yml
+        locked: false
+      my:
+        path: _posts_my/2015-08-21-大数据分析是人机共同体.md
+        source_hash: sha256:ec27945437d369f92915cbcd408d72d38c7faeee23b3e882fd955148d09b1498
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-21-大数据分析是人机共同体/my.yml
+        locked: false
+      km:
+        path: _posts_km/2015-08-21-大数据分析是人机共同体.md
+        source_hash: sha256:ec27945437d369f92915cbcd408d72d38c7faeee23b3e882fd955148d09b1498
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-21-大数据分析是人机共同体/km.yml
+        locked: false
+      lo:
+        path: _posts_lo/2015-08-21-大数据分析是人机共同体.md
+        source_hash: sha256:ec27945437d369f92915cbcd408d72d38c7faeee23b3e882fd955148d09b1498
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-21-大数据分析是人机共同体/lo.yml
+        locked: false
+      ru:
+        path: _posts_ru/2015-08-21-大数据分析是人机共同体.md
+        source_hash: sha256:ec27945437d369f92915cbcd408d72d38c7faeee23b3e882fd955148d09b1498
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-21-大数据分析是人机共同体/ru.yml
+        locked: false
+      fa:
+        path: _posts_fa/2015-08-21-大数据分析是人机共同体.md
+        source_hash: sha256:ec27945437d369f92915cbcd408d72d38c7faeee23b3e882fd955148d09b1498
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-21-大数据分析是人机共同体/fa.yml
+        locked: false
+      ar:
+        path: _posts_ar/2015-08-21-大数据分析是人机共同体.md
+        source_hash: sha256:ec27945437d369f92915cbcd408d72d38c7faeee23b3e882fd955148d09b1498
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-21-大数据分析是人机共同体/ar.yml
+        locked: false
+        dialect: damascus_levantine
+      tr:
+        path: _posts_tr/2015-08-21-大数据分析是人机共同体.md
+        source_hash: sha256:ec27945437d369f92915cbcd408d72d38c7faeee23b3e882fd955148d09b1498
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-21-大数据分析是人机共同体/tr.yml
+        locked: false
+    date: '2015-08-21 02:06:32+00:00'
+    title: 大数据分析是人机共同体

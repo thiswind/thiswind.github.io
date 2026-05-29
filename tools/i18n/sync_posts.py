@@ -81,9 +81,6 @@ def sync():
         record["source_status"] = "deleted"
         record["deleted_at"] = datetime.now(timezone.utc).isoformat()
         for lang, translation in record.get("translations", {}).items():
-            target_path = ROOT / translation["path"]
-            if target_path.exists() and not is_locked(target_path, translation):
-                target_path.unlink()
             translation["status"] = "deleted"
 
     save_manifest(manifest)

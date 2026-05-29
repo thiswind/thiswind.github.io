@@ -66,31 +66,39 @@ jobs:
       - name: Install Python dependencies
         run: pip install -r tools/requirements.txt
 
+      - name: Restore generated translations cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            _posts_th
+            _posts_my
+            _posts_km
+            _posts_lo
+            _posts_ru
+            _posts_fa
+            _posts_ar
+            _posts_tr
+            .i18n/analysis
+          key: i18n-generated-${{ runner.os }}-${{ hashFiles('_posts/**/*.md') }}
+          restore-keys: |
+            i18n-generated-${{ runner.os }}-
+
       - name: Sync source posts
         run: python tools/i18n/sync_posts.py
 
-      - name: Rebase queued run
-        if: ${{ github.event_name == 'push' }}
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git fetch origin main
-          git rebase origin/main
-          python tools/i18n/sync_posts.py
-
       - name: Check translation secret
-        if: ${{ github.event_name == 'push' || inputs.translate }}
+        if: ${{ github.event_name == 'push' || github.event.inputs.translate == 'true' }}
         env:
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
         run: |
           test -n "$LLM_API_KEY" || { echo "LLM_API_KEY repository secret is required for translation"; exit 1; }
 
       - name: Translate posts
-        if: ${{ github.event_name == 'push' || inputs.translate }}
+        if: ${{ github.event_name == 'push' || github.event.inputs.translate == 'true' }}
         env:
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
-          TRANSLATE_LANG: ${{ inputs.lang }}
-          TRANSLATE_SOURCE: ${{ inputs.source }}
+          TRANSLATE_LANG: ${{ github.event.inputs.lang || '' }}
+          TRANSLATE_SOURCE: ${{ github.event.inputs.source || '' }}
         run: |
           args=()
           if [ -n "$TRANSLATE_LANG" ]; then
@@ -105,17 +113,9 @@ jobs:
           set -e
           echo "TRANSLATE_STATUS=$status" >> "$GITHUB_ENV"
 
-      - name: Commit generated translations
-        if: ${{ github.event_name == 'push' || inputs.translate }}
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          for path in _posts_th _posts_my _posts_km _posts_lo _posts_ru _posts_fa _posts_ar _posts_tr .i18n; do
-            test -e "$path" && git add "$path"
-          done
-          git diff --cached --quiet || git commit -m "Update generated translations [skip ci]"
-          git push
-          exit "$TRANSLATE_STATUS"
+      - name: Check translation result
+        if: ${{ github.event_name == 'push' || github.event.inputs.translate == 'true' }}
+        run: exit "$TRANSLATE_STATUS"
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
