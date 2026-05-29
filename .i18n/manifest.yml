@@ -1072,3 +1072,59 @@ sources:
         locked: false
     date: '2015-08-19 18:14:40+00:00'
     title: IPython Notebook
+  2015-08-19-很想念我的朋友:
+    source_path: _posts/2015-08-19-很想念我的朋友.md
+    source_hash: sha256:de136a3e0c6845814f2b6084dab54c29806efe034a07228099729b3e3204169e
+    source_status: active
+    translations:
+      th:
+        path: _posts_th/2015-08-19-很想念我的朋友.md
+        source_hash: sha256:de136a3e0c6845814f2b6084dab54c29806efe034a07228099729b3e3204169e
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-19-很想念我的朋友/th.yml
+        locked: false
+      my:
+        path: _posts_my/2015-08-19-很想念我的朋友.md
+        source_hash: sha256:de136a3e0c6845814f2b6084dab54c29806efe034a07228099729b3e3204169e
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-19-很想念我的朋友/my.yml
+        locked: false
+      km:
+        path: _posts_km/2015-08-19-很想念我的朋友.md
+        source_hash: sha256:de136a3e0c6845814f2b6084dab54c29806efe034a07228099729b3e3204169e
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-19-很想念我的朋友/km.yml
+        locked: false
+      lo:
+        path: _posts_lo/2015-08-19-很想念我的朋友.md
+        source_hash: sha256:de136a3e0c6845814f2b6084dab54c29806efe034a07228099729b3e3204169e
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-19-很想念我的朋友/lo.yml
+        locked: false
+      ru:
+        path: _posts_ru/2015-08-19-很想念我的朋友.md
+        source_hash: sha256:de136a3e0c6845814f2b6084dab54c29806efe034a07228099729b3e3204169e
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-19-很想念我的朋友/ru.yml
+        locked: false
+      fa:
+        path: _posts_fa/2015-08-19-很想念我的朋友.md
+        source_hash: sha256:de136a3e0c6845814f2b6084dab54c29806efe034a07228099729b3e3204169e
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-19-很想念我的朋友/fa.yml
+        locked: false
+      ar:
+        path: _posts_ar/2015-08-19-很想念我的朋友.md
+        source_hash: sha256:de136a3e0c6845814f2b6084dab54c29806efe034a07228099729b3e3204169e
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-19-很想念我的朋友/ar.yml
+        locked: false
+        dialect: damascus_levantine
+      tr:
+        path: _posts_tr/2015-08-19-很想念我的朋友.md
+        source_hash: sha256:de136a3e0c6845814f2b6084dab54c29806efe034a07228099729b3e3204169e
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-19-很想念我的朋友/tr.yml
+        locked: false
+    date: '2015-08-19 12:41:34+00:00'
+    title: 很想念我的朋友
