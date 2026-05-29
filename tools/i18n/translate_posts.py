@@ -85,6 +85,44 @@ def write_translation(source_record, source_post, source_hash, lang, translation
     translation.pop("error", None)
 
 
+def request_batch_translation(source_id, protected_body, frontmatter_fields, targets, batch_path):
+    target_configs = {lang: LANGUAGES[lang] for lang in targets}
+    messages = [
+        {"role": "system", "content": BATCH_TRANSLATION_SYSTEM},
+        {"role": "user", "content": batch_translation_prompt(
+            protected_body,
+            frontmatter_fields,
+            target_configs,
+            read_text(batch_path),
+            previous_analyses_for(targets),
+        )},
+    ]
+    response = complete(messages, temperature=0.2)
+    try:
+        return parse_batch_response(response)
+    except yaml.YAMLError as exc:
+        response = complete(messages + [
+            {"role": "assistant", "content": response},
+            {"role": "user", "content": f"The YAML above is invalid: {exc}. Return the same content as strictly valid YAML only. Use block scalars with | for every Markdown body, description, excerpt, and analysis field."},
+        ], temperature=0.1)
+        return parse_batch_response(response)
+
+
+def write_batch_translations(source_id, source_record, source_post, source_hash, targets, batch_payload):
+    translations = batch_payload["translations"]
+    analysis_payload = batch_payload["analysis"]
+    failures = []
+    for lang, translation in targets.items():
+        try:
+            write_translation(source_record, source_post, source_hash, lang, translation, translations.get(lang), analysis_payload)
+            print(f"translated {source_id} -> {lang}", flush=True)
+        except Exception as exc:
+            translation["status"] = "failed"
+            translation["error"] = str(exc)
+            failures.append(f"{source_id}:{lang}: {exc}")
+    return failures
+
+
 def translate_source(manifest, source_id, only_lang=None):
     source_record = manifest["sources"][source_id]
     targets = target_languages(source_record, only_lang)
@@ -98,49 +136,48 @@ def translate_source(manifest, source_id, only_lang=None):
     write_translation.protected = protected
 
     frontmatter_fields = {field: source_post.metadata.get(field) for field in TRANSLATABLE_FRONTMATTER_FIELDS if field in source_post.metadata}
-    target_configs = {lang: LANGUAGES[lang] for lang in targets}
     batch_path = BATCH_DIR / f"{source_id}.yml"
 
-    print(f"batch translating {source_id} -> {', '.join(targets)}", flush=True)
-    messages = [
-        {"role": "system", "content": BATCH_TRANSLATION_SYSTEM},
-        {"role": "user", "content": batch_translation_prompt(
-            protected_body,
-            frontmatter_fields,
-            target_configs,
-            read_text(batch_path),
-            previous_analyses_for(targets),
-        )},
-    ]
-    response = complete(messages, temperature=0.2)
-    try:
-        batch_payload = parse_batch_response(response)
-    except yaml.YAMLError as exc:
-        response = complete(messages + [
-            {"role": "assistant", "content": response},
-            {"role": "user", "content": f"The YAML above is invalid: {exc}. Return the same content as strictly valid YAML only. Use block scalars with | for every Markdown body, description, excerpt, and analysis field."},
-        ], temperature=0.1)
-        batch_payload = parse_batch_response(response)
-    translations = batch_payload["translations"]
-    analysis_payload = batch_payload["analysis"]
-    write_yaml(batch_path, batch_payload)
-
+    retry_targets = targets
     failures = []
-    for lang, translation in targets.items():
+    print(f"batch translating {source_id} -> {', '.join(targets)}", flush=True)
+    try:
+        batch_payload = request_batch_translation(source_id, protected_body, frontmatter_fields, targets, batch_path)
+        write_yaml(batch_path, batch_payload)
+        failures = write_batch_translations(source_id, source_record, source_post, source_hash, targets, batch_payload)
+        retry_targets = target_languages(source_record, only_lang)
+    except Exception as exc:
+        if len(targets) == 1:
+            raise
+        print(f"batch translation failed for {source_id}: {exc}; retrying one language at a time", flush=True)
+
+    if not failures:
+        return []
+    if len(retry_targets) == 1:
+        return failures
+
+    retry_failures = []
+    for lang, translation in retry_targets.items():
+        single_target = {lang: translation}
+        single_batch_path = BATCH_DIR / f"{source_id}.{lang}.yml"
         try:
-            write_translation(source_record, source_post, source_hash, lang, translation, translations.get(lang), analysis_payload)
-            print(f"translated {source_id} -> {lang}", flush=True)
+            print(f"single-language translating {source_id} -> {lang}", flush=True)
+            batch_payload = request_batch_translation(source_id, protected_body, frontmatter_fields, single_target, single_batch_path)
+            write_yaml(single_batch_path, batch_payload)
+            retry_failures.extend(write_batch_translations(source_id, source_record, source_post, source_hash, single_target, batch_payload))
         except Exception as exc:
             translation["status"] = "failed"
             translation["error"] = str(exc)
-            failures.append(f"{source_id}:{lang}: {exc}")
-    return failures
+            retry_failures.append(f"{source_id}:{lang}: {exc}")
+    return retry_failures
 
 
-def translate_all(only_lang=None):
+def translate_all(only_lang=None, only_source=None):
     manifest = load_manifest()
     failures = []
     for source_id, source_record in manifest.get("sources", {}).items():
+        if only_source and source_id != only_source:
+            continue
         if source_record.get("source_status") != "active":
             continue
         try:
@@ -158,5 +195,6 @@ def translate_all(only_lang=None):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--lang", choices=sorted(LANGUAGES.keys()))
+    parser.add_argument("--source")
     args = parser.parse_args()
-    translate_all(args.lang)
+    translate_all(args.lang, args.source)

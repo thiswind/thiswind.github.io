@@ -26,6 +26,11 @@ on:
           - fa
           - ar
           - tr
+      source:
+        description: Optional source_id for targeted translation reruns
+        required: false
+        default: ""
+        type: string
 
 permissions:
   contents: write
@@ -76,12 +81,20 @@ jobs:
         env:
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
           TRANSLATE_LANG: ${{ inputs.lang }}
+          TRANSLATE_SOURCE: ${{ inputs.source }}
         run: |
+          args=()
           if [ -n "$TRANSLATE_LANG" ]; then
-            python tools/i18n/translate_posts.py --lang "$TRANSLATE_LANG"
-          else
-            python tools/i18n/translate_posts.py
+            args+=(--lang "$TRANSLATE_LANG")
           fi
+          if [ -n "$TRANSLATE_SOURCE" ]; then
+            args+=(--source "$TRANSLATE_SOURCE")
+          fi
+          set +e
+          python tools/i18n/translate_posts.py "${args[@]}"
+          status=$?
+          set -e
+          echo "TRANSLATE_STATUS=$status" >> "$GITHUB_ENV"
 
       - name: Commit generated translations
         if: ${{ github.event_name == 'push' || inputs.translate }}
@@ -93,6 +106,7 @@ jobs:
           done
           git diff --cached --quiet || git commit -m "Update generated translations [skip ci]"
           git push
+          exit "$TRANSLATE_STATUS"
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
