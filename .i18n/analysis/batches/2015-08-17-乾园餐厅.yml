@@ -1,0 +1,126 @@
+analysis:
+  source_summary: '文中仅一句话：“黔园餐馆在我们旁边”，意思是黔园餐馆就在“我们”的旁边/隔壁附近。
+
+    '
+  literal_layer: '“黔园餐馆”作为专有名词，后接方位表达“在我们旁边”，直译即“黔园餐馆在我们旁边（紧邻我们）”。
+
+    '
+  implicit_layer: '隐含的是现场环境或行程语境：作者与“我们”当下所在位置附近有一家名为“黔园餐馆”的餐馆，强调距离近、方位清楚，便于就近就餐或寻找。
+
+    '
+  cross_cultural_layer: '多数目标语言可用自然的方位表述（如“隔壁/就在旁边/就在附近”）来保留“靠近”的社交意图；专有名词在各语中可音译或直译为“黔园餐馆”的等值称呼，保持一致指向同一家店。
+
+    '
+  retelling_strategy: '由于原文极短，采用一句话直述的改写：先保留餐馆名，后用目标语言中最自然的“就在我们旁边/隔壁”方位句式；不新增细节、不扩写。
+
+    '
+  terminology_policy: '1) “黔园餐馆”按“店名/餐馆名”处理，作为专有名词保留并进行目标语言常见书写处理（可音译或直译成等值称呼）。2)
+    不引入与原文无关的餐品、价格或评价。3) 无占位符、无链接、无代码块，保持正文结构简洁。
+
+    '
+  forbidden_styles: '避免：口语化过强、夸张营销语气、宗教或政治导向内容、对店铺做主观评价（如好吃/推荐）以及无根据的补充信息；同时避免将其改成多句叙事。
+
+    '
+translations:
+  th:
+    title: 'null
+
+      '
+    description: 'null
+
+      '
+    excerpt: 'null
+
+      '
+    body: 'ร้านอาหารฉินหยวนอยู่ข้างๆ เรา
+
+      '
+  my:
+    title: 'null
+
+      '
+    description: 'null
+
+      '
+    excerpt: 'null
+
+      '
+    body: 'ချီန်ယွမ် စားသောက်ဆိုင်က ကျွန်တော်တို့ ဘေးမှာ ရှိတယ်။
+
+      '
+  km:
+    title: 'null
+
+      '
+    description: 'null
+
+      '
+    excerpt: 'null
+
+      '
+    body: 'ភោជនីយដ្ឋាន គៀនយាន នៅក្បែរពួកយើង។
+
+      '
+  lo:
+    title: 'null
+
+      '
+    description: 'null
+
+      '
+    excerpt: 'null
+
+      '
+    body: 'ຮ້ານອາຫານ ຂຽນຢວນ ຢູ່ຂ້າງໆ ພວກເຮົາ
+
+      '
+  ru:
+    title: 'null
+
+      '
+    description: 'null
+
+      '
+    excerpt: 'null
+
+      '
+    body: 'Ресторан «Цяньюань» находится рядом с нами.
+
+      '
+  fa:
+    title: 'null
+
+      '
+    description: 'null
+
+      '
+    excerpt: 'null
+
+      '
+    body: 'رستوران «چی‌یوان» کنارِ ماست.
+
+      '
+  ar:
+    title: 'null
+
+      '
+    description: 'null
+
+      '
+    excerpt: 'null
+
+      '
+    body: 'مطعم «تْشِـيـن يـوان» ورا/جنبنا مباشرة.
+
+      '
+  tr:
+    title: 'null
+
+      '
+    description: 'null
+
+      '
+    excerpt: 'null
+
+      '
+    body: Çayınyuan Restoranı bizim yanı başımızda.

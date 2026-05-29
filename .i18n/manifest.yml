@@ -568,51 +568,75 @@ sources:
       th:
         path: _posts_th/2015-08-17-乾园餐厅.md
         source_hash: sha256:eb809dfd66e31c346b84ec364e181ab8c09fc4aa86e1011b6fbcb109259b7180
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-08-17-乾园餐厅/th.yml
         locked: false
+        translation_hash: sha256:b4f7fa4847b75046df9c360a1417053504ede28e5dce75f9b1df0a7822758940
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:26:26.250624+00:00'
       my:
         path: _posts_my/2015-08-17-乾园餐厅.md
         source_hash: sha256:eb809dfd66e31c346b84ec364e181ab8c09fc4aa86e1011b6fbcb109259b7180
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-08-17-乾园餐厅/my.yml
         locked: false
+        translation_hash: sha256:627d746d31bf833380dffcb7bb8e66a4693dd5bfd9679a0850ce8592c56899ce
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:26:26.252062+00:00'
       km:
         path: _posts_km/2015-08-17-乾园餐厅.md
         source_hash: sha256:eb809dfd66e31c346b84ec364e181ab8c09fc4aa86e1011b6fbcb109259b7180
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-08-17-乾园餐厅/km.yml
         locked: false
+        translation_hash: sha256:5b4a04b671dbafa214948a65fa557c95ab7ebf1b8f681a5c272c03afabeac757
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:26:26.253376+00:00'
       lo:
         path: _posts_lo/2015-08-17-乾园餐厅.md
         source_hash: sha256:eb809dfd66e31c346b84ec364e181ab8c09fc4aa86e1011b6fbcb109259b7180
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-08-17-乾园餐厅/lo.yml
         locked: false
+        translation_hash: sha256:a43e8ed14ae69d498531cc07b2862fa210159bd24172ce3f2c74896b96d65a29
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:26:26.254622+00:00'
       ru:
         path: _posts_ru/2015-08-17-乾园餐厅.md
         source_hash: sha256:eb809dfd66e31c346b84ec364e181ab8c09fc4aa86e1011b6fbcb109259b7180
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-08-17-乾园餐厅/ru.yml
         locked: false
+        translation_hash: sha256:18d3fa3709c28bf0f4b860170df1794e25ad9bab2c19f6c6d3b8f6f62f73e8f8
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:26:26.255897+00:00'
       fa:
         path: _posts_fa/2015-08-17-乾园餐厅.md
         source_hash: sha256:eb809dfd66e31c346b84ec364e181ab8c09fc4aa86e1011b6fbcb109259b7180
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-08-17-乾园餐厅/fa.yml
         locked: false
+        translation_hash: sha256:942b39c80a66bc0853ab26c2d0ae457fa9a930b258110f4788c154c438cf830b
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:26:26.257126+00:00'
       ar:
         path: _posts_ar/2015-08-17-乾园餐厅.md
         source_hash: sha256:eb809dfd66e31c346b84ec364e181ab8c09fc4aa86e1011b6fbcb109259b7180
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-08-17-乾园餐厅/ar.yml
         locked: false
         dialect: damascus_levantine
+        translation_hash: sha256:b7dfc3f03c0dde5b121769d8f3098627f7145dd941c10a306dac647121af7398
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:26:26.258352+00:00'
       tr:
         path: _posts_tr/2015-08-17-乾园餐厅.md
         source_hash: sha256:eb809dfd66e31c346b84ec364e181ab8c09fc4aa86e1011b6fbcb109259b7180
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-08-17-乾园餐厅/tr.yml
         locked: false
+        translation_hash: sha256:800cf6d6ab58e077053382a9acbd2694a79f17959761b3c11a154c150d17cc56
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:26:26.259588+00:00'
     date: '2015-08-17 05:59:57+00:00'
     title: 乾园餐厅
