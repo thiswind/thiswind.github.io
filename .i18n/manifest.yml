@@ -1688,3 +1688,59 @@ sources:
         locked: false
     date: '2015-09-13 08:30:17+00:00'
     title: 糟糕的犬儒主义
+  2015-08-23-ubuntu下用dnscrypt做代理用dnsmasq做缓存配置安全dns服务器:
+    source_path: _posts/2015-08-23-Ubuntu下用DNSCrypt做代理用DNSMasq做缓存配置安全DNS服务器.md
+    source_hash: sha256:fba1b252cce3a969417432ed7877ab31cfd881faf4bcc0905bda10b465ac799c
+    source_status: active
+    translations:
+      th:
+        path: _posts_th/2015-08-23-Ubuntu下用DNSCrypt做代理用DNSMasq做缓存配置安全DNS服务器.md
+        source_hash: sha256:fba1b252cce3a969417432ed7877ab31cfd881faf4bcc0905bda10b465ac799c
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-23-ubuntu下用dnscrypt做代理用dnsmasq做缓存配置安全dns服务器/th.yml
+        locked: false
+      my:
+        path: _posts_my/2015-08-23-Ubuntu下用DNSCrypt做代理用DNSMasq做缓存配置安全DNS服务器.md
+        source_hash: sha256:fba1b252cce3a969417432ed7877ab31cfd881faf4bcc0905bda10b465ac799c
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-23-ubuntu下用dnscrypt做代理用dnsmasq做缓存配置安全dns服务器/my.yml
+        locked: false
+      km:
+        path: _posts_km/2015-08-23-Ubuntu下用DNSCrypt做代理用DNSMasq做缓存配置安全DNS服务器.md
+        source_hash: sha256:fba1b252cce3a969417432ed7877ab31cfd881faf4bcc0905bda10b465ac799c
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-23-ubuntu下用dnscrypt做代理用dnsmasq做缓存配置安全dns服务器/km.yml
+        locked: false
+      lo:
+        path: _posts_lo/2015-08-23-Ubuntu下用DNSCrypt做代理用DNSMasq做缓存配置安全DNS服务器.md
+        source_hash: sha256:fba1b252cce3a969417432ed7877ab31cfd881faf4bcc0905bda10b465ac799c
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-23-ubuntu下用dnscrypt做代理用dnsmasq做缓存配置安全dns服务器/lo.yml
+        locked: false
+      ru:
+        path: _posts_ru/2015-08-23-Ubuntu下用DNSCrypt做代理用DNSMasq做缓存配置安全DNS服务器.md
+        source_hash: sha256:fba1b252cce3a969417432ed7877ab31cfd881faf4bcc0905bda10b465ac799c
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-23-ubuntu下用dnscrypt做代理用dnsmasq做缓存配置安全dns服务器/ru.yml
+        locked: false
+      fa:
+        path: _posts_fa/2015-08-23-Ubuntu下用DNSCrypt做代理用DNSMasq做缓存配置安全DNS服务器.md
+        source_hash: sha256:fba1b252cce3a969417432ed7877ab31cfd881faf4bcc0905bda10b465ac799c
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-23-ubuntu下用dnscrypt做代理用dnsmasq做缓存配置安全dns服务器/fa.yml
+        locked: false
+      ar:
+        path: _posts_ar/2015-08-23-Ubuntu下用DNSCrypt做代理用DNSMasq做缓存配置安全DNS服务器.md
+        source_hash: sha256:fba1b252cce3a969417432ed7877ab31cfd881faf4bcc0905bda10b465ac799c
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-23-ubuntu下用dnscrypt做代理用dnsmasq做缓存配置安全dns服务器/ar.yml
+        locked: false
+        dialect: damascus_levantine
+      tr:
+        path: _posts_tr/2015-08-23-Ubuntu下用DNSCrypt做代理用DNSMasq做缓存配置安全DNS服务器.md
+        source_hash: sha256:fba1b252cce3a969417432ed7877ab31cfd881faf4bcc0905bda10b465ac799c
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-23-ubuntu下用dnscrypt做代理用dnsmasq做缓存配置安全dns服务器/tr.yml
+        locked: false
+    date: '2015-08-23 13:53:29+00:00'
+    title: Ubuntu下用DNSCrypt做代理用DNSMasq做缓存配置安全DNS服务器
