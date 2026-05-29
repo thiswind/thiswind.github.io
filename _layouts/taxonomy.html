@@ -2,7 +2,6 @@
 layout: base
 ---
 {% assign page_lang = page.lang | default: site.lang %}
-{% assign ui = site.data.ui[page_lang] | default: site.data.ui.zh %}
 {% assign lang_config = site.data.languages[page_lang] %}
 {% assign collection_name = lang_config.collection | default: 'posts' %}
 {% if collection_name == 'posts' %}
@@ -10,13 +9,16 @@ layout: base
 {% else %}
   {% assign posts = site[collection_name] | sort: 'date' | reverse %}
 {% endif %}
-<section class="taxonomy cyber-frame" augmented-ui="tl-clip br-clip border">
-  <h1>{{ page.title }}</h1>
+<section class="taxonomy cyber-frame" augmented-ui="tl-2-clip-x br-2-clip-y border">
+  <header class="section-header compact">
+    <span class="section-kicker">TAXONOMY NODE</span>
+    <h1>{{ page.title }}</h1>
+  </header>
   {% assign taxonomy_field = page.taxonomy | default: 'categories' %}
   {% for post in posts %}
     {% assign values = post[taxonomy_field] %}
     {% for value in values %}
-      <section class="taxonomy-group">
+      <section class="taxonomy-group" augmented-ui="tl-clip br-clip border">
         <h2>{{ value }}</h2>
         {% for candidate in posts %}
           {% assign candidate_values = candidate[taxonomy_field] %}

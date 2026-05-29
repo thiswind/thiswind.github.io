@@ -2,33 +2,153 @@
 .post,
 .archive,
 .taxonomy {
+  position: relative;
   margin-block-end: 2rem;
-  padding: clamp(1.25rem, 4vw, 2.5rem);
+  padding: clamp(1.25rem, 4vw, 2.75rem);
+}
+
+.hero::before,
+.post::before,
+.archive::before,
+.taxonomy::before {
+  content: "";
+  position: absolute;
+  inset-inline: 1.25rem;
+  inset-block-start: 0;
+  height: 0.22rem;
+  background: repeating-linear-gradient(90deg, $color-yellow 0 1.35rem, $color-black 1.35rem 2rem);
+  opacity: 0.85;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(16rem, 0.38fr);
+  gap: clamp(1.25rem, 4vw, 3rem);
+  align-items: stretch;
 }
 
 .hero-kicker,
+.post-classification,
+.section-kicker,
 .post-meta {
   color: $color-muted;
   font-family: $font-mono;
-  font-size: 0.9rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
 }
 
-.post-list {
+.hero h1,
+.post-header h1,
+.archive h1,
+.taxonomy h1 {
+  margin-block: 0.45rem 1rem;
+}
+
+.hero-content {
+  color: rgba($color-text, 0.88);
+  font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+.hero-console {
+  display: grid;
+  align-content: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  border: 1px solid rgba($color-cyan, 0.36);
+  background:
+    linear-gradient(135deg, rgba($color-cyan, 0.08), transparent 55%),
+    rgba($color-black, 0.34);
+  font-family: $font-mono;
+  font-size: 0.78rem;
+  letter-spacing: 0.09em;
+}
+
+.hero-console span {
+  display: block;
+  border-inline-start: 0.22rem solid $color-yellow;
+  padding: 0.45rem 0.6rem;
+  background: rgba($color-panel-soft, 0.9);
+}
+
+.post-list,
+.archive-list {
   display: grid;
   gap: 1rem;
 }
 
+.section-header {
+  position: relative;
+  margin-block: 2rem 1rem;
+  padding: 1rem 1.25rem;
+  border-inline-start: 0.35rem solid $color-yellow;
+  background: linear-gradient(90deg, rgba($color-yellow, 0.12), transparent 70%);
+}
+
+.section-header.compact {
+  margin-block-start: 0;
+}
+
+.section-header h1,
+.section-header h2 {
+  margin: 0.25rem 0 0;
+  color: $color-yellow;
+}
+
 .post-card {
-  padding: 1.25rem;
-  background: $color-panel;
+  position: relative;
+  overflow: hidden;
+  padding: 1.2rem;
+  background:
+    linear-gradient(110deg, rgba($color-yellow, 0.08), transparent 34%),
+    $color-panel;
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+
+.post-card::after {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  inset-block-end: 0;
+  height: 0.18rem;
+  background: linear-gradient(90deg, $color-yellow, $color-cyan, transparent);
+  opacity: 0.7;
+}
+
+.post-card:hover,
+.post-card:focus-within {
+  transform: translateY(-0.16rem);
+  box-shadow: 0 0 1.5rem rgba($color-cyan, 0.17), inset 0 0 1.5rem rgba($color-yellow, 0.055);
+}
+
+.post-card-strip {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-block-end: 0.85rem;
+  color: $color-black;
+  font-family: $font-mono;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.post-card-strip span {
+  background: $color-yellow;
+  padding: 0.18rem 0.38rem;
 }
 
 .post-card h3 {
-  margin-block-start: 0;
+  margin-block: 0 0.65rem;
 }
 
 .post-card a {
   text-decoration: none;
+}
+
+.post-card h3 a:hover,
+.post-card h3 a:focus-visible {
+  color: $color-cyan;
 }
 
 .post-card-excerpt {
@@ -37,22 +157,120 @@
 
 .read-more {
   display: inline-block;
-  margin-block-start: 0.75rem;
+  margin-block-start: 0.85rem;
   color: $color-yellow;
   font-family: $font-mono;
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.read-more:hover,
+.read-more:focus-visible {
+  color: $color-cyan;
+}
+
+.post-header {
+  border-block-end: 1px solid rgba($color-yellow, 0.32);
+  margin-block-end: 1.5rem;
+  padding-block-end: 1.5rem;
+}
+
+.post-content-shell {
+  padding: clamp(1rem, 3vw, 2rem);
+  border: 1px solid rgba($color-cyan, 0.16);
+  background:
+    linear-gradient(180deg, rgba($color-panel-soft, 0.72), rgba($color-black, 0.2)),
+    rgba($color-black, 0.18);
+}
+
+.post-content {
+  color: rgba($color-text, 0.95);
+}
+
+.post-content a {
+  color: $color-cyan;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+.post-content blockquote {
+  margin-inline: 0;
+  padding: 0.75rem 1rem;
+  border-inline-start: 0.3rem solid $color-yellow;
+  background: rgba($color-yellow, 0.07);
 }
 
 .language-switcher {
-  display: flex;
-  flex-wrap: wrap;
+  --aug-border-bg: rgba(252, 238, 10, 0.48);
+  --aug-border-all: 1px;
+  display: grid;
   gap: 0.75rem;
   margin-block-start: 1rem;
+  padding: 0.85rem;
+  background: rgba($color-black, 0.36);
 }
 
-.language-switcher .active {
+.language-switcher-label {
+  color: $color-muted;
+  font-family: $font-mono;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+}
+
+.language-switcher-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.language-switcher a,
+.language-switcher span.active {
+  min-width: 2.4rem;
+  padding: 0.35rem 0.5rem;
+  border: 1px solid rgba($color-cyan, 0.32);
+  color: $color-cyan;
+  background: rgba($color-cyan, 0.055);
+  font-family: $font-mono;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.language-switcher span.active {
+  border-color: $color-yellow;
+  background: $color-yellow;
+  color: $color-black;
+  box-shadow: 0 0 0.8rem rgba($color-yellow, 0.25);
+}
+
+.language-switcher a:hover,
+.language-switcher a:focus-visible {
+  border-color: $color-yellow;
   color: $color-yellow;
 }
 
 .taxonomy-group {
-  margin-block-start: 2rem;
+  --aug-border-bg: rgba(0, 240, 255, 0.32);
+  --aug-border-all: 1px;
+  margin-block-start: 1.25rem;
+  padding: 1rem;
+  background: rgba($color-black, 0.24);
+}
+
+.taxonomy-group h2 {
+  margin-block-start: 0;
+  color: $color-cyan;
+}
+
+@media (max-width: 760px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .post-card-strip {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

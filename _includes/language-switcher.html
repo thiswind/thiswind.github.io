@@ -1,27 +1,30 @@
 {% assign source_id = include.source_id | default: page.source_id %}
 {% assign current_lang = include.current_lang | default: page.lang | default: site.lang %}
-<nav class="language-switcher" aria-label="Languages">
-  {% for lang_pair in site.data.languages %}
-    {% assign lang_code = lang_pair[0] %}
-    {% assign lang = lang_pair[1] %}
-    {% assign target_url = lang.path_prefix %}
-    {% if source_id %}
-      {% if lang.collection == 'posts' %}
-        {% assign candidates = site.posts %}
-      {% else %}
-        {% assign candidates = site[lang.collection] %}
-      {% endif %}
-      {% for candidate in candidates %}
-        {% if candidate.source_id == source_id %}
-          {% assign target_url = candidate.url %}
-          {% break %}
+<nav class="language-switcher" aria-label="Languages" augmented-ui="tl-clip br-clip border">
+  <span class="language-switcher-label">LANGUAGE MATRIX</span>
+  <div class="language-switcher-grid">
+    {% for lang_pair in site.data.languages %}
+      {% assign lang_code = lang_pair[0] %}
+      {% assign lang = lang_pair[1] %}
+      {% assign target_url = lang.path_prefix %}
+      {% if source_id %}
+        {% if lang.collection == 'posts' %}
+          {% assign candidates = site.posts %}
+        {% else %}
+          {% assign candidates = site[lang.collection] %}
         {% endif %}
-      {% endfor %}
-    {% endif %}
-    {% if lang_code == current_lang %}
-      <span class="active">{{ lang.native_name }}</span>
-    {% else %}
-      <a href="{{ target_url | relative_url }}">{{ lang.native_name }}</a>
-    {% endif %}
-  {% endfor %}
+        {% for candidate in candidates %}
+          {% if candidate.source_id == source_id %}
+            {% assign target_url = candidate.url %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+      {% if lang_code == current_lang %}
+        <span class="active" title="{{ lang.native_name }}">{{ lang_code | upcase }}</span>
+      {% else %}
+        <a href="{{ target_url | relative_url }}" title="{{ lang.native_name }}">{{ lang_code | upcase }}</a>
+      {% endif %}
+    {% endfor %}
+  </div>
 </nav>

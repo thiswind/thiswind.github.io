@@ -1,25 +1,61 @@
 .cyber-frame,
 .cyber-panel,
 .post-card,
-.footer-panel {
-  --aug-border-bg: #00f0ff;
+.footer-panel,
+.taxonomy-group,
+.language-switcher,
+.site-header {
+  --aug-border-bg: #{$panel-border};
   --aug-border-all: 1px;
-  --aug-inlay-bg: rgba(13, 18, 30, 0.92);
+  --aug-inlay-bg: #{$color-panel};
   background: $color-panel;
-  box-shadow:
-    0 0 0.75rem rgba($color-cyan, 0.14),
-    inset 0 0 1.5rem rgba($color-magenta, 0.08);
+  box-shadow: $panel-shadow;
+  clip-path: polygon(0 1rem, 1rem 0, calc(100% - 0.65rem) 0, 100% 0.65rem, 100% calc(100% - 1rem), calc(100% - 1rem) 100%, 0.65rem 100%, 0 calc(100% - 0.65rem));
+}
+
+.cyber-frame::after,
+.post-card::before,
+.footer-panel::before {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+.cyber-frame::after {
+  inset: 0.55rem;
+  border: 1px solid rgba($color-cyan, 0.08);
 }
 
 .cyber-frame h1,
 .cyber-frame h2,
 .post-card h3 {
   color: $color-yellow;
-  text-shadow: 0 0 0.4rem rgba($color-yellow, 0.35);
+  text-shadow:
+    0 0 0.4rem rgba($color-yellow, 0.24),
+    0.08em 0 rgba($color-red, 0.12);
 }
 
-.section-header {
-  border-inline-start: 4px solid $color-magenta;
-  padding-inline-start: 0.75rem;
-  margin-block: 2rem 1rem;
+.cyber-frame {
+  background:
+    linear-gradient(135deg, rgba($color-yellow, 0.07), transparent 34%),
+    linear-gradient(315deg, rgba($color-cyan, 0.05), transparent 40%),
+    $color-panel;
+}
+
+.cyber-frame > * {
+  position: relative;
+  z-index: 1;
+}
+
+.site-header,
+.footer-panel {
+  position: relative;
+}
+
+.footer-panel::before {
+  inset-inline-start: 0;
+  inset-block-start: 0;
+  width: 7rem;
+  height: 0.22rem;
+  background: repeating-linear-gradient(90deg, $color-yellow 0 0.8rem, $color-black 0.8rem 1.2rem);
 }

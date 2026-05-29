@@ -2,14 +2,16 @@
 layout: base
 ---
 {% assign page_lang = page.lang | default: site.lang %}
-{% assign ui = site.data.ui[page_lang] | default: site.data.ui.zh %}
-<article class="post cyber-frame" augmented-ui="tl-clip tr-clip br-clip bl-clip border">
+<article class="post cyber-frame" augmented-ui="tl-2-clip-x tr-clip br-2-clip-y bl-clip border">
   <header class="post-header">
+    <span class="post-classification">ARCHIVE ENTRY // {{ page_lang | upcase }}</span>
     <h1>{{ page.title }}</h1>
     {% include post-meta.html post=page lang=page_lang %}
     {% include language-switcher.html source_id=page.source_id current_lang=page_lang %}
   </header>
-  <div class="post-content">
-    {{ content }}
+  <div class="post-content-shell">
+    <div class="post-content">
+      {{ content }}
+    </div>
   </div>
 </article>

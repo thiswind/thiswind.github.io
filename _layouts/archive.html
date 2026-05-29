@@ -10,9 +10,14 @@ layout: base
 {% else %}
   {% assign posts = site[collection_name] | sort: 'date' | reverse %}
 {% endif %}
-<section class="archive cyber-frame" augmented-ui="tl-clip br-clip border">
-  <h1>{{ page.title | default: ui.posts }}</h1>
-  {% for post in posts %}
-    {% include post-card.html post=post lang=page_lang %}
-  {% endfor %}
+<section class="archive cyber-frame" augmented-ui="tl-2-clip-x br-2-clip-y border">
+  <header class="section-header compact">
+    <span class="section-kicker">ARCHIVE INDEX</span>
+    <h1>{{ page.title | default: ui.posts }}</h1>
+  </header>
+  <div class="archive-list">
+    {% for post in posts %}
+      {% include post-card.html post=post lang=page_lang %}
+    {% endfor %}
+  </div>
 </section>

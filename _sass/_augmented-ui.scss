@@ -1,6 +1,22 @@
 [augmented-ui] {
   --aug-clip-tl1: 1rem;
-  --aug-clip-tr1: 0.5rem;
-  --aug-clip-br1: 1.25rem;
-  --aug-clip-bl1: 0.5rem;
+  --aug-clip-tr1: 0.65rem;
+  --aug-clip-br1: 1.2rem;
+  --aug-clip-bl1: 0.55rem;
+  --aug-clip-tl2: 1.65rem;
+  --aug-clip-br2: 1.65rem;
+}
+
+.site-header[augmented-ui] {
+  --aug-clip-tl1: 0.85rem;
+  --aug-clip-tr1: 0.85rem;
+  --aug-clip-br1: 0.55rem;
+  --aug-clip-bl1: 0.55rem;
+}
+
+.post-card[augmented-ui] {
+  --aug-clip-tl1: 0.65rem;
+  --aug-clip-tr1: 0.25rem;
+  --aug-clip-br1: 0.75rem;
+  --aug-clip-bl1: 0.25rem;
 }

@@ -1,8 +1,16 @@
 {% assign page_lang = include.lang | default: page.lang | default: site.lang %}
 {% assign ui = site.data.ui[page_lang] | default: site.data.ui.zh %}
 {% assign lang_config = site.data.languages[page_lang] %}
-<header class="site-header">
-  <a class="site-title" href="{{ lang_config.path_prefix | default: '/' | relative_url }}">{{ site.title }}</a>
+<header class="site-header" augmented-ui="tl-clip tr-clip br-clip bl-clip border">
+  <a class="site-title" href="{{ lang_config.path_prefix | default: '/' | relative_url }}">
+    <span class="site-title-mark">TW</span>
+    <span class="site-title-text">{{ site.title }}</span>
+  </a>
+  <div class="site-status">
+    <span>ARCHIVE SYS</span>
+    <span>ONLINE</span>
+    <span>{{ page_lang | upcase }}</span>
+  </div>
   <nav class="site-nav" aria-label="{{ ui.posts }}">
     <a href="{{ lang_config.path_prefix | default: '/' | relative_url }}">{{ ui.home }}</a>
     <a href="{{ lang_config.path_prefix | append: 'archive/' | relative_url }}">{{ ui.posts }}</a>

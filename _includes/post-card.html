@@ -1,11 +1,15 @@
 {% assign post = include.post %}
 {% assign page_lang = include.lang | default: page.lang | default: site.lang %}
 {% assign ui = site.data.ui[page_lang] | default: site.data.ui.zh %}
-<article class="post-card" augmented-ui="tl-clip br-clip border">
+<article class="post-card" augmented-ui="tl-clip tr-clip br-clip bl-clip border">
+  <div class="post-card-strip">
+    <span>POST LOG</span>
+    <span>{{ post.date | date: "%Y.%m.%d" }}</span>
+  </div>
   <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
   {% include post-meta.html post=post lang=page_lang %}
   {% if post.excerpt %}
     <div class="post-card-excerpt">{{ post.excerpt }}</div>
   {% endif %}
-  <a class="read-more" href="{{ post.url | relative_url }}">{{ ui.read_more }}</a>
+  <a class="read-more" href="{{ post.url | relative_url }}">{{ ui.read_more }} <span aria-hidden="true">//</span></a>
 </article>
