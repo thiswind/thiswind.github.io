@@ -1352,3 +1352,59 @@ sources:
         locked: false
     date: '2015-08-25 05:52:42+00:00'
     title: 各种BIN路径的区别
+  2015-08-24-dnsmasq-and-dnscrypt-in-one-docker:
+    source_path: _posts/2015-08-24-DNSMasq-and-DNSCrypt-in-one-Docker.md
+    source_hash: sha256:e1d2009135bcb8ea67643f0bacadc859d424a2a4c88d2b98637879015897f139
+    source_status: active
+    translations:
+      th:
+        path: _posts_th/2015-08-24-DNSMasq-and-DNSCrypt-in-one-Docker.md
+        source_hash: sha256:e1d2009135bcb8ea67643f0bacadc859d424a2a4c88d2b98637879015897f139
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-24-dnsmasq-and-dnscrypt-in-one-docker/th.yml
+        locked: false
+      my:
+        path: _posts_my/2015-08-24-DNSMasq-and-DNSCrypt-in-one-Docker.md
+        source_hash: sha256:e1d2009135bcb8ea67643f0bacadc859d424a2a4c88d2b98637879015897f139
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-24-dnsmasq-and-dnscrypt-in-one-docker/my.yml
+        locked: false
+      km:
+        path: _posts_km/2015-08-24-DNSMasq-and-DNSCrypt-in-one-Docker.md
+        source_hash: sha256:e1d2009135bcb8ea67643f0bacadc859d424a2a4c88d2b98637879015897f139
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-24-dnsmasq-and-dnscrypt-in-one-docker/km.yml
+        locked: false
+      lo:
+        path: _posts_lo/2015-08-24-DNSMasq-and-DNSCrypt-in-one-Docker.md
+        source_hash: sha256:e1d2009135bcb8ea67643f0bacadc859d424a2a4c88d2b98637879015897f139
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-24-dnsmasq-and-dnscrypt-in-one-docker/lo.yml
+        locked: false
+      ru:
+        path: _posts_ru/2015-08-24-DNSMasq-and-DNSCrypt-in-one-Docker.md
+        source_hash: sha256:e1d2009135bcb8ea67643f0bacadc859d424a2a4c88d2b98637879015897f139
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-24-dnsmasq-and-dnscrypt-in-one-docker/ru.yml
+        locked: false
+      fa:
+        path: _posts_fa/2015-08-24-DNSMasq-and-DNSCrypt-in-one-Docker.md
+        source_hash: sha256:e1d2009135bcb8ea67643f0bacadc859d424a2a4c88d2b98637879015897f139
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-24-dnsmasq-and-dnscrypt-in-one-docker/fa.yml
+        locked: false
+      ar:
+        path: _posts_ar/2015-08-24-DNSMasq-and-DNSCrypt-in-one-Docker.md
+        source_hash: sha256:e1d2009135bcb8ea67643f0bacadc859d424a2a4c88d2b98637879015897f139
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-24-dnsmasq-and-dnscrypt-in-one-docker/ar.yml
+        locked: false
+        dialect: damascus_levantine
+      tr:
+        path: _posts_tr/2015-08-24-DNSMasq-and-DNSCrypt-in-one-Docker.md
+        source_hash: sha256:e1d2009135bcb8ea67643f0bacadc859d424a2a4c88d2b98637879015897f139
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-24-dnsmasq-and-dnscrypt-in-one-docker/tr.yml
+        locked: false
+    date: '2015-08-24 13:26:22+00:00'
+    title: DNSMasq and DNSCrypt in one Docker
