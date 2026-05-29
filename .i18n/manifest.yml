@@ -35,9 +35,12 @@ sources:
       lo:
         path: _posts_lo/2026-05-29-welcome.md
         source_hash: sha256:2c1fab70af6cde3ca6530579fc98eccf1ebf09877167de377a46cda69e7db4f0
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2026-05-29-welcome/lo.yml
         locked: false
+        translation_hash: sha256:7bb277b2fd71af96d24d400b5e1d3b6dac55f5bbe0483df9988cae3953222e66
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T04:49:46.748676+00:00'
       ru:
         path: _posts_ru/2026-05-29-welcome.md
         source_hash: sha256:2c1fab70af6cde3ca6530579fc98eccf1ebf09877167de377a46cda69e7db4f0
