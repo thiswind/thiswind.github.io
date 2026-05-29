@@ -1016,3 +1016,59 @@ sources:
         locked: false
     date: '2015-08-21 02:06:32+00:00'
     title: 大数据分析是人机共同体
+  2015-08-19-ipython-notebook:
+    source_path: _posts/2015-08-19-IPython-Notebook.md
+    source_hash: sha256:4c0acbe0414e61ee4432f84ebc71924d77271c2788cf356d205b782b95c8830c
+    source_status: active
+    translations:
+      th:
+        path: _posts_th/2015-08-19-IPython-Notebook.md
+        source_hash: sha256:4c0acbe0414e61ee4432f84ebc71924d77271c2788cf356d205b782b95c8830c
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-19-ipython-notebook/th.yml
+        locked: false
+      my:
+        path: _posts_my/2015-08-19-IPython-Notebook.md
+        source_hash: sha256:4c0acbe0414e61ee4432f84ebc71924d77271c2788cf356d205b782b95c8830c
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-19-ipython-notebook/my.yml
+        locked: false
+      km:
+        path: _posts_km/2015-08-19-IPython-Notebook.md
+        source_hash: sha256:4c0acbe0414e61ee4432f84ebc71924d77271c2788cf356d205b782b95c8830c
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-19-ipython-notebook/km.yml
+        locked: false
+      lo:
+        path: _posts_lo/2015-08-19-IPython-Notebook.md
+        source_hash: sha256:4c0acbe0414e61ee4432f84ebc71924d77271c2788cf356d205b782b95c8830c
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-19-ipython-notebook/lo.yml
+        locked: false
+      ru:
+        path: _posts_ru/2015-08-19-IPython-Notebook.md
+        source_hash: sha256:4c0acbe0414e61ee4432f84ebc71924d77271c2788cf356d205b782b95c8830c
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-19-ipython-notebook/ru.yml
+        locked: false
+      fa:
+        path: _posts_fa/2015-08-19-IPython-Notebook.md
+        source_hash: sha256:4c0acbe0414e61ee4432f84ebc71924d77271c2788cf356d205b782b95c8830c
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-19-ipython-notebook/fa.yml
+        locked: false
+      ar:
+        path: _posts_ar/2015-08-19-IPython-Notebook.md
+        source_hash: sha256:4c0acbe0414e61ee4432f84ebc71924d77271c2788cf356d205b782b95c8830c
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-19-ipython-notebook/ar.yml
+        locked: false
+        dialect: damascus_levantine
+      tr:
+        path: _posts_tr/2015-08-19-IPython-Notebook.md
+        source_hash: sha256:4c0acbe0414e61ee4432f84ebc71924d77271c2788cf356d205b782b95c8830c
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-19-ipython-notebook/tr.yml
+        locked: false
+    date: '2015-08-19 18:14:40+00:00'
+    title: IPython Notebook
