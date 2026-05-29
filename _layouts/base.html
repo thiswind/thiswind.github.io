@@ -1,0 +1,14 @@
+<!doctype html>
+{% assign page_lang = page.lang | default: site.lang %}
+{% assign lang_config = site.data.languages[page_lang] %}
+{% assign page_dir = page.dir | default: lang_config.dir | default: 'ltr' %}
+<html lang="{{ page_lang }}" dir="{{ page_dir }}">
+  {% include head.html lang=page_lang dir=page_dir %}
+  <body class="lang-{{ page_lang }} dir-{{ page_dir }}">
+    {% include nav.html lang=page_lang %}
+    <main class="site-main" id="main-content">
+      {{ content }}
+    </main>
+    {% include footer.html lang=page_lang %}
+  </body>
+</html>

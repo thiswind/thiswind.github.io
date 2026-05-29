@@ -1,0 +1,58 @@
+version: 1
+sources:
+  2026-05-29-welcome:
+    source_path: _posts/2026-05-29-welcome.md
+    source_hash: sha256:2c1fab70af6cde3ca6530579fc98eccf1ebf09877167de377a46cda69e7db4f0
+    source_status: active
+    translations:
+      th:
+        path: _posts_th/2026-05-29-welcome.md
+        source_hash: sha256:2c1fab70af6cde3ca6530579fc98eccf1ebf09877167de377a46cda69e7db4f0
+        status: missing
+        analysis_path: .i18n/analysis/2026-05-29-welcome/th.yml
+        locked: false
+      my:
+        path: _posts_my/2026-05-29-welcome.md
+        source_hash: sha256:2c1fab70af6cde3ca6530579fc98eccf1ebf09877167de377a46cda69e7db4f0
+        status: missing
+        analysis_path: .i18n/analysis/2026-05-29-welcome/my.yml
+        locked: false
+      km:
+        path: _posts_km/2026-05-29-welcome.md
+        source_hash: sha256:2c1fab70af6cde3ca6530579fc98eccf1ebf09877167de377a46cda69e7db4f0
+        status: missing
+        analysis_path: .i18n/analysis/2026-05-29-welcome/km.yml
+        locked: false
+      lo:
+        path: _posts_lo/2026-05-29-welcome.md
+        source_hash: sha256:2c1fab70af6cde3ca6530579fc98eccf1ebf09877167de377a46cda69e7db4f0
+        status: missing
+        analysis_path: .i18n/analysis/2026-05-29-welcome/lo.yml
+        locked: false
+      ru:
+        path: _posts_ru/2026-05-29-welcome.md
+        source_hash: sha256:2c1fab70af6cde3ca6530579fc98eccf1ebf09877167de377a46cda69e7db4f0
+        status: missing
+        analysis_path: .i18n/analysis/2026-05-29-welcome/ru.yml
+        locked: false
+      fa:
+        path: _posts_fa/2026-05-29-welcome.md
+        source_hash: sha256:2c1fab70af6cde3ca6530579fc98eccf1ebf09877167de377a46cda69e7db4f0
+        status: missing
+        analysis_path: .i18n/analysis/2026-05-29-welcome/fa.yml
+        locked: false
+      ar:
+        path: _posts_ar/2026-05-29-welcome.md
+        source_hash: sha256:2c1fab70af6cde3ca6530579fc98eccf1ebf09877167de377a46cda69e7db4f0
+        status: missing
+        analysis_path: .i18n/analysis/2026-05-29-welcome/ar.yml
+        locked: false
+        dialect: damascus_levantine
+      tr:
+        path: _posts_tr/2026-05-29-welcome.md
+        source_hash: sha256:2c1fab70af6cde3ca6530579fc98eccf1ebf09877167de377a46cda69e7db4f0
+        status: missing
+        analysis_path: .i18n/analysis/2026-05-29-welcome/tr.yml
+        locked: false
+    date: 2026-05-29 10:00:00 +0800
+    title: 欢迎来到我的个人博客

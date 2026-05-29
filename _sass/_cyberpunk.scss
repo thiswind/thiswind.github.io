@@ -1,0 +1,25 @@
+.cyber-frame,
+.cyber-panel,
+.post-card,
+.footer-panel {
+  --aug-border-bg: #00f0ff;
+  --aug-border-all: 1px;
+  --aug-inlay-bg: rgba(13, 18, 30, 0.92);
+  background: $color-panel;
+  box-shadow:
+    0 0 0.75rem rgba($color-cyan, 0.14),
+    inset 0 0 1.5rem rgba($color-magenta, 0.08);
+}
+
+.cyber-frame h1,
+.cyber-frame h2,
+.post-card h3 {
+  color: $color-yellow;
+  text-shadow: 0 0 0.4rem rgba($color-yellow, 0.35);
+}
+
+.section-header {
+  border-inline-start: 4px solid $color-magenta;
+  padding-inline-start: 0.75rem;
+  margin-block: 2rem 1rem;
+}

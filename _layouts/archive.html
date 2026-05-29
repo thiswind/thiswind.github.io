@@ -1,0 +1,18 @@
+---
+layout: base
+---
+{% assign page_lang = page.lang | default: site.lang %}
+{% assign ui = site.data.ui[page_lang] | default: site.data.ui.zh %}
+{% assign lang_config = site.data.languages[page_lang] %}
+{% assign collection_name = lang_config.collection | default: 'posts' %}
+{% if collection_name == 'posts' %}
+  {% assign posts = site.posts %}
+{% else %}
+  {% assign posts = site[collection_name] | sort: 'date' | reverse %}
+{% endif %}
+<section class="archive cyber-frame" augmented-ui="tl-clip br-clip border">
+  <h1>{{ page.title | default: ui.posts }}</h1>
+  {% for post in posts %}
+    {% include post-card.html post=post lang=page_lang %}
+  {% endfor %}
+</section>

@@ -1,0 +1,12 @@
+{% assign page_lang = include.lang | default: page.lang | default: site.lang %}
+{% assign ui = site.data.ui[page_lang] | default: site.data.ui.zh %}
+{% assign lang_config = site.data.languages[page_lang] %}
+<header class="site-header">
+  <a class="site-title" href="{{ lang_config.path_prefix | default: '/' | relative_url }}">{{ site.title }}</a>
+  <nav class="site-nav" aria-label="{{ ui.posts }}">
+    <a href="{{ lang_config.path_prefix | default: '/' | relative_url }}">{{ ui.home }}</a>
+    <a href="{{ lang_config.path_prefix | append: 'archive/' | relative_url }}">{{ ui.posts }}</a>
+    <a href="{{ lang_config.path_prefix | append: 'categories/' | relative_url }}">{{ ui.categories }}</a>
+    <a href="{{ lang_config.path_prefix | append: 'tags/' | relative_url }}">{{ ui.tags }}</a>
+  </nav>
+</header>

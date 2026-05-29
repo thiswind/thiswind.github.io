@@ -1,0 +1,127 @@
+title: thiswind
+description: Multilingual personal blog
+url: "https://thiswind.github.io"
+baseurl: ""
+lang: zh
+timezone: Asia/Shanghai
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate-v2
+
+permalink: /:categories/:year/:month/:day/:title/
+
+pagination:
+  enabled: true
+  per_page: 8
+  permalink: /page/:num/
+  title: ":title - page :num"
+  sort_reverse: true
+  trail:
+    before: 2
+    after: 2
+
+collections:
+  posts_th:
+    output: true
+    permalink: /th/:categories/:year/:month/:day/:title/
+  posts_my:
+    output: true
+    permalink: /my/:categories/:year/:month/:day/:title/
+  posts_km:
+    output: true
+    permalink: /km/:categories/:year/:month/:day/:title/
+  posts_lo:
+    output: true
+    permalink: /lo/:categories/:year/:month/:day/:title/
+  posts_ru:
+    output: true
+    permalink: /ru/:categories/:year/:month/:day/:title/
+  posts_fa:
+    output: true
+    permalink: /fa/:categories/:year/:month/:day/:title/
+  posts_ar:
+    output: true
+    permalink: /ar/:categories/:year/:month/:day/:title/
+  posts_tr:
+    output: true
+    permalink: /tr/:categories/:year/:month/:day/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      lang: zh
+      dir: ltr
+  - scope:
+      path: ""
+      type: posts_th
+    values:
+      layout: post
+      lang: th
+      dir: ltr
+  - scope:
+      path: ""
+      type: posts_my
+    values:
+      layout: post
+      lang: my
+      dir: ltr
+  - scope:
+      path: ""
+      type: posts_km
+    values:
+      layout: post
+      lang: km
+      dir: ltr
+  - scope:
+      path: ""
+      type: posts_lo
+    values:
+      layout: post
+      lang: lo
+      dir: ltr
+  - scope:
+      path: ""
+      type: posts_ru
+    values:
+      layout: post
+      lang: ru
+      dir: ltr
+  - scope:
+      path: ""
+      type: posts_fa
+    values:
+      layout: post
+      lang: fa
+      dir: rtl
+  - scope:
+      path: ""
+      type: posts_ar
+    values:
+      layout: post
+      lang: ar
+      dir: rtl
+  - scope:
+      path: ""
+      type: posts_tr
+    values:
+      layout: post
+      lang: tr
+      dir: ltr
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+exclude:
+  - .i18n/
+  - tools/
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/

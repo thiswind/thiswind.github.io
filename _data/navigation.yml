@@ -1,0 +1,9 @@
+main:
+  - key: home
+    url: /
+  - key: posts
+    url: /archive/
+  - key: categories
+    url: /categories/
+  - key: tags
+    url: /tags/

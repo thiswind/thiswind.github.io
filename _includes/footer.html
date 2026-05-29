@@ -1,0 +1,8 @@
+{% assign page_lang = include.lang | default: page.lang | default: site.lang %}
+{% assign ui = site.data.ui[page_lang] | default: site.data.ui.zh %}
+<footer class="site-footer">
+  <div class="footer-panel" augmented-ui="tl-clip br-clip border">
+    <span>{{ site.title }}</span>
+    <span>{{ ui.languages }}</span>
+  </div>
+</footer>

@@ -1,0 +1,28 @@
+body {
+  font-family: $font-ui;
+  background:
+    linear-gradient(135deg, rgba(0, 240, 255, 0.09), transparent 32rem),
+    radial-gradient(circle at 80% 10%, rgba(255, 43, 214, 0.16), transparent 26rem),
+    $color-bg;
+  color: $color-text;
+  line-height: 1.65;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+}
+
+code,
+pre {
+  font-family: $font-mono;
+}
+
+pre {
+  overflow-x: auto;
+  padding: 1rem;
+  border: 1px solid rgba($color-cyan, 0.35);
+  background: rgba(0, 0, 0, 0.45);
+}

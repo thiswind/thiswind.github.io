@@ -1,0 +1,48 @@
+.site-header,
+.site-footer,
+.site-main {
+  width: min(100% - 2rem, $content-width);
+  margin-inline: auto;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem 0;
+}
+
+.site-title {
+  color: $color-yellow;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+}
+
+.site-nav a,
+.language-switcher a,
+.language-switcher span {
+  color: $color-cyan;
+  text-decoration: none;
+}
+
+.site-main {
+  padding: 2rem 0 4rem;
+}
+
+.site-footer {
+  padding: 2rem 0 3rem;
+}
+
+.footer-panel {
+  padding: 1rem;
+  color: $color-muted;
+}

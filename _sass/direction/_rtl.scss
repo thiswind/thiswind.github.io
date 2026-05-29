@@ -1,0 +1,14 @@
+.dir-rtl {
+  direction: rtl;
+  text-align: start;
+}
+
+.dir-rtl .site-header {
+  flex-direction: row-reverse;
+}
+
+.dir-rtl pre,
+.dir-rtl code {
+  direction: ltr;
+  text-align: left;
+}

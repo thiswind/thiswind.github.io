@@ -1,0 +1,65 @@
+zh:
+  label: 中文
+  native_name: 中文
+  dir: ltr
+  collection: posts
+  path_prefix: /
+  source: true
+  typography: zh
+th:
+  label: Thai
+  native_name: ไทย
+  dir: ltr
+  collection: posts_th
+  path_prefix: /th/
+  typography: th
+my:
+  label: Burmese
+  native_name: မြန်မာ
+  dir: ltr
+  collection: posts_my
+  path_prefix: /my/
+  typography: my
+km:
+  label: Khmer
+  native_name: ខ្មែរ
+  dir: ltr
+  collection: posts_km
+  path_prefix: /km/
+  typography: km
+lo:
+  label: Lao
+  native_name: ລາວ
+  dir: ltr
+  collection: posts_lo
+  path_prefix: /lo/
+  typography: lo
+ru:
+  label: Russian
+  native_name: Русский
+  dir: ltr
+  collection: posts_ru
+  path_prefix: /ru/
+  typography: ru
+fa:
+  label: Persian
+  native_name: فارسی
+  dir: rtl
+  collection: posts_fa
+  path_prefix: /fa/
+  typography: fa
+ar:
+  label: Levantine Arabic
+  native_name: شامي دمشقي
+  dir: rtl
+  collection: posts_ar
+  path_prefix: /ar/
+  typography: ar
+  dialect: damascus_levantine
+tr:
+  label: Turkish
+  native_name: Türkçe
+  dir: ltr
+  collection: posts_tr
+  path_prefix: /tr/
+  typography: tr

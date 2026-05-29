@@ -1,0 +1,10 @@
+{% assign post = include.post %}
+{% assign page_lang = include.lang | default: page.lang | default: site.lang %}
+{% assign ui = site.data.ui[page_lang] | default: site.data.ui.zh %}
+<div class="post-meta">
+  <time datetime="{{ post.date | date_to_xmlschema }}">{{ ui.published_on }} {{ post.date | date: "%Y-%m-%d" }}</time>
+  {% if post.categories and post.categories.size > 0 %}
+    <span class="meta-separator">//</span>
+    <span>{{ post.categories | join: " / " }}</span>
+  {% endif %}
+</div>

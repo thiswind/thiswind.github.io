@@ -1,0 +1,81 @@
+zh:
+  home: 首页
+  posts: 文章
+  categories: 分类
+  tags: 标签
+  languages: 语言
+  read_more: 继续阅读
+  published_on: 发布于
+  source_language: 中文原文
+th:
+  home: หน้าแรก
+  posts: บทความ
+  categories: หมวดหมู่
+  tags: แท็ก
+  languages: ภาษา
+  read_more: อ่านต่อ
+  published_on: เผยแพร่เมื่อ
+  source_language: ต้นฉบับภาษาจีน
+my:
+  home: မူလစာမျက်နှာ
+  posts: ဆောင်းပါးများ
+  categories: အမျိုးအစားများ
+  tags: တဂ်များ
+  languages: ဘာသာစကားများ
+  read_more: ဆက်ဖတ်ရန်
+  published_on: ထုတ်ဝေသည့်နေ့
+  source_language: တရုတ်မူရင်း
+km:
+  home: ទំព័រដើម
+  posts: អត្ថបទ
+  categories: ប្រភេទ
+  tags: ស្លាក
+  languages: ភាសា
+  read_more: អានបន្ត
+  published_on: បានផ្សាយនៅ
+  source_language: អត្ថបទដើមចិន
+lo:
+  home: ໜ້າຫຼັກ
+  posts: ບົດຄວາມ
+  categories: ໝວດໝູ່
+  tags: ແທັກ
+  languages: ພາສາ
+  read_more: ອ່ານຕໍ່
+  published_on: ເຜີຍແຜ່ເມື່ອ
+  source_language: ຕົ້ນສະບັບພາສາຈີນ
+ru:
+  home: Главная
+  posts: Статьи
+  categories: Категории
+  tags: Теги
+  languages: Языки
+  read_more: Читать далее
+  published_on: Опубликовано
+  source_language: Китайский оригинал
+fa:
+  home: خانه
+  posts: نوشته‌ها
+  categories: دسته‌ها
+  tags: برچسب‌ها
+  languages: زبان‌ها
+  read_more: ادامه مطلب
+  published_on: منتشر شده در
+  source_language: متن اصلی چینی
+ar:
+  home: الرئيسية
+  posts: المقالات
+  categories: التصنيفات
+  tags: الوسوم
+  languages: اللغات
+  read_more: كمّل قراية
+  published_on: منشور بـ
+  source_language: الأصل بالصيني
+tr:
+  home: Ana sayfa
+  posts: Yazılar
+  categories: Kategoriler
+  tags: Etiketler
+  languages: Diller
+  read_more: Devamını oku
+  published_on: Yayın tarihi
+  source_language: Çince kaynak
