@@ -11,6 +11,21 @@ on:
         required: false
         default: true
         type: boolean
+      lang:
+        description: Optional single language code for translation smoke tests
+        required: false
+        default: ""
+        type: choice
+        options:
+          - ""
+          - th
+          - my
+          - km
+          - lo
+          - ru
+          - fa
+          - ar
+          - tr
 
 permissions:
   contents: write
@@ -60,7 +75,13 @@ jobs:
         if: ${{ github.event_name == 'push' || inputs.translate }}
         env:
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
-        run: python tools/i18n/translate_posts.py
+          TRANSLATE_LANG: ${{ inputs.lang }}
+        run: |
+          if [ -n "$TRANSLATE_LANG" ]; then
+            python tools/i18n/translate_posts.py --lang "$TRANSLATE_LANG"
+          else
+            python tools/i18n/translate_posts.py
+          fi
 
       - name: Commit generated translations
         if: ${{ github.event_name == 'push' || inputs.translate }}

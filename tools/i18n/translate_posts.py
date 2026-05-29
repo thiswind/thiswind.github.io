@@ -1,3 +1,4 @@
+import argparse
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -76,19 +77,21 @@ def translate_one(manifest, source_id, lang, translation):
     })
 
 
-def translate_all():
+def translate_all(only_lang=None):
     manifest = load_manifest()
     failures = []
     for source_id, source_record in manifest.get("sources", {}).items():
         if source_record.get("source_status") != "active":
             continue
         for lang, translation in source_record.get("translations", {}).items():
+            if only_lang and lang != only_lang:
+                continue
             if translation.get("locked") or translation.get("status") not in TRANSLATABLE_STATUSES:
                 continue
             try:
                 translate_one(manifest, source_id, lang, translation)
                 save_manifest(manifest)
-                print(f"translated {source_id} -> {lang}")
+                print(f"translated {source_id} -> {lang}", flush=True)
             except Exception as exc:
                 translation["status"] = "failed"
                 translation["error"] = str(exc)
@@ -99,4 +102,7 @@ def translate_all():
 
 
 if __name__ == "__main__":
-    translate_all()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--lang", choices=sorted(LANGUAGES.keys()))
+    args = parser.parse_args()
+    translate_all(args.lang)
