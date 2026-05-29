@@ -1,7 +1,7 @@
 import frontmatter
 
 TRANSLATABLE_FIELDS = {"title", "description", "excerpt"}
-PRESERVED_FIELDS = {"layout", "date", "categories", "tags", "author", "slug", "source_id"}
+PRESERVED_FIELDS = {"layout", "date", "categories", "tags", "author", "slug", "source_id", "math"}
 
 
 def load_post(path):
