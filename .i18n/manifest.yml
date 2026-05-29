@@ -648,52 +648,76 @@ sources:
       th:
         path: _posts_th/2015-08-15-自由软件.md
         source_hash: sha256:21eb04656c810904a50d181e9ea8783bd4b535b3f59db7d33b734a77b37e23ec
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-08-15-自由软件/th.yml
         locked: false
+        translation_hash: sha256:1ede8e5a3efc448d863cb7c2426d1b352456caedc078cffac0afe3c23b86220d
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:28:56.063407+00:00'
       my:
         path: _posts_my/2015-08-15-自由软件.md
         source_hash: sha256:21eb04656c810904a50d181e9ea8783bd4b535b3f59db7d33b734a77b37e23ec
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-08-15-自由软件/my.yml
         locked: false
+        translation_hash: sha256:8fae498e49210d4ec80a6354cde5dad6b12080fcd1f3f5015eeaba7d9dd9aa64
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:28:56.066002+00:00'
       km:
         path: _posts_km/2015-08-15-自由软件.md
         source_hash: sha256:21eb04656c810904a50d181e9ea8783bd4b535b3f59db7d33b734a77b37e23ec
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-08-15-自由软件/km.yml
         locked: false
+        translation_hash: sha256:12e020b9d5aea84275364d0f20137b49d6ac1b843d892fb26070a1849c588179
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:28:56.068448+00:00'
       lo:
         path: _posts_lo/2015-08-15-自由软件.md
         source_hash: sha256:21eb04656c810904a50d181e9ea8783bd4b535b3f59db7d33b734a77b37e23ec
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-08-15-自由软件/lo.yml
         locked: false
+        translation_hash: sha256:b71ad5d791b54da878905ab5aea5ba14cea0ddc4a479f959cdd8c4422e6e7461
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:28:56.070852+00:00'
       ru:
         path: _posts_ru/2015-08-15-自由软件.md
         source_hash: sha256:21eb04656c810904a50d181e9ea8783bd4b535b3f59db7d33b734a77b37e23ec
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-08-15-自由软件/ru.yml
         locked: false
+        translation_hash: sha256:ba6f5dad94197e993d9fbed5ba2498078080c28d78918d7c0fe80d65a8e59900
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:28:56.073225+00:00'
       fa:
         path: _posts_fa/2015-08-15-自由软件.md
         source_hash: sha256:21eb04656c810904a50d181e9ea8783bd4b535b3f59db7d33b734a77b37e23ec
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-08-15-自由软件/fa.yml
         locked: false
+        translation_hash: sha256:91712e680af23e9c8125a2a056043a5c12304b4e8c2dbf95fcad96cbd3156ab5
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:28:56.075650+00:00'
       ar:
         path: _posts_ar/2015-08-15-自由软件.md
         source_hash: sha256:21eb04656c810904a50d181e9ea8783bd4b535b3f59db7d33b734a77b37e23ec
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-08-15-自由软件/ar.yml
         locked: false
         dialect: damascus_levantine
+        translation_hash: sha256:2167985099efbdfede55bdc5c3d8fd25ada2bd0fd664ac7e7f58a611594bdd19
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:28:56.078777+00:00'
       tr:
         path: _posts_tr/2015-08-15-自由软件.md
         source_hash: sha256:21eb04656c810904a50d181e9ea8783bd4b535b3f59db7d33b734a77b37e23ec
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-08-15-自由软件/tr.yml
         locked: false
+        translation_hash: sha256:b6fef7af71f89fa5166332e47e4720848767be4475feb3ce598a786bd9fac687
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:28:56.081184+00:00'
     date: '2015-08-15 04:54:59+00:00'
     title: 自由软件
   2015-08-17-yaml格式在markdown当中的写法:
@@ -704,51 +728,75 @@ sources:
       th:
         path: _posts_th/2015-08-17-yaml格式在markdown当中的写法.md
         source_hash: sha256:3249f233733ce7c7082ea99d6beea56f8ddae1d5a6362de9f151583a9d153ae4
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-08-17-yaml格式在markdown当中的写法/th.yml
         locked: false
+        translation_hash: sha256:67b689d36c5ed5c46a90bb85d97de47594f7de486c95bd720c96d79f2cf6e5ee
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:29:10.145604+00:00'
       my:
         path: _posts_my/2015-08-17-yaml格式在markdown当中的写法.md
         source_hash: sha256:3249f233733ce7c7082ea99d6beea56f8ddae1d5a6362de9f151583a9d153ae4
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-08-17-yaml格式在markdown当中的写法/my.yml
         locked: false
+        translation_hash: sha256:582f80f952718f28e49feb5170b950be42170ddda59ca39ebcba283e6dd5d749
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:29:10.147444+00:00'
       km:
         path: _posts_km/2015-08-17-yaml格式在markdown当中的写法.md
         source_hash: sha256:3249f233733ce7c7082ea99d6beea56f8ddae1d5a6362de9f151583a9d153ae4
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-08-17-yaml格式在markdown当中的写法/km.yml
         locked: false
+        translation_hash: sha256:4879d33cf4d748eb9a718a94da4b8fc6532721356ecdc2dfea2a12a4171949bc
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:29:10.149177+00:00'
       lo:
         path: _posts_lo/2015-08-17-yaml格式在markdown当中的写法.md
         source_hash: sha256:3249f233733ce7c7082ea99d6beea56f8ddae1d5a6362de9f151583a9d153ae4
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-08-17-yaml格式在markdown当中的写法/lo.yml
         locked: false
+        translation_hash: sha256:7361084a00bb77c467ccc6548b8e2c97500a73fd4579932234452d9291975025
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:29:10.150918+00:00'
       ru:
         path: _posts_ru/2015-08-17-yaml格式在markdown当中的写法.md
         source_hash: sha256:3249f233733ce7c7082ea99d6beea56f8ddae1d5a6362de9f151583a9d153ae4
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-08-17-yaml格式在markdown当中的写法/ru.yml
         locked: false
+        translation_hash: sha256:7948300e28ab6c0da5b1ca026f9ba43a30264f37654491a753da3ddffff695d3
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:29:10.152636+00:00'
       fa:
         path: _posts_fa/2015-08-17-yaml格式在markdown当中的写法.md
         source_hash: sha256:3249f233733ce7c7082ea99d6beea56f8ddae1d5a6362de9f151583a9d153ae4
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-08-17-yaml格式在markdown当中的写法/fa.yml
         locked: false
+        translation_hash: sha256:d46677d3dd7beae9f72e87bad9992817a4f6ef7026da85cba4ff84343e5fca30
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:29:10.154331+00:00'
       ar:
         path: _posts_ar/2015-08-17-yaml格式在markdown当中的写法.md
         source_hash: sha256:3249f233733ce7c7082ea99d6beea56f8ddae1d5a6362de9f151583a9d153ae4
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-08-17-yaml格式在markdown当中的写法/ar.yml
         locked: false
         dialect: damascus_levantine
+        translation_hash: sha256:8f0dcfd5fac8c46bdeaf87f9213beec347c4c520e9a6ee4ee78ae33ea83d80b5
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:29:10.156071+00:00'
       tr:
         path: _posts_tr/2015-08-17-yaml格式在markdown当中的写法.md
         source_hash: sha256:3249f233733ce7c7082ea99d6beea56f8ddae1d5a6362de9f151583a9d153ae4
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-08-17-yaml格式在markdown当中的写法/tr.yml
         locked: false
+        translation_hash: sha256:03cb1ff9560bd4b4d0c30ecdcdd2a087d0ea1ce84bbdf5a00c681832523f5ee8
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:29:10.158052+00:00'
     date: '2015-08-17 16:12:40+00:00'
     title: yaml格式在markdown当中的写法
