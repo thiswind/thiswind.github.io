@@ -264,8 +264,125 @@
   color: $color-cyan;
 }
 
+.profile-node,
+.gpt-registry {
+  margin-block-end: 2rem;
+  padding: clamp(1.25rem, 4vw, 2.75rem);
+}
+
+.profile-node-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(14rem, 0.32fr);
+  gap: clamp(1.25rem, 4vw, 3rem);
+}
+
+.profile-status {
+  display: grid;
+  align-content: center;
+  gap: 0.75rem;
+  font-family: $font-mono;
+  font-size: 0.78rem;
+  letter-spacing: 0.09em;
+}
+
+.profile-status span {
+  border: 1px solid rgba($color-cyan, 0.32);
+  border-inline-start: 0.24rem solid $color-yellow;
+  padding: 0.5rem 0.65rem;
+  background: rgba($color-cyan, 0.055);
+}
+
+.gpt-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.gpt-card {
+  --aug-border-bg: rgba(252, 238, 10, 0.6);
+  --aug-border-all: 1px;
+  display: grid;
+  grid-template-columns: minmax(12rem, 0.36fr) minmax(0, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+  background: $color-panel;
+  box-shadow: $panel-shadow;
+}
+
+.gpt-card-media {
+  border: 1px solid rgba($color-cyan, 0.26);
+  background: rgba($color-black, 0.42);
+  overflow: hidden;
+}
+
+.gpt-card-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gpt-card-body {
+  display: grid;
+  align-content: start;
+  gap: 0.75rem;
+}
+
+.gpt-card-strip,
+.gpt-language-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  font-family: $font-mono;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.gpt-card-strip span,
+.gpt-language-row span {
+  border: 1px solid rgba($color-cyan, 0.32);
+  padding: 0.22rem 0.42rem;
+  background: rgba($color-cyan, 0.055);
+}
+
+.gpt-card h2 {
+  margin: 0;
+  color: $color-yellow;
+}
+
+.gpt-card p {
+  margin: 0;
+}
+
+.gpt-card-note {
+  color: $color-muted;
+  font-family: $font-mono;
+  font-size: 0.88rem;
+}
+
+.gpt-launch {
+  justify-self: start;
+  border: 1px solid $color-yellow;
+  padding: 0.55rem 0.75rem;
+  color: $color-black;
+  background: $color-yellow;
+  font-family: $font-mono;
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+}
+
+.gpt-launch:hover,
+.gpt-launch:focus-visible {
+  color: $color-yellow;
+  background: $color-black;
+  box-shadow: 0 0 1rem rgba($color-yellow, 0.24);
+}
+
 @media (max-width: 760px) {
-  .hero-grid {
+  .hero-grid,
+  .profile-node-grid,
+  .gpt-card {
     grid-template-columns: 1fr;
   }
 

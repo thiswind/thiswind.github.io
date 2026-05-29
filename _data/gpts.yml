@@ -1,0 +1,22 @@
+- id: zaina-zh-ar
+  code: ZAINA-01
+  name: Zaina Chinese-Arabic
+  status: active
+  languages:
+    - ZH
+    - AR
+  image: /assets/images/Zaina-Chinese-Arabic.png
+  url: https://chatgpt.com/g/g-6739c10a75e08191bcbc82d4686be4ac-zaina-chinese-arabic
+  description: 日常使用的流利中文与阿拉伯语翻译助手，面向自然对话和生活场景。
+  note: Fluent Chinese-Arabic translation node for everyday use.
+- id: zaina-ar-en
+  code: ZAINA-02
+  name: Zaina Arabic-English
+  status: active
+  languages:
+    - AR
+    - EN
+  image: /assets/images/Zaina-Chinese-English.png
+  url: https://chatgpt.com/g/g-673b1f7347288191be080f68e585cd78-zaina-arabic-english
+  description: 具备文化意识的英语与阿拉伯语翻译助手，适合日常表达、语气转换和自然交流。
+  note: Culturally aware Arabic-English translation node for natural conversation.

@@ -1,0 +1,21 @@
+{% assign gpt = include.gpt %}
+<article class="gpt-card" augmented-ui="tl-clip tr-clip br-clip bl-clip border">
+  <div class="gpt-card-media">
+    <img src="{{ gpt.image | relative_url }}" alt="{{ gpt.name }}">
+  </div>
+  <div class="gpt-card-body">
+    <div class="gpt-card-strip">
+      <span>GPT NODE // {{ gpt.code }}</span>
+      <span>{{ gpt.status | upcase }}</span>
+    </div>
+    <h2>{{ gpt.name }}</h2>
+    <p>{{ gpt.description }}</p>
+    <p class="gpt-card-note">{{ gpt.note }}</p>
+    <div class="gpt-language-row" aria-label="Language matrix">
+      {% for language in gpt.languages %}
+        <span>{{ language }}</span>
+      {% endfor %}
+    </div>
+    <a class="gpt-launch" href="{{ gpt.url }}" rel="noopener" target="_blank">OPEN CHATGPT //</a>
+  </div>
+</article>

@@ -7,3 +7,7 @@ main:
     url: /categories/
   - key: tags
     url: /tags/
+  - key: about
+    url: /about/
+  - key: mygpts
+    url: /mygpts/

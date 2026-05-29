@@ -12,9 +12,16 @@
     <span>{{ page_lang | upcase }}</span>
   </div>
   <nav class="site-nav" aria-label="{{ ui.posts }}">
-    <a href="{{ lang_config.path_prefix | default: '/' | relative_url }}">{{ ui.home }}</a>
-    <a href="{{ lang_config.path_prefix | append: 'archive/' | relative_url }}">{{ ui.posts }}</a>
-    <a href="{{ lang_config.path_prefix | append: 'categories/' | relative_url }}">{{ ui.categories }}</a>
-    <a href="{{ lang_config.path_prefix | append: 'tags/' | relative_url }}">{{ ui.tags }}</a>
+    {% for item in site.data.navigation.main %}
+      {% assign label = ui[item.key] | default: item.key %}
+      {% assign target_url = item.url %}
+      {% if item.key == 'home' %}
+        {% assign target_url = lang_config.path_prefix | default: '/' %}
+      {% elsif item.key == 'posts' or item.key == 'categories' or item.key == 'tags' %}
+        {% assign target_path = item.url | remove_first: '/' %}
+        {% assign target_url = lang_config.path_prefix | append: target_path %}
+      {% endif %}
+      <a href="{{ target_url | relative_url }}">{{ label }}</a>
+    {% endfor %}
   </nav>
 </header>

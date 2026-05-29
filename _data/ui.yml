@@ -3,6 +3,8 @@ zh:
   posts: 文章
   categories: 分类
   tags: 标签
+  about: 关于
+  mygpts: GPTs
   languages: 语言
   read_more: 继续阅读
   published_on: 发布于
@@ -12,6 +14,8 @@ th:
   posts: บทความ
   categories: หมวดหมู่
   tags: แท็ก
+  about: เกี่ยวกับ
+  mygpts: GPTs
   languages: ภาษา
   read_more: อ่านต่อ
   published_on: เผยแพร่เมื่อ
@@ -21,6 +25,8 @@ my:
   posts: ဆောင်းပါးများ
   categories: အမျိုးအစားများ
   tags: တဂ်များ
+  about: အကြောင်း
+  mygpts: GPTs
   languages: ဘာသာစကားများ
   read_more: ဆက်ဖတ်ရန်
   published_on: ထုတ်ဝေသည့်နေ့
@@ -30,6 +36,8 @@ km:
   posts: អត្ថបទ
   categories: ប្រភេទ
   tags: ស្លាក
+  about: អំពី
+  mygpts: GPTs
   languages: ភាសា
   read_more: អានបន្ត
   published_on: បានផ្សាយនៅ
@@ -39,6 +47,8 @@ lo:
   posts: ບົດຄວາມ
   categories: ໝວດໝູ່
   tags: ແທັກ
+  about: ກ່ຽວກັບ
+  mygpts: GPTs
   languages: ພາສາ
   read_more: ອ່ານຕໍ່
   published_on: ເຜີຍແຜ່ເມື່ອ
@@ -48,6 +58,8 @@ ru:
   posts: Статьи
   categories: Категории
   tags: Теги
+  about: Обо мне
+  mygpts: GPTs
   languages: Языки
   read_more: Читать далее
   published_on: Опубликовано
@@ -57,6 +69,8 @@ fa:
   posts: نوشته‌ها
   categories: دسته‌ها
   tags: برچسب‌ها
+  about: درباره
+  mygpts: GPTs
   languages: زبان‌ها
   read_more: ادامه مطلب
   published_on: منتشر شده در
@@ -66,6 +80,8 @@ ar:
   posts: المقالات
   categories: التصنيفات
   tags: الوسوم
+  about: عنّي
+  mygpts: GPTs
   languages: اللغات
   read_more: كمّل قراية
   published_on: منشور بـ
@@ -75,6 +91,8 @@ tr:
   posts: Yazılar
   categories: Kategoriler
   tags: Etiketler
+  about: Hakkında
+  mygpts: GPTs
   languages: Diller
   read_more: Devamını oku
   published_on: Yayın tarihi
