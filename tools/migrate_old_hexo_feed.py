@@ -296,8 +296,13 @@ def normalize_inline(text):
     return re.sub(r"\s+", " ", unescape(text)).strip()
 
 
+def preserve_math_delimiters(text):
+    return re.sub(r"(?<!\\)\\([\\[\\]()])", r"\\\\\1", text)
+
+
 def normalize_markdown(text):
     text = text.replace("\xa0", " ")
+    text = preserve_math_delimiters(text)
     text = re.sub(r"\n{3,}", "\n\n", text)
     lines = [line.rstrip() for line in text.strip().splitlines()]
     return "\n".join(lines).strip() + "\n"

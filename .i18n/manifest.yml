@@ -802,13 +802,13 @@ sources:
     title: yaml格式在markdown当中的写法
   2015-08-15-mathtest:
     source_path: _posts/2015-08-15-MathTest.md
-    source_hash: sha256:b4c7fcb2a78ce7173b011cbb8e5454632e9a8588925b6fd054f79fa5989a3ff4
+    source_hash: sha256:174a56dc8242bc67e25d50895f4244aa37bf598d0bfe6a23dd06836bb3d2eba0
     source_status: active
     translations:
       th:
         path: _posts_th/2015-08-15-MathTest.md
-        source_hash: sha256:b4c7fcb2a78ce7173b011cbb8e5454632e9a8588925b6fd054f79fa5989a3ff4
-        status: active
+        source_hash: sha256:174a56dc8242bc67e25d50895f4244aa37bf598d0bfe6a23dd06836bb3d2eba0
+        status: stale
         analysis_path: .i18n/analysis/2015-08-15-mathtest/th.yml
         locked: false
         translation_hash: sha256:b0551e599db389e3e1227b7caaf9ce2081387ffeec608a980cce21ca2890e611
@@ -816,8 +816,8 @@ sources:
         updated_at: '2026-05-29T09:33:05.098493+00:00'
       my:
         path: _posts_my/2015-08-15-MathTest.md
-        source_hash: sha256:b4c7fcb2a78ce7173b011cbb8e5454632e9a8588925b6fd054f79fa5989a3ff4
-        status: active
+        source_hash: sha256:174a56dc8242bc67e25d50895f4244aa37bf598d0bfe6a23dd06836bb3d2eba0
+        status: stale
         analysis_path: .i18n/analysis/2015-08-15-mathtest/my.yml
         locked: false
         translation_hash: sha256:58f7a2c58423b2e958246bcb67f22fc652b9fcf0f83487eed9eb095fe5a121e7
@@ -825,8 +825,8 @@ sources:
         updated_at: '2026-05-29T09:33:05.100691+00:00'
       km:
         path: _posts_km/2015-08-15-MathTest.md
-        source_hash: sha256:b4c7fcb2a78ce7173b011cbb8e5454632e9a8588925b6fd054f79fa5989a3ff4
-        status: active
+        source_hash: sha256:174a56dc8242bc67e25d50895f4244aa37bf598d0bfe6a23dd06836bb3d2eba0
+        status: stale
         analysis_path: .i18n/analysis/2015-08-15-mathtest/km.yml
         locked: false
         translation_hash: sha256:e98801f49c592ba6c2138c89cafb51cdef98b6ef27dca9ca54b39be6d356a2d7
@@ -834,8 +834,8 @@ sources:
         updated_at: '2026-05-29T09:33:05.102803+00:00'
       lo:
         path: _posts_lo/2015-08-15-MathTest.md
-        source_hash: sha256:b4c7fcb2a78ce7173b011cbb8e5454632e9a8588925b6fd054f79fa5989a3ff4
-        status: active
+        source_hash: sha256:174a56dc8242bc67e25d50895f4244aa37bf598d0bfe6a23dd06836bb3d2eba0
+        status: stale
         analysis_path: .i18n/analysis/2015-08-15-mathtest/lo.yml
         locked: false
         translation_hash: sha256:145a7e6e20858e8f7557d950acce303b96d5ef73df887eff43b75867630e32d5
@@ -843,8 +843,8 @@ sources:
         updated_at: '2026-05-29T09:33:05.104893+00:00'
       ru:
         path: _posts_ru/2015-08-15-MathTest.md
-        source_hash: sha256:b4c7fcb2a78ce7173b011cbb8e5454632e9a8588925b6fd054f79fa5989a3ff4
-        status: active
+        source_hash: sha256:174a56dc8242bc67e25d50895f4244aa37bf598d0bfe6a23dd06836bb3d2eba0
+        status: stale
         analysis_path: .i18n/analysis/2015-08-15-mathtest/ru.yml
         locked: false
         translation_hash: sha256:e693dfb90d6af17ca899f1dc3e44997bd25f16c76af4210407cbde61e11053e8
@@ -852,8 +852,8 @@ sources:
         updated_at: '2026-05-29T09:33:05.106972+00:00'
       fa:
         path: _posts_fa/2015-08-15-MathTest.md
-        source_hash: sha256:b4c7fcb2a78ce7173b011cbb8e5454632e9a8588925b6fd054f79fa5989a3ff4
-        status: active
+        source_hash: sha256:174a56dc8242bc67e25d50895f4244aa37bf598d0bfe6a23dd06836bb3d2eba0
+        status: stale
         analysis_path: .i18n/analysis/2015-08-15-mathtest/fa.yml
         locked: false
         translation_hash: sha256:07f4ff9bec8d28af81f05ec3becca2b7657179c2d1d12ddabe3d682d3260037e
@@ -861,8 +861,8 @@ sources:
         updated_at: '2026-05-29T09:33:05.109036+00:00'
       ar:
         path: _posts_ar/2015-08-15-MathTest.md
-        source_hash: sha256:b4c7fcb2a78ce7173b011cbb8e5454632e9a8588925b6fd054f79fa5989a3ff4
-        status: active
+        source_hash: sha256:174a56dc8242bc67e25d50895f4244aa37bf598d0bfe6a23dd06836bb3d2eba0
+        status: stale
         analysis_path: .i18n/analysis/2015-08-15-mathtest/ar.yml
         locked: false
         dialect: damascus_levantine
@@ -871,8 +871,8 @@ sources:
         updated_at: '2026-05-29T09:33:05.111106+00:00'
       tr:
         path: _posts_tr/2015-08-15-MathTest.md
-        source_hash: sha256:b4c7fcb2a78ce7173b011cbb8e5454632e9a8588925b6fd054f79fa5989a3ff4
-        status: active
+        source_hash: sha256:174a56dc8242bc67e25d50895f4244aa37bf598d0bfe6a23dd06836bb3d2eba0
+        status: stale
         analysis_path: .i18n/analysis/2015-08-15-mathtest/tr.yml
         locked: false
         translation_hash: sha256:fecf0bd9cb8335d8ac5ffa8c57c248e0951710b3fda40811e3ee84fe2f69fc91
