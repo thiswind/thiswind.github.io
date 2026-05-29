@@ -808,52 +808,76 @@ sources:
       th:
         path: _posts_th/2015-08-15-MathTest.md
         source_hash: sha256:b4c7fcb2a78ce7173b011cbb8e5454632e9a8588925b6fd054f79fa5989a3ff4
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-08-15-mathtest/th.yml
         locked: false
+        translation_hash: sha256:b0551e599db389e3e1227b7caaf9ce2081387ffeec608a980cce21ca2890e611
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:33:05.098493+00:00'
       my:
         path: _posts_my/2015-08-15-MathTest.md
         source_hash: sha256:b4c7fcb2a78ce7173b011cbb8e5454632e9a8588925b6fd054f79fa5989a3ff4
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-08-15-mathtest/my.yml
         locked: false
+        translation_hash: sha256:58f7a2c58423b2e958246bcb67f22fc652b9fcf0f83487eed9eb095fe5a121e7
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:33:05.100691+00:00'
       km:
         path: _posts_km/2015-08-15-MathTest.md
         source_hash: sha256:b4c7fcb2a78ce7173b011cbb8e5454632e9a8588925b6fd054f79fa5989a3ff4
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-08-15-mathtest/km.yml
         locked: false
+        translation_hash: sha256:e98801f49c592ba6c2138c89cafb51cdef98b6ef27dca9ca54b39be6d356a2d7
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:33:05.102803+00:00'
       lo:
         path: _posts_lo/2015-08-15-MathTest.md
         source_hash: sha256:b4c7fcb2a78ce7173b011cbb8e5454632e9a8588925b6fd054f79fa5989a3ff4
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-08-15-mathtest/lo.yml
         locked: false
+        translation_hash: sha256:145a7e6e20858e8f7557d950acce303b96d5ef73df887eff43b75867630e32d5
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:33:05.104893+00:00'
       ru:
         path: _posts_ru/2015-08-15-MathTest.md
         source_hash: sha256:b4c7fcb2a78ce7173b011cbb8e5454632e9a8588925b6fd054f79fa5989a3ff4
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-08-15-mathtest/ru.yml
         locked: false
+        translation_hash: sha256:e693dfb90d6af17ca899f1dc3e44997bd25f16c76af4210407cbde61e11053e8
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:33:05.106972+00:00'
       fa:
         path: _posts_fa/2015-08-15-MathTest.md
         source_hash: sha256:b4c7fcb2a78ce7173b011cbb8e5454632e9a8588925b6fd054f79fa5989a3ff4
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-08-15-mathtest/fa.yml
         locked: false
+        translation_hash: sha256:07f4ff9bec8d28af81f05ec3becca2b7657179c2d1d12ddabe3d682d3260037e
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:33:05.109036+00:00'
       ar:
         path: _posts_ar/2015-08-15-MathTest.md
         source_hash: sha256:b4c7fcb2a78ce7173b011cbb8e5454632e9a8588925b6fd054f79fa5989a3ff4
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-08-15-mathtest/ar.yml
         locked: false
         dialect: damascus_levantine
+        translation_hash: sha256:5a5a9fa24287c4c969fe828d50690386b7edd66a76d9cce09e7f369653b8f4fc
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:33:05.111106+00:00'
       tr:
         path: _posts_tr/2015-08-15-MathTest.md
         source_hash: sha256:b4c7fcb2a78ce7173b011cbb8e5454632e9a8588925b6fd054f79fa5989a3ff4
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-08-15-mathtest/tr.yml
         locked: false
+        translation_hash: sha256:fecf0bd9cb8335d8ac5ffa8c57c248e0951710b3fda40811e3ee84fe2f69fc91
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:33:05.113183+00:00'
     date: '2015-08-15 10:22:55+00:00'
     title: MathTest
   2015-08-15-bash临时取消alias的办法:
@@ -864,51 +888,75 @@ sources:
       th:
         path: _posts_th/2015-08-15-bash临时取消alias的办法.md
         source_hash: sha256:5f6bf26003af3e6a52bcad99fa5a4869d91d0f263eacd28e712e74315c760783
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-08-15-bash临时取消alias的办法/th.yml
         locked: false
+        translation_hash: sha256:594b293cc4f0b6cdbca4892b809f0a81801a1a040dee838685cf0a7b5009edea
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:33:28.945866+00:00'
       my:
         path: _posts_my/2015-08-15-bash临时取消alias的办法.md
         source_hash: sha256:5f6bf26003af3e6a52bcad99fa5a4869d91d0f263eacd28e712e74315c760783
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-08-15-bash临时取消alias的办法/my.yml
         locked: false
+        translation_hash: sha256:d5dfca74bbd3294f7a9a8bfda1475403b3420309954e557e3cf42d5c6bf41537
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:33:28.948101+00:00'
       km:
         path: _posts_km/2015-08-15-bash临时取消alias的办法.md
         source_hash: sha256:5f6bf26003af3e6a52bcad99fa5a4869d91d0f263eacd28e712e74315c760783
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-08-15-bash临时取消alias的办法/km.yml
         locked: false
+        translation_hash: sha256:b43027f9a3c6505ea626624c2ac84201a799f8c0ef9d762442e6f8c8707c7ea2
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:33:28.950419+00:00'
       lo:
         path: _posts_lo/2015-08-15-bash临时取消alias的办法.md
         source_hash: sha256:5f6bf26003af3e6a52bcad99fa5a4869d91d0f263eacd28e712e74315c760783
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-08-15-bash临时取消alias的办法/lo.yml
         locked: false
+        translation_hash: sha256:77386290a6df8cff66eda757be138cd35e0787c057fee724b8b60c646aba1c15
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:33:28.952668+00:00'
       ru:
         path: _posts_ru/2015-08-15-bash临时取消alias的办法.md
         source_hash: sha256:5f6bf26003af3e6a52bcad99fa5a4869d91d0f263eacd28e712e74315c760783
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-08-15-bash临时取消alias的办法/ru.yml
         locked: false
+        translation_hash: sha256:ea043fe8d007d49c9760544395fe5932724e1a39254cee77df8061b872094276
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:33:28.954830+00:00'
       fa:
         path: _posts_fa/2015-08-15-bash临时取消alias的办法.md
         source_hash: sha256:5f6bf26003af3e6a52bcad99fa5a4869d91d0f263eacd28e712e74315c760783
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-08-15-bash临时取消alias的办法/fa.yml
         locked: false
+        translation_hash: sha256:bad4a5b5bba24b0ee6d32a42891b5bb0da15b7e81e9768ba3b83b2b27268cfa6
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:33:28.957007+00:00'
       ar:
         path: _posts_ar/2015-08-15-bash临时取消alias的办法.md
         source_hash: sha256:5f6bf26003af3e6a52bcad99fa5a4869d91d0f263eacd28e712e74315c760783
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-08-15-bash临时取消alias的办法/ar.yml
         locked: false
         dialect: damascus_levantine
+        translation_hash: sha256:bb46073dcc4a0cfb1f9d2ce4b8ef24fb6ae3f5ec56c84c516fde01f79a3cfd19
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:33:28.959154+00:00'
       tr:
         path: _posts_tr/2015-08-15-bash临时取消alias的办法.md
         source_hash: sha256:5f6bf26003af3e6a52bcad99fa5a4869d91d0f263eacd28e712e74315c760783
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2015-08-15-bash临时取消alias的办法/tr.yml
         locked: false
+        translation_hash: sha256:8a07c35cb99d0d4e8dbeb6f1d5f60b451ea163265c605d83fc3f46655177060d
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T09:33:28.961369+00:00'
     date: '2015-08-15 06:12:05+00:00'
     title: bash临时取消alias的办法
