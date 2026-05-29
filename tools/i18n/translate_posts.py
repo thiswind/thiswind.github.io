@@ -102,7 +102,7 @@ def translate_source(manifest, source_id, only_lang=None):
     batch_path = BATCH_DIR / f"{source_id}.yml"
 
     print(f"batch translating {source_id} -> {', '.join(targets)}", flush=True)
-    response = complete([
+    messages = [
         {"role": "system", "content": BATCH_TRANSLATION_SYSTEM},
         {"role": "user", "content": batch_translation_prompt(
             protected_body,
@@ -111,9 +111,16 @@ def translate_source(manifest, source_id, only_lang=None):
             read_text(batch_path),
             previous_analyses_for(targets),
         )},
-    ], temperature=0.2)
-
-    batch_payload = parse_batch_response(response)
+    ]
+    response = complete(messages, temperature=0.2)
+    try:
+        batch_payload = parse_batch_response(response)
+    except yaml.YAMLError as exc:
+        response = complete(messages + [
+            {"role": "assistant", "content": response},
+            {"role": "user", "content": f"The YAML above is invalid: {exc}. Return the same content as strictly valid YAML only. Use block scalars with | for every Markdown body, description, excerpt, and analysis field."},
+        ], temperature=0.1)
+        batch_payload = parse_batch_response(response)
     translations = batch_payload["translations"]
     analysis_payload = batch_payload["analysis"]
     write_yaml(batch_path, batch_payload)
