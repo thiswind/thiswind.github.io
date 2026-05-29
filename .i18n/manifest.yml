@@ -1184,3 +1184,59 @@ sources:
         locked: false
     date: '2015-08-19 15:36:11+00:00'
     title: 赫洛与勒安得耳
+  2015-08-24-docker-compose.yml中指定udp端口:
+    source_path: _posts/2015-08-24-docker-compose.yml中指定UDP端口.md
+    source_hash: sha256:f0641d3b3954b1d2a27c079caa642e26c674a0df9a1c5272efe04c0884629e97
+    source_status: active
+    translations:
+      th:
+        path: _posts_th/2015-08-24-docker-compose.yml中指定UDP端口.md
+        source_hash: sha256:f0641d3b3954b1d2a27c079caa642e26c674a0df9a1c5272efe04c0884629e97
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-24-docker-compose.yml中指定udp端口/th.yml
+        locked: false
+      my:
+        path: _posts_my/2015-08-24-docker-compose.yml中指定UDP端口.md
+        source_hash: sha256:f0641d3b3954b1d2a27c079caa642e26c674a0df9a1c5272efe04c0884629e97
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-24-docker-compose.yml中指定udp端口/my.yml
+        locked: false
+      km:
+        path: _posts_km/2015-08-24-docker-compose.yml中指定UDP端口.md
+        source_hash: sha256:f0641d3b3954b1d2a27c079caa642e26c674a0df9a1c5272efe04c0884629e97
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-24-docker-compose.yml中指定udp端口/km.yml
+        locked: false
+      lo:
+        path: _posts_lo/2015-08-24-docker-compose.yml中指定UDP端口.md
+        source_hash: sha256:f0641d3b3954b1d2a27c079caa642e26c674a0df9a1c5272efe04c0884629e97
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-24-docker-compose.yml中指定udp端口/lo.yml
+        locked: false
+      ru:
+        path: _posts_ru/2015-08-24-docker-compose.yml中指定UDP端口.md
+        source_hash: sha256:f0641d3b3954b1d2a27c079caa642e26c674a0df9a1c5272efe04c0884629e97
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-24-docker-compose.yml中指定udp端口/ru.yml
+        locked: false
+      fa:
+        path: _posts_fa/2015-08-24-docker-compose.yml中指定UDP端口.md
+        source_hash: sha256:f0641d3b3954b1d2a27c079caa642e26c674a0df9a1c5272efe04c0884629e97
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-24-docker-compose.yml中指定udp端口/fa.yml
+        locked: false
+      ar:
+        path: _posts_ar/2015-08-24-docker-compose.yml中指定UDP端口.md
+        source_hash: sha256:f0641d3b3954b1d2a27c079caa642e26c674a0df9a1c5272efe04c0884629e97
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-24-docker-compose.yml中指定udp端口/ar.yml
+        locked: false
+        dialect: damascus_levantine
+      tr:
+        path: _posts_tr/2015-08-24-docker-compose.yml中指定UDP端口.md
+        source_hash: sha256:f0641d3b3954b1d2a27c079caa642e26c674a0df9a1c5272efe04c0884629e97
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-24-docker-compose.yml中指定udp端口/tr.yml
+        locked: false
+    date: '2015-08-24 12:52:00+00:00'
+    title: docker-compose.yml中指定UDP端口
