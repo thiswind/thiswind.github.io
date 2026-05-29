@@ -88,7 +88,9 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add _posts_th _posts_my _posts_km _posts_lo _posts_ru _posts_fa _posts_ar _posts_tr .i18n
+          for path in _posts_th _posts_my _posts_km _posts_lo _posts_ru _posts_fa _posts_ar _posts_tr .i18n; do
+            test -e "$path" && git add "$path"
+          done
           git diff --cached --quiet || git commit -m "Update generated translations [skip ci]"
           git push
 
