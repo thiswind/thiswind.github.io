@@ -1240,3 +1240,59 @@ sources:
         locked: false
     date: '2015-08-24 12:52:00+00:00'
     title: docker-compose.yml中指定UDP端口
+  2015-08-24-influxdb的查询语句必须用单引号:
+    source_path: _posts/2015-08-24-InfluxDB的查询语句必须用单引号.md
+    source_hash: sha256:dda36594b89e295ddc0582d00eac63bcd76b90ef33bff8c8d782148ab60d2509
+    source_status: active
+    translations:
+      th:
+        path: _posts_th/2015-08-24-InfluxDB的查询语句必须用单引号.md
+        source_hash: sha256:dda36594b89e295ddc0582d00eac63bcd76b90ef33bff8c8d782148ab60d2509
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-24-influxdb的查询语句必须用单引号/th.yml
+        locked: false
+      my:
+        path: _posts_my/2015-08-24-InfluxDB的查询语句必须用单引号.md
+        source_hash: sha256:dda36594b89e295ddc0582d00eac63bcd76b90ef33bff8c8d782148ab60d2509
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-24-influxdb的查询语句必须用单引号/my.yml
+        locked: false
+      km:
+        path: _posts_km/2015-08-24-InfluxDB的查询语句必须用单引号.md
+        source_hash: sha256:dda36594b89e295ddc0582d00eac63bcd76b90ef33bff8c8d782148ab60d2509
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-24-influxdb的查询语句必须用单引号/km.yml
+        locked: false
+      lo:
+        path: _posts_lo/2015-08-24-InfluxDB的查询语句必须用单引号.md
+        source_hash: sha256:dda36594b89e295ddc0582d00eac63bcd76b90ef33bff8c8d782148ab60d2509
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-24-influxdb的查询语句必须用单引号/lo.yml
+        locked: false
+      ru:
+        path: _posts_ru/2015-08-24-InfluxDB的查询语句必须用单引号.md
+        source_hash: sha256:dda36594b89e295ddc0582d00eac63bcd76b90ef33bff8c8d782148ab60d2509
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-24-influxdb的查询语句必须用单引号/ru.yml
+        locked: false
+      fa:
+        path: _posts_fa/2015-08-24-InfluxDB的查询语句必须用单引号.md
+        source_hash: sha256:dda36594b89e295ddc0582d00eac63bcd76b90ef33bff8c8d782148ab60d2509
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-24-influxdb的查询语句必须用单引号/fa.yml
+        locked: false
+      ar:
+        path: _posts_ar/2015-08-24-InfluxDB的查询语句必须用单引号.md
+        source_hash: sha256:dda36594b89e295ddc0582d00eac63bcd76b90ef33bff8c8d782148ab60d2509
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-24-influxdb的查询语句必须用单引号/ar.yml
+        locked: false
+        dialect: damascus_levantine
+      tr:
+        path: _posts_tr/2015-08-24-InfluxDB的查询语句必须用单引号.md
+        source_hash: sha256:dda36594b89e295ddc0582d00eac63bcd76b90ef33bff8c8d782148ab60d2509
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-24-influxdb的查询语句必须用单引号/tr.yml
+        locked: false
+    date: '2015-08-24 17:07:02+00:00'
+    title: InfluxDB的查询语句必须用单引号
