@@ -1520,3 +1520,59 @@ sources:
         locked: false
     date: '2015-08-17 15:27:18+00:00'
     title: circle.yml基本概念
+  2015-08-22-mac-os-x-删除-docker-toolbox-的办法:
+    source_path: _posts/2015-08-22-Mac-OS-X-删除-Docker-Toolbox-的办法.md
+    source_hash: sha256:6700caf9fba64287528b0efcc9c55863147cf14a1f62844e205bc854afcc35a4
+    source_status: active
+    translations:
+      th:
+        path: _posts_th/2015-08-22-Mac-OS-X-删除-Docker-Toolbox-的办法.md
+        source_hash: sha256:6700caf9fba64287528b0efcc9c55863147cf14a1f62844e205bc854afcc35a4
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-22-mac-os-x-删除-docker-toolbox-的办法/th.yml
+        locked: false
+      my:
+        path: _posts_my/2015-08-22-Mac-OS-X-删除-Docker-Toolbox-的办法.md
+        source_hash: sha256:6700caf9fba64287528b0efcc9c55863147cf14a1f62844e205bc854afcc35a4
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-22-mac-os-x-删除-docker-toolbox-的办法/my.yml
+        locked: false
+      km:
+        path: _posts_km/2015-08-22-Mac-OS-X-删除-Docker-Toolbox-的办法.md
+        source_hash: sha256:6700caf9fba64287528b0efcc9c55863147cf14a1f62844e205bc854afcc35a4
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-22-mac-os-x-删除-docker-toolbox-的办法/km.yml
+        locked: false
+      lo:
+        path: _posts_lo/2015-08-22-Mac-OS-X-删除-Docker-Toolbox-的办法.md
+        source_hash: sha256:6700caf9fba64287528b0efcc9c55863147cf14a1f62844e205bc854afcc35a4
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-22-mac-os-x-删除-docker-toolbox-的办法/lo.yml
+        locked: false
+      ru:
+        path: _posts_ru/2015-08-22-Mac-OS-X-删除-Docker-Toolbox-的办法.md
+        source_hash: sha256:6700caf9fba64287528b0efcc9c55863147cf14a1f62844e205bc854afcc35a4
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-22-mac-os-x-删除-docker-toolbox-的办法/ru.yml
+        locked: false
+      fa:
+        path: _posts_fa/2015-08-22-Mac-OS-X-删除-Docker-Toolbox-的办法.md
+        source_hash: sha256:6700caf9fba64287528b0efcc9c55863147cf14a1f62844e205bc854afcc35a4
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-22-mac-os-x-删除-docker-toolbox-的办法/fa.yml
+        locked: false
+      ar:
+        path: _posts_ar/2015-08-22-Mac-OS-X-删除-Docker-Toolbox-的办法.md
+        source_hash: sha256:6700caf9fba64287528b0efcc9c55863147cf14a1f62844e205bc854afcc35a4
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-22-mac-os-x-删除-docker-toolbox-的办法/ar.yml
+        locked: false
+        dialect: damascus_levantine
+      tr:
+        path: _posts_tr/2015-08-22-Mac-OS-X-删除-Docker-Toolbox-的办法.md
+        source_hash: sha256:6700caf9fba64287528b0efcc9c55863147cf14a1f62844e205bc854afcc35a4
+        status: missing
+        analysis_path: .i18n/analysis/2015-08-22-mac-os-x-删除-docker-toolbox-的办法/tr.yml
+        locked: false
+    date: '2015-08-22 05:24:26+00:00'
+    title: Mac OS X 删除 Docker Toolbox 的办法
