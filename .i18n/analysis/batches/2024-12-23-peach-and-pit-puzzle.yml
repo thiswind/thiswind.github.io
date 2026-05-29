@@ -1,0 +1,473 @@
+analysis:
+  source_summary: 'This post is a “fun programming problem” about peaches and peach
+    pits. You start with some money and some pits. Each move you can buy 1 peach for
+    1 unit of money, or exchange 3 pits for 1 peach. Every time you eat a peach, you
+    gain 1 pit. The objective is to eat as many peaches as possible. The author presents
+    a full solution approach and then provides complete Python code, with a placeholder
+    for the code block.
+
+    '
+  literal_layer: 'The article explains the rules (money/pits, buy or exchange, eating
+    yields pits) and then describes a solution strategy: maximize the effective value
+    of pits by converting them into money when beneficial, buy and eat peaches whenever
+    possible, and when you cannot continue buying, check whether you can “exchange
+    one more time” to maximize resource usage. Finally, it states “program code” and
+    includes a Python implementation with an unchanged placeholder code block: __I18N_CODE_BLOCK_0000__.
+
+    '
+  implicit_layer: 'The internal intent is to instruct readers to think in terms of
+    resource conversion efficiency (pits ↔ money), avoid wasting value, and use a
+    systematic sequence of decisions. It frames the problem as educational and playful,
+    while still sounding complete and confident (“full solution and code”). It also
+    implies an algorithmic goal: compute/construct the maximum count rather than simulate
+    randomly.
+
+    '
+  cross_cultural_layer: 'The post uses culturally neutral items (“peach” and “pit”)
+    and generic programming framing, so the retelling can remain content-faithful
+    across languages. However, publishing conventions differ: some languages prefer
+    clearer section titles and formal academic tone. For right-to-left Arabic and
+    Persian, the writing must remain natural within those norms while keeping Markdown
+    structure intact. The “buy 1 yuan” concept should be described as “1 unit of money”
+    while retaining the number 1 and the exchange rule 3 pits, so the math remains
+    consistent.
+
+    '
+  retelling_strategy: 'Keep the Markdown structure and headings, preserve the unchanged
+    placeholder __I18N_CODE_BLOCK_0000__, and rewrite the explanation as a stepwise
+    strategy: (1) convert pit value to money to maximize funds, (2) buy and eat a
+    peach if affordable, (3) when buying stalls, see if one more exchange is possible.
+    Use formal, natural blog prose in each target language, avoiding literal word-for-word
+    translation.
+
+    '
+  terminology_policy: '- Preserve the mathematical constants exactly: “1” money for
+    1 peach, “3” pits for 1 peach, and “+1 pit per peach eaten”.
+
+    - Translate “桃核” consistently as the equivalent of “peach pit/stone” (in each
+    language’s natural term).
+
+    - Keep the placeholder token __I18N_CODE_BLOCK_0000__ exactly unchanged in all
+    translations.
+
+    - Maintain section headings: “解题思路/程序代码” equivalents in each language.
+
+    '
+  forbidden_styles: '- Do not use literal translation that sounds unnatural.
+
+    - Do not alter Markdown structure (headings and list formatting must remain).
+
+    - For Arabic: use only Damascus Levantine Arabic wording and never Modern Standard
+    Arabic or Saudi dialect.
+
+    - Do not add or remove placeholders; keep URLs/Liquid placeholders/code identifiers
+    unchanged (none present besides the code placeholder).
+
+    - Do not wrap the YAML in Markdown fences; output only valid YAML.
+
+    '
+translations:
+  th:
+    title: 'ปลายทางของพีชกับเมล็ดพีช: โจทย์สนุกสำหรับการเขียนโปรแกรม
+
+      '
+    description: 'โจทย์เขียนโปรแกรมแบบเล่นเพลินเกี่ยวกับการแลกเมล็ดพีชเพื่อซื้อพีช
+      และการทำให้กินพีชได้มากที่สุด
+
+      '
+    excerpt: 'กติกาคือเริ่มด้วยเงินและเมล็ดพีช จากนั้นซื้อพีชด้วยเงิน หรือแลกเมล็ดพีชให้ได้พีช
+      และเมื่อกินพีชแล้วจะได้เมล็ดเพิ่ม พร้อมแนวคิดและโค้ดครบชุด
+
+      '
+    body: 'นี่คือโจทย์การเขียนโปรแกรมแบบสนุกเกี่ยวกับพีชและเมล็ดพีช กติกามีดังนี้:
+
+      - เริ่มต้นด้วยจำนวนเงินและเมล็ดพีชในปริมาณหนึ่ง
+
+      - ในแต่ละครั้ง คุณสามารถใช้เงิน 1 บาทเพื่อซื้อพีช 1 ลูก หรือใช้เมล็ดพีช 3 เมล็ดแลกพีช
+      1 ลูก
+
+      - เมื่อกินพีช 1 ลูก จะได้รับเมล็ดพีชเพิ่ม 1 เมล็ด
+
+
+      เป้าหมายสุดท้ายคือ: กินพีชให้ได้มากที่สุดเท่าที่จะทำได้ ด้านล่างคือแนวคิดทั้งหมดสำหรับการแก้ปัญหาและโค้ดที่ใช้ได้จริง
+
+
+      ## แนวคิดในการแก้ปัญหา
+
+
+      จุดสำคัญของโจทย์นี้คือการใช้คุณค่าของเมล็ดพีชให้คุ้มค่า และหลีกเลี่ยงการเสียทรัพยากรโดยไม่จำเป็น
+      ขั้นตอนโดยรวมมีดังนี้:
+
+      1. ในแต่ละขั้น ให้แปลง “มูลค่าของเมล็ดพีช” ให้เป็นเงิน เพื่อให้จำนวนเงินมากที่สุด
+
+      2. หากเงินเพียงพอ ให้ซื้อพีช 1 ลูก แล้วกิน
+
+      3. เมื่อเริ่มพยายามซื้อแล้วไม่สามารถทำต่อได้ ให้ตรวจสอบว่า “สามารถแลกเพิ่มอีกหนึ่งรอบ”
+      ได้หรือไม่ เพื่อให้การใช้ทรัพยากรมีประสิทธิภาพสูงสุด
+
+
+      ## โค้ดโปรแกรม
+
+
+      โค้ดด้านล่างเป็นการทำให้ครบถ้วนด้วย Python:
+
+
+      __I18N_CODE_BLOCK_0000__
+
+      '
+  my:
+    title: 'ပိန္ကော်နှင့် ပိန္အူပင် စိတ်ဝင်စားဖွယ် ပရိုဂရမ်မင်းမေးခွန်း
+
+      '
+    description: 'ပိန္ကော် (peach) နဲ့ အူပင် (peach pit) တွေအကြောင်း စိတ်ဝင်စားဖွယ်
+      ပရိုဂရမ်မင်းမေးခွန်းတစ်ခု။ ပိန္အူပင်တွေကို လဲလှယ်ပြီး ပိန္ကော်ကို အများဆုံးစားနိုင်အောင်
+      ရှာဖွေရမယ်။
+
+      '
+    excerpt: 'စည်းမျဉ်းက ရင်းနှီးငွေတချို့နဲ့ အူပင်တချို့ရှိပြီး ပိန္ကော်ကို ငွေ 1
+      နဲ့ 1 လုံး ဝယ်နိုင်သလို အူပင် 3 ခုနဲ့ 1 လုံး လဲလှယ်လည်းရပါတယ်။ စားလိုက်တိုင်း
+      အူပင် 1 ခု ပြန်ရတယ်—ပြီးတော့ အကောင်းဆုံးဖြေရှင်းနည်းနဲ့ ကုဒ်ကိုပါ ဖော်ပြထားပါတယ်။
+
+      '
+    body: 'ဒါက ပိန္ကော် (peach) နဲ့ ပိန္အူပင် (peach pit) တွေအကြောင်း စိတ်ဝင်စားဖွယ်
+      ပရိုဂရမ်မင်းမေးခွန်းတစ်ခုပါ။ စည်းမျဉ်းတွေက အောက်ပါအတိုင်း ဖြစ်ပါတယ်။
+
+      - အစမှာ ငွေအချို့နဲ့ ပိန္အူပင် အချို့ရှိသည်။
+
+      - တစ်ခါတစ်လေမှာ ငွေ 1 နဲ့ ပိန္ကော် 1 လုံး ဝယ်နိုင်သည်၊ သို့မဟုတ် ပိန္အူပင် 3
+      ခုကို လဲလှယ်ပြီး ပိန္ကော် 1 လုံး ရယူနိုင်သည်။
+
+      - ပိန္ကော် 1 လုံး စားလိုက်တိုင်း ပိန္အူပင် 1 ခု ရရှိသည်။
+
+
+      နောက်ဆုံးရည်မှန်းချက်မှာ ပိန္ကော်ကို တတ်နိုင်သမျှ အများဆုံးစားရန် ဖြစ်သည်။ အောက်တွင်
+      ဒီမေးခွန်းကို ဖြေရှင်းရန် အပြည့်အစုံ အကြံဉာဏ်နဲ့ ကုဒ်ပါ တင်ပြထားသည်။
+
+
+      ## ဖြေရှင်းနည်းအကြံဉာဏ်
+
+
+      ဒီမေးခွန်းရဲ့ အဓိကကတော့ ပိန္အူပင်တွေရဲ့ တန်ဖိုးကို အပြည့်အဝ အသုံးချပြီး အကျိုးမဲ့ဆုံးရှုံးမှုတွေ
+      မဖြစ်စေရန် ဖြစ်ပါတယ်။ လုပ်ထုံးလုပ်နည်းကို အောက်ပါအတိုင်း ဆောင်ရွက်ပါ။
+
+      1. အဆင့်တစ်ဆင့်တိုင်းမှာ ပိန္အူပင်ရဲ့တန်ဖိုးကို ငွေအဖြစ် ပြောင်းလဲပြီး ငွေပမာဏကို
+      အမြင့်ဆုံးဖြစ်အောင် လုပ်ပါ။
+
+      2. ငွေ လုံလောက်ပါက ပိန္ကော် 1 လုံး ဝယ်ပြီး စားပါ။
+
+      3. ဝယ်ယူခြင်းကို ဆက်မလုပ်နိုင်တော့တဲ့အခါ “နောက်တစ်ကြိမ် ထပ်လဲလှယ်နိုင်မလား”
+      ကို စစ်ဆေးပြီး အရင်းအမြစ်ကို အများဆုံး အသုံးချပါ။
+
+
+      ## ပရိုဂရမ်ကုဒ်
+
+
+      အောက်ပါကုဒ်သည် Python ဖြင့် အပြည့်အစုံ ရေးထားခြင်း ဖြစ်သည်-
+
+
+      __I18N_CODE_BLOCK_0000__
+
+      '
+  km:
+    title: 'បញ្ហាសរសេរកម្មវិធីដ៏គួរឲ្យចាប់អារម្មណ៍៖ ផ្លែប៉ែស និងគ្រាប់ផ្លែប៉ែស
+
+      '
+    description: 'បញ្ហាសរសេរកម្មវិធីបែបលេងសប្បាយ ស្តីពីការទិញផ្លែប៉ែស ឬប្តូរគ្រាប់ផ្លែប៉ែស
+      ដើម្បីអាចញ៉ាំផ្លែប៉ែសបានច្រើនបំផុត។
+
+      '
+    excerpt: 'ច្បាប់គឺចាប់ផ្តើមដោយលុយ និងគ្រាប់ផ្លែប៉ែស បន្ទាប់មកអាចទិញផ្លែប៉ែសដោយលុយ
+      1 ឬប្តូរគ្រាប់ 3 គ្រាប់ទៅជាផ្លែប៉ែស 1 ផ្លែ។ ពេលញ៉ាំផ្លែប៉ែសម្តងៗ នឹងទទួលបានគ្រាប់
+      1 គ្រាប់បន្ថែម។
+
+      '
+    body: 'នេះជាបញ្ហាសរសេរកម្មវិធីបែបលេងសប្បាយ ដែលទាក់ទងនឹងផ្លែប៉ែស និងគ្រាប់ផ្លែប៉ែស។
+      ច្បាប់នៃបញ្ហាមានដូចខាងក្រោម៖
+
+      - មានលុយ និងគ្រាប់ផ្លែប៉ែសក្នុងចំនួនមួយដំបូង
+
+      - រាល់លើក អ្នកអាចប្រើលុយ 1 ដើម្បីទិញផ្លែប៉ែស 1 ផ្លែ ឬប្រើគ្រាប់ផ្លែប៉ែស 3 គ្រាប់
+      ដើម្បីប្តូរទៅយកផ្លែប៉ែស 1 ផ្លែ
+
+      - រាល់ពេលញ៉ាំផ្លែប៉ែស 1 ផ្លែ នឹងទទួលបានគ្រាប់ផ្លែប៉ែស 1 គ្រាប់
+
+
+      គោលដៅចុងក្រោយគឺ៖ ញ៉ាំផ្លែប៉ែសឲ្យបានច្រើនតាមដែលអាចធ្វើបាន។ ខាងក្រោមនេះជាគំនិតពេញលេញ
+      និងកូដសម្រាប់ដោះស្រាយបញ្ហានេះ។
+
+
+      ## គំនិតដោះស្រាយបញ្ហា
+
+
+      ចំណុចសំខាន់នៃបញ្ហានេះ គឺការប្រើប្រាស់តម្លៃរបស់គ្រាប់ផ្លែប៉ែសឲ្យបានពេញលេញ និងជៀសវាងការខ្ជះខ្ជាយ។
+      ជំហានអនុវត្តមានដូចជា៖
+
+      1. ក្នុងមួយជំហានៗ បម្លែងតម្លៃរបស់គ្រាប់ផ្លែប៉ែសទៅជាលុយ ដើម្បីឲ្យប្រាក់មានច្រើនបំផុត
+
+      2. ប្រសិនបើលុយគ្រប់គ្រាន់ សូមទិញផ្លែប៉ែស 1 ផ្លែ ហើយញ៉ាំវា
+
+      3. ពេលព្យាយាមទិញហើយមិនអាចបន្តបាន សូមពិនិត្យមើលថា អាច “ប្តូរបន្ថែមម្តងទៀត” បានទេ
+      ដើម្បីធានាថាការប្រើប្រាស់ធនធានមានប្រសិទ្ធភាពខ្ពស់បំផុត
+
+
+      ## កូដកម្មវិធី
+
+
+      ខាងក្រោមនេះជាកូដពេញលេញដែលអនុវត្តដោយ Python៖
+
+
+      __I18N_CODE_BLOCK_0000__
+
+      '
+  lo:
+    title: 'ປັນຫາສົນໃຈສໍາລັບການຂຽນໂປຣແກຣມ: ໝາກພີດ ແລະ ແກ່ນໝາກພີດ
+
+      '
+    description: 'ໂຈມຂຽນໂປຣແກຣມແບບສົນທະນາ ກ່ຽວກັບການຊື້ໝາກພີດ ຫຼື ການແລກແກ່ນໝາກພີດ
+      ເພື່ອກິນໃຫ້ໄດ້ຫຼາຍທີ່ສຸດ
+
+      '
+    excerpt: 'ເລີ່ມດ້ວຍເງິນແລະແກ່ນໝາກພີດ: ຊື້ໝາກພີດ 1 ດ້ວຍເງິນ 1 ຫຼື ແລກແກ່ນ 3 ແກ່ນເພື່ອໄດ້ໝາກພີດ
+      1 ລູກ. ກິນແລ້ວຈະໄດ້ແກ່ນເພີ່ມ 1 ແກ່ນ
+
+      '
+    body: 'ນີ້ແມ່ນໂຈມຂຽນໂປຣແກຣມແບບສົນໃຈກ່ຽວກັບໝາກພີດ ແລະ ແກ່ນໝາກພີດ។ ກົດກາແມ່ນດັ່ງນີ້:
+
+      - ເລີ່ມຕົ້ນດ້ວຍເງິນ ແລະ ແກ່ນໝາກພີດ ຈໍານວນໜຶ່ງ
+
+      - ແຕ່ລະຄັ້ງ ສາມາດໃຊ້ເງິນ 1 ຊື້ໝາກພີດ 1 ລູກ ຫຼື ໃຊ້ແກ່ນໝາກພີດ 3 ແກ່ນແລກເອົາໝາກພີດ
+      1 ລູກ
+
+      - ເມື່ອກິນໝາກພີດ 1 ລູກ ຈະໄດ້ແກ່ນໝາກພີດ 1 ແກ່ນ
+
+
+      ເປົ້າໝາຍສຸດທ້າຍແມ່ນ: ກິນໝາກພີດໃຫ້ໄດ້ຫຼາຍທີ່ສຸດ. ຂ້າງລຸ່ມນີ້ແມ່ນແນວຄິດທັງໝົດ
+      ແລະໂຄດສໍາລັບແກ້ບັນຫານີ້
+
+
+      ## ແນວຄິດໃນການແກ້ໂຈມ
+
+
+      ຫຼັກສໍາຄັນຂອງໂຈມນີ້ຢູ່ທີ່ການນໍາໃຊ້ຄຸນຄ່າຂອງແກ່ນໝາກພີດໃຫ້ເກີນຄຸ້ມ ແລະຫຼີກລ້ຽງການເສຍປະໂຫຍດ.
+      ຂັ້ນຕອນມີດັ່ງນີ້:
+
+      1. ໃນແຕ່ລະຂັ້ນ ປ່ຽນຄຸນຄ່າຂອງແກ່ນໃຫ້ເປັນເງິນ ເພື່ອໃຫ້ມີທຶນຫຼາຍທີ່ສຸດ
+
+      2. ຖ້າເງິນພຽງພໍ ຊື້ໝາກພີດ 1 ລູກ ແລ້ວກິນ
+
+      3. ເມື່ອພະຍາຍາມຊື້ແລ້ວບໍ່ສາມາດດໍາເນີນຕໍ່ໄດ້ ໃຫ້ກວດເບິ່ງວ່າ “ສາມາດແລກເພີ່ມອີກ
+      1 ຄັ້ງ” ໄດ້ບໍ ເພື່ອໃຫ້ໃຊ້ທັບພະຍາກອນໄດ້ຄຸ້ມຄ່າທີ່ສຸດ
+
+
+      ## ໂຄດໂປຣແກຣມ
+
+
+      ດ້ານລຸ່ມນີ້ແມ່ນໂຄດທັງໝົດທີ່ໃຊ້ Python ດັ່ງນີ້:
+
+
+      __I18N_CODE_BLOCK_0000__
+
+      '
+  ru:
+    title: 'Увлекательная задача по программированию: персики и косточки
+
+      '
+    description: 'Задача для любопытных: как с помощью правил покупки и обмена косточек
+      съесть как можно больше персиков.
+
+      '
+    excerpt: 'Сначала есть деньги и косточки. За 1 единицу денег можно купить 1 персик,
+      а за 3 косточки обменять на 1 персик. После того как вы съедаете персик, получаете
+      1 косточку. Ниже — полная идея решения и код.
+
+      '
+    body: 'Это увлекательная задача по программированию про персики и косточки. Правила
+      такие:
+
+      - Сначала имеется некоторое количество денег и косточек.
+
+      - На каждом шаге можно купить 1 персик за 1 единицу денег либо обменять 3 косточки
+      на 1 персик.
+
+      - После того как вы съедаете 1 персик, вы получаете 1 косточку.
+
+
+      Конечная цель: съесть как можно больше персиков. Ниже приведены полная идея
+      решения и весь код.
+
+
+      ## Идея решения
+
+
+      Ключ к задаче — максимально эффективно использовать ценность косточек и не тратить
+      ресурсы впустую. Действуем так:
+
+      1. На каждом шаге переводим ценность косточек в деньги, чтобы максимально увеличить
+      запас средств.
+
+      2. Если денег достаточно, покупаем 1 персик и сразу его съедаем.
+
+      3. Когда купить больше уже не получается, проверяем, можно ли сделать «обмен
+      ещё раз», чтобы добиться максимальной отдачи от ресурсов.
+
+
+      ## Код программы
+
+
+      Ниже — полная реализация на Python:
+
+
+      __I18N_CODE_BLOCK_0000__
+
+      '
+  fa:
+    title: 'مسئلهٔ جالب برنامه‌نویسی: هلو و هستهٔ هلو
+
+      '
+    description: 'یک تمرین سرگرم‌کنندهٔ برنامه‌نویسی دربارهٔ خرید هلو یا تبدیل هسته‌ها
+      تا بتوانید بیشترین تعداد هلو را بخورید.
+
+      '
+    excerpt: 'قوانین چنین است: با مقداری پول و هسته شروع می‌کنید. هر بار می‌توانید
+      با پول 1، یک هلو بخرید یا با 3 هسته یک هلو بگیرید. هر بار که یک هلو بخورید،
+      1 هسته به دست می‌آورید. در ادامه، ایدهٔ کامل حل و کد آمده است.
+
+      '
+    body: 'این یک مسئلهٔ جالب برنامه‌نویسی دربارهٔ هلو و هستهٔ هلو است. قوانین مسئله
+      به شرح زیر است:
+
+      - در ابتدا مقدار مشخصی پول و تعدادی هسته دارید.
+
+      - هر بار می‌توانید با 1 واحد پول، یک هلو بخرید؛ یا با 3 هسته، یک هلو معاوضه
+      کنید.
+
+      - هرگاه یک هلو بخورید، 1 هسته به دست می‌آورید.
+
+
+      هدف نهایی این است: تا جای ممکن هلوهای بیشتری بخورید. در ادامه، ایدهٔ کامل حل
+      این مسئله و کد آن را می‌بینید.
+
+
+      ## ایدهٔ حل مسئله
+
+
+      نکتهٔ اصلی اینجاست که باید از ارزش هسته‌ها به‌خوبی استفاده کنید و از هدررفت
+      منابع جلوگیری شود. مراحل کار به این شکل است:
+
+      1. در هر گام، ارزش هسته‌ها را به پول تبدیل کنید تا بیشترین مقدار سرمایه را داشته
+      باشید.
+
+      2. اگر پول کافی بود، یک هلو بخرید و آن را مصرف کنید.
+
+      3. وقتی دیگر امکان خرید وجود نداشت، بررسی کنید آیا می‌توانید «یک بار دیگر معاوضه
+      کنید» تا استفاده از منابع به حداکثر برسد.
+
+
+      ## کد برنامه
+
+
+      کد کامل زیر با Python نوشته شده است:
+
+
+      __I18N_CODE_BLOCK_0000__
+
+      '
+  ar:
+    title: 'مسألة برمجة حلوة: خوخ و نواة الخوخ
+
+      '
+    description: 'مسألة ممتعة عن كيف تشتري خوخ أو تبدّل نوى الخوخ، لتأكل أكبر عدد
+      ممكن من الخوخ.
+
+      '
+    excerpt: 'من البداية عندك شوية فلوس وشوية نوى. كل مرة بتقدر تشتري خوخ وحدة بفلوس
+      1، أو تبدّل 3 نوى على خوخ وحدة. ولما تاكل خوخ بتاخد نواة 1 زيادة. في الأسفل
+      في الفكرة كاملة والحل بالـكود.
+
+      '
+    body: 'هيدي مسألة برمجة حلوة وشيّقة عن الخوخ ونواة الخوخ. القواعد هيك:
+
+      - من البداية في عندك عدد معيّن من الفلوس وعدد معيّن من النوى.
+
+      - كل مرة فيك تشتري خوخة واحدة بفلوس 1، أو تِبدّل 3 نوى على خوخة واحدة.
+
+      - كل ما تاكل خوخة وحدة، بصير تربح 1 نواة.
+
+
+      الهدف النهائي: تاكل أكبر عدد ممكن من الخوخ. يليها بتلاقي الفكرة الكاملة للحل
+      والبرنامج كامل.
+
+
+      ## فكرة الحل
+
+
+      السر هون إنك تستفيد بأقصى شكل من قيمة النوى وتمنع الهدر. خطوات العمل:
+
+      1. بكل خطوة، حوِّل قيمة النوى على فلوس، حتى تكون الفلوس هي الأكبر.
+
+      2. إذا الفلوس بتكفي، اشترِ خوخة واحدة وخليها تنأكل.
+
+      3. لما تجرّب تشتري وما بقى فيك تكمل، راجع إذا فيك “تبدّل مرة زيادة” حتى تستغل
+      الموارد بأقصى قدر.
+
+
+      ## كود البرنامج
+
+
+      يلي أدناه الكود كامل باستخدام Python:
+
+
+      __I18N_CODE_BLOCK_0000__
+
+      '
+  tr:
+    title: 'Eğlenceli Bir Programlama Problemi: Şeftali ve Şeftali Çekirdeği
+
+      '
+    description: 'Şeftali ve çekirdeklerle ilgili, satın alma ve takas kurallarını
+      kullanarak mümkün olan en fazla şeftaliyi yemenizi hedefleyen eğlenceli bir
+      problem.
+
+      '
+    excerpt: 'Başlangıçta para ve çekirdekler vardır. Her adımda 1 birim parayla 1
+      şeftali satın alabilir ya da 3 çekirdeği 1 şeftaliyle takas edebilirsiniz. Bir
+      şeftali yedikçe 1 çekirdek kazanırsınız. Aşağıda çözümün tam fikri ve kodu bulunuyor.
+
+      '
+    body: 'Bu, şeftali ve şeftali çekirdeğiyle ilgili eğlenceli bir programlama problemidir.
+      Kurallar aşağıdaki gibidir:
+
+      - Başlangıçta belirli miktarda para ve çekirdek bulunur.
+
+      - Her seferinde 1 birim para ile 1 şeftali satın alabilir ya da 3 çekirdeği
+      1 şeftali ile takas edebilirsiniz.
+
+      - Her bir şeftaliyi yediğinizde 1 çekirdek kazanırsınız.
+
+
+      Nihai hedef: mümkün olduğunca çok şeftali yemek. Aşağıda bu problemi çözmek
+      için eksiksiz düşünce yapısı ve kod yer almaktadır.
+
+
+      ## Çözüm Fikri
+
+
+      Bu problemin ana noktası, çekirdeklerin değerini yeterince iyi kullanmak ve
+      israfı önlemektir. İzlenecek adımlar şunlardır:
+
+      1. Her adımda, çekirdeklerin değerini paraya çevirerek fonları en üst düzeye
+      çıkarın.
+
+      2. Yeterli para varsa, 1 şeftali satın alıp yiyin.
+
+      3. Artık satın almaya devam edemediğinizde, kaynak kullanımını maksimize etmek
+      için “bir kere daha takas yapıp yapamayacağınıza” bakın.
+
+
+      ## Program Kodu
+
+
+      Aşağıdaki kod, Python ile eksiksiz bir uygulamadır:
+
+
+      __I18N_CODE_BLOCK_0000__'

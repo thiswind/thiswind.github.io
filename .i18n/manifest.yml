@@ -88,52 +88,76 @@ sources:
       th:
         path: _posts_th/2024-12-12-柠檬和薄荷.md
         source_hash: sha256:25b8549edb7b96d3d67bde27873e64957663cd13c0ac84a3740b6f51025f04b5
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2024-12-12-lemon-mint/th.yml
         locked: false
+        translation_hash: sha256:bee4be034343200ac8567172d94d07cc7d9a30830a5b80dfd4ede30b0ab2812e
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T08:09:21.827614+00:00'
       my:
         path: _posts_my/2024-12-12-柠檬和薄荷.md
         source_hash: sha256:25b8549edb7b96d3d67bde27873e64957663cd13c0ac84a3740b6f51025f04b5
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2024-12-12-lemon-mint/my.yml
         locked: false
+        translation_hash: sha256:999b4aa8a2e73327774908c9f543403d7b27ebd8365a36c7adebd40f6e9c5f50
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T08:09:21.829744+00:00'
       km:
         path: _posts_km/2024-12-12-柠檬和薄荷.md
         source_hash: sha256:25b8549edb7b96d3d67bde27873e64957663cd13c0ac84a3740b6f51025f04b5
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2024-12-12-lemon-mint/km.yml
         locked: false
+        translation_hash: sha256:70ecc67739f2ae2b1296c01ccf82781fe0401bf109bc4bf28a93b345f1435b2e
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T08:09:21.831823+00:00'
       lo:
         path: _posts_lo/2024-12-12-柠檬和薄荷.md
         source_hash: sha256:25b8549edb7b96d3d67bde27873e64957663cd13c0ac84a3740b6f51025f04b5
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2024-12-12-lemon-mint/lo.yml
         locked: false
+        translation_hash: sha256:a55d7713d0e45f6281e5c574c31c2a281bf6c3646ec0834de445063204aaeb8b
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T08:09:21.833894+00:00'
       ru:
         path: _posts_ru/2024-12-12-柠檬和薄荷.md
         source_hash: sha256:25b8549edb7b96d3d67bde27873e64957663cd13c0ac84a3740b6f51025f04b5
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2024-12-12-lemon-mint/ru.yml
         locked: false
+        translation_hash: sha256:9083d85f1b6d88a5f8e422ccc164ac728b74ad7455151fa20e901d504edb4fcd
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T08:09:21.835962+00:00'
       fa:
         path: _posts_fa/2024-12-12-柠檬和薄荷.md
         source_hash: sha256:25b8549edb7b96d3d67bde27873e64957663cd13c0ac84a3740b6f51025f04b5
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2024-12-12-lemon-mint/fa.yml
         locked: false
+        translation_hash: sha256:753bee6d8c511419483aedc16a8da84def4db4faf3aae7fa654f8c6373fbb900
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T08:09:21.838013+00:00'
       ar:
         path: _posts_ar/2024-12-12-柠檬和薄荷.md
         source_hash: sha256:25b8549edb7b96d3d67bde27873e64957663cd13c0ac84a3740b6f51025f04b5
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2024-12-12-lemon-mint/ar.yml
         locked: false
         dialect: damascus_levantine
+        translation_hash: sha256:80febd9b7ef030e3d403f9d0f22180866caf299b46bb9e42bd987aaba50eed62
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T08:09:21.840065+00:00'
       tr:
         path: _posts_tr/2024-12-12-柠檬和薄荷.md
         source_hash: sha256:25b8549edb7b96d3d67bde27873e64957663cd13c0ac84a3740b6f51025f04b5
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2024-12-12-lemon-mint/tr.yml
         locked: false
+        translation_hash: sha256:103bcd322da8d1b1397d0af83662ba02a6d56237817b649d803b462717f11519
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T08:09:21.842133+00:00'
     date: 2024-12-12 22:57:00 +0800
     title: 柠檬和薄荷
   2024-12-21-artemisinin-contribution:
@@ -144,52 +168,76 @@ sources:
       th:
         path: _posts_th/2024-12-21-artemisinin-contribution.md
         source_hash: sha256:95fb15d6c198a62f95214b483edda564068a00b9df47d7e57ff7bd78069cf013
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2024-12-21-artemisinin-contribution/th.yml
         locked: false
+        translation_hash: sha256:87b4c4b9cd07ba1a4f9766198073dd7a53bb7ded89caed722c0dd30415806216
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T08:10:38.024252+00:00'
       my:
         path: _posts_my/2024-12-21-artemisinin-contribution.md
         source_hash: sha256:95fb15d6c198a62f95214b483edda564068a00b9df47d7e57ff7bd78069cf013
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2024-12-21-artemisinin-contribution/my.yml
         locked: false
+        translation_hash: sha256:c3a5778b4cb1886313942446463b839311a2c84cfedc0480b5146e27bd998b91
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T08:10:38.027893+00:00'
       km:
         path: _posts_km/2024-12-21-artemisinin-contribution.md
         source_hash: sha256:95fb15d6c198a62f95214b483edda564068a00b9df47d7e57ff7bd78069cf013
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2024-12-21-artemisinin-contribution/km.yml
         locked: false
+        translation_hash: sha256:f89328384bf4881a6188890d988e8288a3eaff14456f736a8b0a3cbd43d066ac
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T08:10:38.031485+00:00'
       lo:
         path: _posts_lo/2024-12-21-artemisinin-contribution.md
         source_hash: sha256:95fb15d6c198a62f95214b483edda564068a00b9df47d7e57ff7bd78069cf013
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2024-12-21-artemisinin-contribution/lo.yml
         locked: false
+        translation_hash: sha256:2ce21128497783e02e2ee5c16599b88d31837f8610ebad0b3a732ebaac585183
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T08:10:38.035017+00:00'
       ru:
         path: _posts_ru/2024-12-21-artemisinin-contribution.md
         source_hash: sha256:95fb15d6c198a62f95214b483edda564068a00b9df47d7e57ff7bd78069cf013
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2024-12-21-artemisinin-contribution/ru.yml
         locked: false
+        translation_hash: sha256:68b8af9b4a0d5c1ffd3aaa42fbd13eb941de60b52a2fe3b472d1a56fb8fd1de5
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T08:10:38.038521+00:00'
       fa:
         path: _posts_fa/2024-12-21-artemisinin-contribution.md
         source_hash: sha256:95fb15d6c198a62f95214b483edda564068a00b9df47d7e57ff7bd78069cf013
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2024-12-21-artemisinin-contribution/fa.yml
         locked: false
+        translation_hash: sha256:48741eccbb24db8eb3c37884cf800cf8ba6cbd418531acc5fc4bdd4dbc2bd0e4
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T08:10:38.042049+00:00'
       ar:
         path: _posts_ar/2024-12-21-artemisinin-contribution.md
         source_hash: sha256:95fb15d6c198a62f95214b483edda564068a00b9df47d7e57ff7bd78069cf013
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2024-12-21-artemisinin-contribution/ar.yml
         locked: false
         dialect: damascus_levantine
+        translation_hash: sha256:0768ea442dd05aac3aa875f5f24e8c52b620f1d1af851196cfe7776350cc16ee
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T08:10:38.045549+00:00'
       tr:
         path: _posts_tr/2024-12-21-artemisinin-contribution.md
         source_hash: sha256:95fb15d6c198a62f95214b483edda564068a00b9df47d7e57ff7bd78069cf013
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2024-12-21-artemisinin-contribution/tr.yml
         locked: false
+        translation_hash: sha256:58a0ddaa9d812451aeba15baf5819f743a5b053e93b4c2ebefdc4b15d2126e37
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T08:10:38.049046+00:00'
     date: 2024-12-21 18:20:00 +0800
     title: 青蒿素：云南对全球疟疾防治的贡献
   2024-12-23-peach-and-pit-puzzle:
@@ -200,52 +248,76 @@ sources:
       th:
         path: _posts_th/2024-12-23-peach-and-pit-puzzle.md
         source_hash: sha256:f5881bd6504553598f74a81fe9bb3b43c4810662128763cd0f7659c680c7b3e2
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2024-12-23-peach-and-pit-puzzle/th.yml
         locked: false
+        translation_hash: sha256:8f9e693ff20311ce18eaf4591f10506b53dbcfdd8963778769901cbe74a9bd2b
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T08:11:32.115005+00:00'
       my:
         path: _posts_my/2024-12-23-peach-and-pit-puzzle.md
         source_hash: sha256:f5881bd6504553598f74a81fe9bb3b43c4810662128763cd0f7659c680c7b3e2
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2024-12-23-peach-and-pit-puzzle/my.yml
         locked: false
+        translation_hash: sha256:b742a9ac6c41db744e1fdafcfe8fbc19661712da4234e749c5cf693c1de34ff9
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T08:11:32.118269+00:00'
       km:
         path: _posts_km/2024-12-23-peach-and-pit-puzzle.md
         source_hash: sha256:f5881bd6504553598f74a81fe9bb3b43c4810662128763cd0f7659c680c7b3e2
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2024-12-23-peach-and-pit-puzzle/km.yml
         locked: false
+        translation_hash: sha256:bc613c3496d7269462266caffa183bfc3f50508f01f4fc5ed94dcdf66fe069b6
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T08:11:32.121423+00:00'
       lo:
         path: _posts_lo/2024-12-23-peach-and-pit-puzzle.md
         source_hash: sha256:f5881bd6504553598f74a81fe9bb3b43c4810662128763cd0f7659c680c7b3e2
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2024-12-23-peach-and-pit-puzzle/lo.yml
         locked: false
+        translation_hash: sha256:456d0e2282e3f55ed9ac87103d53424126bc3bc9e565ce9400c4d4dce12d9f6e
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T08:11:32.124593+00:00'
       ru:
         path: _posts_ru/2024-12-23-peach-and-pit-puzzle.md
         source_hash: sha256:f5881bd6504553598f74a81fe9bb3b43c4810662128763cd0f7659c680c7b3e2
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2024-12-23-peach-and-pit-puzzle/ru.yml
         locked: false
+        translation_hash: sha256:3e65129f0ef2fbf37c4b8a29ba365ed73399d574c0ff5e649074dff376fa74d8
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T08:11:32.127708+00:00'
       fa:
         path: _posts_fa/2024-12-23-peach-and-pit-puzzle.md
         source_hash: sha256:f5881bd6504553598f74a81fe9bb3b43c4810662128763cd0f7659c680c7b3e2
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2024-12-23-peach-and-pit-puzzle/fa.yml
         locked: false
+        translation_hash: sha256:eacf91dcfbc601f26384b13eedecc9a058452f2ba9679e1c5e8ad4ac8e17ea68
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T08:11:32.130929+00:00'
       ar:
         path: _posts_ar/2024-12-23-peach-and-pit-puzzle.md
         source_hash: sha256:f5881bd6504553598f74a81fe9bb3b43c4810662128763cd0f7659c680c7b3e2
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2024-12-23-peach-and-pit-puzzle/ar.yml
         locked: false
         dialect: damascus_levantine
+        translation_hash: sha256:da51ed1b3db510929f953e5422d69557fce6fd9a3e8fb62cc8aec6d258629b22
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T08:11:32.134191+00:00'
       tr:
         path: _posts_tr/2024-12-23-peach-and-pit-puzzle.md
         source_hash: sha256:f5881bd6504553598f74a81fe9bb3b43c4810662128763cd0f7659c680c7b3e2
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2024-12-23-peach-and-pit-puzzle/tr.yml
         locked: false
+        translation_hash: sha256:2f740459663207edcaacc48ebe9977462640c6d40efa97168ebb512a7869ca9b
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T08:11:32.137403+00:00'
     date: 2024-12-23 19:46:00 +0800
     title: 桃子与桃核的趣味题
   2024-12-24-pale-blue-dot:
@@ -256,52 +328,76 @@ sources:
       th:
         path: _posts_th/2024-12-24-Pale-Blue-Dot.md
         source_hash: sha256:da56d7e0986768dc6777a946b862ccd553458cb4fd9c315ba0935fd933e63c30
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2024-12-24-pale-blue-dot/th.yml
         locked: false
+        translation_hash: sha256:09fc771bd80f4145bf639d21ca0f3e8a878f7027db23371c30a4d8a678cdff14
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T08:12:32.432823+00:00'
       my:
         path: _posts_my/2024-12-24-Pale-Blue-Dot.md
         source_hash: sha256:da56d7e0986768dc6777a946b862ccd553458cb4fd9c315ba0935fd933e63c30
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2024-12-24-pale-blue-dot/my.yml
         locked: false
+        translation_hash: sha256:ec8b5d91e47ea5978a10cd29ea4393bb016ad4c22fe6fdcffd309fd6affe40c1
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T08:12:32.435708+00:00'
       km:
         path: _posts_km/2024-12-24-Pale-Blue-Dot.md
         source_hash: sha256:da56d7e0986768dc6777a946b862ccd553458cb4fd9c315ba0935fd933e63c30
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2024-12-24-pale-blue-dot/km.yml
         locked: false
+        translation_hash: sha256:b2198cb8f17c36502e766a3f0badb725fcf74d9b75fc305b4ba10fe53f6e89eb
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T08:12:32.438485+00:00'
       lo:
         path: _posts_lo/2024-12-24-Pale-Blue-Dot.md
         source_hash: sha256:da56d7e0986768dc6777a946b862ccd553458cb4fd9c315ba0935fd933e63c30
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2024-12-24-pale-blue-dot/lo.yml
         locked: false
+        translation_hash: sha256:b2074b98a1e17dcda733e5706e54d5bf3aae427fef4008d7c42b4dd0e5cfe701
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T08:12:32.441283+00:00'
       ru:
         path: _posts_ru/2024-12-24-Pale-Blue-Dot.md
         source_hash: sha256:da56d7e0986768dc6777a946b862ccd553458cb4fd9c315ba0935fd933e63c30
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2024-12-24-pale-blue-dot/ru.yml
         locked: false
+        translation_hash: sha256:636989c6353c61c029e45f767d031050787d4452d79a9a22b082612167e667d2
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T08:12:32.444038+00:00'
       fa:
         path: _posts_fa/2024-12-24-Pale-Blue-Dot.md
         source_hash: sha256:da56d7e0986768dc6777a946b862ccd553458cb4fd9c315ba0935fd933e63c30
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2024-12-24-pale-blue-dot/fa.yml
         locked: false
+        translation_hash: sha256:c705eedaeeb485382330a597541ad2fb36a236f18f0f6e57625f490d9be2c3d3
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T08:12:32.446771+00:00'
       ar:
         path: _posts_ar/2024-12-24-Pale-Blue-Dot.md
         source_hash: sha256:da56d7e0986768dc6777a946b862ccd553458cb4fd9c315ba0935fd933e63c30
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2024-12-24-pale-blue-dot/ar.yml
         locked: false
         dialect: damascus_levantine
+        translation_hash: sha256:f9e787f38d6a5e20a57e89dd5fdb9394bfd07a7dbd7ef3f255dbfc0d7eb849da
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T08:12:32.449498+00:00'
       tr:
         path: _posts_tr/2024-12-24-Pale-Blue-Dot.md
         source_hash: sha256:da56d7e0986768dc6777a946b862ccd553458cb4fd9c315ba0935fd933e63c30
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2024-12-24-pale-blue-dot/tr.yml
         locked: false
+        translation_hash: sha256:d476544b205d6bb38ca8d9c6857378ba0df6d71cd57f8d4cbfeecdecf7d7fe21
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T08:12:32.452243+00:00'
     date: 2024-12-24 17:56:00 +0800
     title: 暗淡蓝点
   2025-01-25-umbrella-for-others:
@@ -312,51 +408,75 @@ sources:
       th:
         path: _posts_th/2025-01-25-umbrella-for-others.md
         source_hash: sha256:140468d47d6d4467d7045b830a7e7eb7d43ff120219ed90b61db007353bf3545
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2025-01-25-umbrella-for-others/th.yml
         locked: false
+        translation_hash: sha256:a93e9956ff1537947f15076fc1c5d6459bee6239152fc205337507a9d00c9757
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T08:12:48.136684+00:00'
       my:
         path: _posts_my/2025-01-25-umbrella-for-others.md
         source_hash: sha256:140468d47d6d4467d7045b830a7e7eb7d43ff120219ed90b61db007353bf3545
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2025-01-25-umbrella-for-others/my.yml
         locked: false
+        translation_hash: sha256:9c6e7bcc0321a5c94daa15b281b25fc46c660b4ac5b0b4d805e6833f763ea386
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T08:12:48.138541+00:00'
       km:
         path: _posts_km/2025-01-25-umbrella-for-others.md
         source_hash: sha256:140468d47d6d4467d7045b830a7e7eb7d43ff120219ed90b61db007353bf3545
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2025-01-25-umbrella-for-others/km.yml
         locked: false
+        translation_hash: sha256:4002ea55effc9075cc09c769cfc8b11daebcf37d53cefc4a47ec9733de7528d2
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T08:12:48.140345+00:00'
       lo:
         path: _posts_lo/2025-01-25-umbrella-for-others.md
         source_hash: sha256:140468d47d6d4467d7045b830a7e7eb7d43ff120219ed90b61db007353bf3545
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2025-01-25-umbrella-for-others/lo.yml
         locked: false
+        translation_hash: sha256:5415099bd0dfd16037f269cb62993a065aaf3663a7979836c6813a359d93acc9
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T08:12:48.142099+00:00'
       ru:
         path: _posts_ru/2025-01-25-umbrella-for-others.md
         source_hash: sha256:140468d47d6d4467d7045b830a7e7eb7d43ff120219ed90b61db007353bf3545
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2025-01-25-umbrella-for-others/ru.yml
         locked: false
+        translation_hash: sha256:9988ad1fcdb1dc4f67afdb733ea0e656d86787a3752029bbe009c25a8aab699b
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T08:12:48.143887+00:00'
       fa:
         path: _posts_fa/2025-01-25-umbrella-for-others.md
         source_hash: sha256:140468d47d6d4467d7045b830a7e7eb7d43ff120219ed90b61db007353bf3545
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2025-01-25-umbrella-for-others/fa.yml
         locked: false
+        translation_hash: sha256:048884f91d9ce9150435daee0affdb5af26a19642fa993ea3efd9f0a99b011a6
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T08:12:48.145659+00:00'
       ar:
         path: _posts_ar/2025-01-25-umbrella-for-others.md
         source_hash: sha256:140468d47d6d4467d7045b830a7e7eb7d43ff120219ed90b61db007353bf3545
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2025-01-25-umbrella-for-others/ar.yml
         locked: false
         dialect: damascus_levantine
+        translation_hash: sha256:6bff48d5af016e07d011403d9dab042cb895ce67fa05244a1309142c63dfe671
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T08:12:48.147424+00:00'
       tr:
         path: _posts_tr/2025-01-25-umbrella-for-others.md
         source_hash: sha256:140468d47d6d4467d7045b830a7e7eb7d43ff120219ed90b61db007353bf3545
-        status: missing
+        status: active
         analysis_path: .i18n/analysis/2025-01-25-umbrella-for-others/tr.yml
         locked: false
+        translation_hash: sha256:8919564e2d3b526c779585e79b2ab989a6f8ff95b4f9411c52779b3758db6a62
+        model: gpt-5.4-nano
+        updated_at: '2026-05-29T08:12:48.149181+00:00'
     date: 2025-01-25 00:52:48 +0800
     title: 因为自己淋过雨，所以想给别人撑把伞

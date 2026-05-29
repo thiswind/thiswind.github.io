@@ -1,0 +1,64 @@
+source_summary: 'This post is a “fun programming problem” about peaches and peach
+  pits. You start with some money and some pits. Each move you can buy 1 peach for
+  1 unit of money, or exchange 3 pits for 1 peach. Every time you eat a peach, you
+  gain 1 pit. The objective is to eat as many peaches as possible. The author presents
+  a full solution approach and then provides complete Python code, with a placeholder
+  for the code block.
+
+  '
+literal_layer: 'The article explains the rules (money/pits, buy or exchange, eating
+  yields pits) and then describes a solution strategy: maximize the effective value
+  of pits by converting them into money when beneficial, buy and eat peaches whenever
+  possible, and when you cannot continue buying, check whether you can “exchange one
+  more time” to maximize resource usage. Finally, it states “program code” and includes
+  a Python implementation with an unchanged placeholder code block: __I18N_CODE_BLOCK_0000__.
+
+  '
+implicit_layer: 'The internal intent is to instruct readers to think in terms of resource
+  conversion efficiency (pits ↔ money), avoid wasting value, and use a systematic
+  sequence of decisions. It frames the problem as educational and playful, while still
+  sounding complete and confident (“full solution and code”). It also implies an algorithmic
+  goal: compute/construct the maximum count rather than simulate randomly.
+
+  '
+cross_cultural_layer: 'The post uses culturally neutral items (“peach” and “pit”)
+  and generic programming framing, so the retelling can remain content-faithful across
+  languages. However, publishing conventions differ: some languages prefer clearer
+  section titles and formal academic tone. For right-to-left Arabic and Persian, the
+  writing must remain natural within those norms while keeping Markdown structure
+  intact. The “buy 1 yuan” concept should be described as “1 unit of money” while
+  retaining the number 1 and the exchange rule 3 pits, so the math remains consistent.
+
+  '
+retelling_strategy: 'Keep the Markdown structure and headings, preserve the unchanged
+  placeholder __I18N_CODE_BLOCK_0000__, and rewrite the explanation as a stepwise
+  strategy: (1) convert pit value to money to maximize funds, (2) buy and eat a peach
+  if affordable, (3) when buying stalls, see if one more exchange is possible. Use
+  formal, natural blog prose in each target language, avoiding literal word-for-word
+  translation.
+
+  '
+terminology_policy: '- Preserve the mathematical constants exactly: “1” money for
+  1 peach, “3” pits for 1 peach, and “+1 pit per peach eaten”.
+
+  - Translate “桃核” consistently as the equivalent of “peach pit/stone” (in each language’s
+  natural term).
+
+  - Keep the placeholder token __I18N_CODE_BLOCK_0000__ exactly unchanged in all translations.
+
+  - Maintain section headings: “解题思路/程序代码” equivalents in each language.
+
+  '
+forbidden_styles: '- Do not use literal translation that sounds unnatural.
+
+  - Do not alter Markdown structure (headings and list formatting must remain).
+
+  - For Arabic: use only Damascus Levantine Arabic wording and never Modern Standard
+  Arabic or Saudi dialect.
+
+  - Do not add or remove placeholders; keep URLs/Liquid placeholders/code identifiers
+  unchanged (none present besides the code placeholder).
+
+  - Do not wrap the YAML in Markdown fences; output only valid YAML.
+
+  '
