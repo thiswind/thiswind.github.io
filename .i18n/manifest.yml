@@ -1632,3 +1632,59 @@ sources:
         locked: false
     date: '2015-08-15 06:04:11+00:00'
     title: Tree 命令中文乱码问题的解决
+  2015-09-13-糟糕的犬儒主义:
+    source_path: _posts/2015-09-13-糟糕的犬儒主义.md
+    source_hash: sha256:f874a444abd023672efc898fc5b023248bb720bdf2679300efac8dc60321eeb6
+    source_status: active
+    translations:
+      th:
+        path: _posts_th/2015-09-13-糟糕的犬儒主义.md
+        source_hash: sha256:f874a444abd023672efc898fc5b023248bb720bdf2679300efac8dc60321eeb6
+        status: missing
+        analysis_path: .i18n/analysis/2015-09-13-糟糕的犬儒主义/th.yml
+        locked: false
+      my:
+        path: _posts_my/2015-09-13-糟糕的犬儒主义.md
+        source_hash: sha256:f874a444abd023672efc898fc5b023248bb720bdf2679300efac8dc60321eeb6
+        status: missing
+        analysis_path: .i18n/analysis/2015-09-13-糟糕的犬儒主义/my.yml
+        locked: false
+      km:
+        path: _posts_km/2015-09-13-糟糕的犬儒主义.md
+        source_hash: sha256:f874a444abd023672efc898fc5b023248bb720bdf2679300efac8dc60321eeb6
+        status: missing
+        analysis_path: .i18n/analysis/2015-09-13-糟糕的犬儒主义/km.yml
+        locked: false
+      lo:
+        path: _posts_lo/2015-09-13-糟糕的犬儒主义.md
+        source_hash: sha256:f874a444abd023672efc898fc5b023248bb720bdf2679300efac8dc60321eeb6
+        status: missing
+        analysis_path: .i18n/analysis/2015-09-13-糟糕的犬儒主义/lo.yml
+        locked: false
+      ru:
+        path: _posts_ru/2015-09-13-糟糕的犬儒主义.md
+        source_hash: sha256:f874a444abd023672efc898fc5b023248bb720bdf2679300efac8dc60321eeb6
+        status: missing
+        analysis_path: .i18n/analysis/2015-09-13-糟糕的犬儒主义/ru.yml
+        locked: false
+      fa:
+        path: _posts_fa/2015-09-13-糟糕的犬儒主义.md
+        source_hash: sha256:f874a444abd023672efc898fc5b023248bb720bdf2679300efac8dc60321eeb6
+        status: missing
+        analysis_path: .i18n/analysis/2015-09-13-糟糕的犬儒主义/fa.yml
+        locked: false
+      ar:
+        path: _posts_ar/2015-09-13-糟糕的犬儒主义.md
+        source_hash: sha256:f874a444abd023672efc898fc5b023248bb720bdf2679300efac8dc60321eeb6
+        status: missing
+        analysis_path: .i18n/analysis/2015-09-13-糟糕的犬儒主义/ar.yml
+        locked: false
+        dialect: damascus_levantine
+      tr:
+        path: _posts_tr/2015-09-13-糟糕的犬儒主义.md
+        source_hash: sha256:f874a444abd023672efc898fc5b023248bb720bdf2679300efac8dc60321eeb6
+        status: missing
+        analysis_path: .i18n/analysis/2015-09-13-糟糕的犬儒主义/tr.yml
+        locked: false
+    date: '2015-09-13 08:30:17+00:00'
+    title: 糟糕的犬儒主义
