@@ -808,7 +808,7 @@ sources:
       th:
         path: _posts_th/2015-08-15-MathTest.md
         source_hash: sha256:174a56dc8242bc67e25d50895f4244aa37bf598d0bfe6a23dd06836bb3d2eba0
-        status: stale
+        status: active
         analysis_path: .i18n/analysis/2015-08-15-mathtest/th.yml
         locked: false
         translation_hash: sha256:b0551e599db389e3e1227b7caaf9ce2081387ffeec608a980cce21ca2890e611
@@ -817,7 +817,7 @@ sources:
       my:
         path: _posts_my/2015-08-15-MathTest.md
         source_hash: sha256:174a56dc8242bc67e25d50895f4244aa37bf598d0bfe6a23dd06836bb3d2eba0
-        status: stale
+        status: active
         analysis_path: .i18n/analysis/2015-08-15-mathtest/my.yml
         locked: false
         translation_hash: sha256:58f7a2c58423b2e958246bcb67f22fc652b9fcf0f83487eed9eb095fe5a121e7
@@ -826,7 +826,7 @@ sources:
       km:
         path: _posts_km/2015-08-15-MathTest.md
         source_hash: sha256:174a56dc8242bc67e25d50895f4244aa37bf598d0bfe6a23dd06836bb3d2eba0
-        status: stale
+        status: active
         analysis_path: .i18n/analysis/2015-08-15-mathtest/km.yml
         locked: false
         translation_hash: sha256:e98801f49c592ba6c2138c89cafb51cdef98b6ef27dca9ca54b39be6d356a2d7
@@ -835,7 +835,7 @@ sources:
       lo:
         path: _posts_lo/2015-08-15-MathTest.md
         source_hash: sha256:174a56dc8242bc67e25d50895f4244aa37bf598d0bfe6a23dd06836bb3d2eba0
-        status: stale
+        status: active
         analysis_path: .i18n/analysis/2015-08-15-mathtest/lo.yml
         locked: false
         translation_hash: sha256:145a7e6e20858e8f7557d950acce303b96d5ef73df887eff43b75867630e32d5
@@ -844,7 +844,7 @@ sources:
       ru:
         path: _posts_ru/2015-08-15-MathTest.md
         source_hash: sha256:174a56dc8242bc67e25d50895f4244aa37bf598d0bfe6a23dd06836bb3d2eba0
-        status: stale
+        status: active
         analysis_path: .i18n/analysis/2015-08-15-mathtest/ru.yml
         locked: false
         translation_hash: sha256:e693dfb90d6af17ca899f1dc3e44997bd25f16c76af4210407cbde61e11053e8
@@ -853,7 +853,7 @@ sources:
       fa:
         path: _posts_fa/2015-08-15-MathTest.md
         source_hash: sha256:174a56dc8242bc67e25d50895f4244aa37bf598d0bfe6a23dd06836bb3d2eba0
-        status: stale
+        status: active
         analysis_path: .i18n/analysis/2015-08-15-mathtest/fa.yml
         locked: false
         translation_hash: sha256:07f4ff9bec8d28af81f05ec3becca2b7657179c2d1d12ddabe3d682d3260037e
@@ -862,7 +862,7 @@ sources:
       ar:
         path: _posts_ar/2015-08-15-MathTest.md
         source_hash: sha256:174a56dc8242bc67e25d50895f4244aa37bf598d0bfe6a23dd06836bb3d2eba0
-        status: stale
+        status: active
         analysis_path: .i18n/analysis/2015-08-15-mathtest/ar.yml
         locked: false
         dialect: damascus_levantine
@@ -872,7 +872,7 @@ sources:
       tr:
         path: _posts_tr/2015-08-15-MathTest.md
         source_hash: sha256:174a56dc8242bc67e25d50895f4244aa37bf598d0bfe6a23dd06836bb3d2eba0
-        status: stale
+        status: active
         analysis_path: .i18n/analysis/2015-08-15-mathtest/tr.yml
         locked: false
         translation_hash: sha256:fecf0bd9cb8335d8ac5ffa8c57c248e0951710b3fda40811e3ee84fe2f69fc91
@@ -1635,59 +1635,60 @@ sources:
   2015-09-13-糟糕的犬儒主义:
     source_path: _posts/2015-09-13-糟糕的犬儒主义.md
     source_hash: sha256:f874a444abd023672efc898fc5b023248bb720bdf2679300efac8dc60321eeb6
-    source_status: active
+    source_status: deleted
     translations:
       th:
         path: _posts_th/2015-09-13-糟糕的犬儒主义.md
         source_hash: sha256:f874a444abd023672efc898fc5b023248bb720bdf2679300efac8dc60321eeb6
-        status: missing
+        status: deleted
         analysis_path: .i18n/analysis/2015-09-13-糟糕的犬儒主义/th.yml
         locked: false
       my:
         path: _posts_my/2015-09-13-糟糕的犬儒主义.md
         source_hash: sha256:f874a444abd023672efc898fc5b023248bb720bdf2679300efac8dc60321eeb6
-        status: missing
+        status: deleted
         analysis_path: .i18n/analysis/2015-09-13-糟糕的犬儒主义/my.yml
         locked: false
       km:
         path: _posts_km/2015-09-13-糟糕的犬儒主义.md
         source_hash: sha256:f874a444abd023672efc898fc5b023248bb720bdf2679300efac8dc60321eeb6
-        status: missing
+        status: deleted
         analysis_path: .i18n/analysis/2015-09-13-糟糕的犬儒主义/km.yml
         locked: false
       lo:
         path: _posts_lo/2015-09-13-糟糕的犬儒主义.md
         source_hash: sha256:f874a444abd023672efc898fc5b023248bb720bdf2679300efac8dc60321eeb6
-        status: missing
+        status: deleted
         analysis_path: .i18n/analysis/2015-09-13-糟糕的犬儒主义/lo.yml
         locked: false
       ru:
         path: _posts_ru/2015-09-13-糟糕的犬儒主义.md
         source_hash: sha256:f874a444abd023672efc898fc5b023248bb720bdf2679300efac8dc60321eeb6
-        status: missing
+        status: deleted
         analysis_path: .i18n/analysis/2015-09-13-糟糕的犬儒主义/ru.yml
         locked: false
       fa:
         path: _posts_fa/2015-09-13-糟糕的犬儒主义.md
         source_hash: sha256:f874a444abd023672efc898fc5b023248bb720bdf2679300efac8dc60321eeb6
-        status: missing
+        status: deleted
         analysis_path: .i18n/analysis/2015-09-13-糟糕的犬儒主义/fa.yml
         locked: false
       ar:
         path: _posts_ar/2015-09-13-糟糕的犬儒主义.md
         source_hash: sha256:f874a444abd023672efc898fc5b023248bb720bdf2679300efac8dc60321eeb6
-        status: missing
+        status: deleted
         analysis_path: .i18n/analysis/2015-09-13-糟糕的犬儒主义/ar.yml
         locked: false
         dialect: damascus_levantine
       tr:
         path: _posts_tr/2015-09-13-糟糕的犬儒主义.md
         source_hash: sha256:f874a444abd023672efc898fc5b023248bb720bdf2679300efac8dc60321eeb6
-        status: missing
+        status: deleted
         analysis_path: .i18n/analysis/2015-09-13-糟糕的犬儒主义/tr.yml
         locked: false
     date: '2015-09-13 08:30:17+00:00'
     title: 糟糕的犬儒主义
+    deleted_at: '2026-05-30T02:27:21.840601+00:00'
   2015-08-23-ubuntu下用dnscrypt做代理用dnsmasq做缓存配置安全dns服务器:
     source_path: _posts/2015-08-23-Ubuntu下用DNSCrypt做代理用DNSMasq做缓存配置安全DNS服务器.md
     source_hash: sha256:fba1b252cce3a969417432ed7877ab31cfd881faf4bcc0905bda10b465ac799c
