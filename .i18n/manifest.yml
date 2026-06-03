@@ -1745,3 +1745,59 @@ sources:
         locked: false
     date: '2015-08-23 13:53:29+00:00'
     title: Ubuntu下用DNSCrypt做代理用DNSMasq做缓存配置安全DNS服务器
+  2026-06-03-gpt-arrival-alien-language:
+    source_path: _posts/2026-06-03-gpt-arrival-alien-language.md
+    source_hash: sha256:6720e8a1805c119e7f339ba3d62e37e5785178a776aeff2e8c3114d5d5374611
+    source_status: active
+    translations:
+      th:
+        path: _posts_th/2026-06-03-gpt-arrival-alien-language.md
+        source_hash: sha256:6720e8a1805c119e7f339ba3d62e37e5785178a776aeff2e8c3114d5d5374611
+        status: missing
+        analysis_path: .i18n/analysis/2026-06-03-gpt-arrival-alien-language/th.yml
+        locked: false
+      my:
+        path: _posts_my/2026-06-03-gpt-arrival-alien-language.md
+        source_hash: sha256:6720e8a1805c119e7f339ba3d62e37e5785178a776aeff2e8c3114d5d5374611
+        status: missing
+        analysis_path: .i18n/analysis/2026-06-03-gpt-arrival-alien-language/my.yml
+        locked: false
+      km:
+        path: _posts_km/2026-06-03-gpt-arrival-alien-language.md
+        source_hash: sha256:6720e8a1805c119e7f339ba3d62e37e5785178a776aeff2e8c3114d5d5374611
+        status: missing
+        analysis_path: .i18n/analysis/2026-06-03-gpt-arrival-alien-language/km.yml
+        locked: false
+      lo:
+        path: _posts_lo/2026-06-03-gpt-arrival-alien-language.md
+        source_hash: sha256:6720e8a1805c119e7f339ba3d62e37e5785178a776aeff2e8c3114d5d5374611
+        status: missing
+        analysis_path: .i18n/analysis/2026-06-03-gpt-arrival-alien-language/lo.yml
+        locked: false
+      ru:
+        path: _posts_ru/2026-06-03-gpt-arrival-alien-language.md
+        source_hash: sha256:6720e8a1805c119e7f339ba3d62e37e5785178a776aeff2e8c3114d5d5374611
+        status: missing
+        analysis_path: .i18n/analysis/2026-06-03-gpt-arrival-alien-language/ru.yml
+        locked: false
+      fa:
+        path: _posts_fa/2026-06-03-gpt-arrival-alien-language.md
+        source_hash: sha256:6720e8a1805c119e7f339ba3d62e37e5785178a776aeff2e8c3114d5d5374611
+        status: missing
+        analysis_path: .i18n/analysis/2026-06-03-gpt-arrival-alien-language/fa.yml
+        locked: false
+      ar:
+        path: _posts_ar/2026-06-03-gpt-arrival-alien-language.md
+        source_hash: sha256:6720e8a1805c119e7f339ba3d62e37e5785178a776aeff2e8c3114d5d5374611
+        status: missing
+        analysis_path: .i18n/analysis/2026-06-03-gpt-arrival-alien-language/ar.yml
+        locked: false
+        dialect: damascus_levantine
+      tr:
+        path: _posts_tr/2026-06-03-gpt-arrival-alien-language.md
+        source_hash: sha256:6720e8a1805c119e7f339ba3d62e37e5785178a776aeff2e8c3114d5d5374611
+        status: missing
+        analysis_path: .i18n/analysis/2026-06-03-gpt-arrival-alien-language/tr.yml
+        locked: false
+    date: '2026-06-03 00:00:00+08:00'
+    title: 为什么我觉得 GPT 更像《降临》里的外星人，而不像人类说话
