@@ -18,4 +18,23 @@
     <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
   {% endif %}
   {% feed_meta %}
+  {% if page.url == '/' %}
+  <script>
+    (function () {
+      var redirected = sessionStorage.getItem('lang_redirected');
+      if (redirected) return;
+      sessionStorage.setItem('lang_redirected', '1');
+      var map = {
+        'ar': '/ar/', 'fa': '/fa/', 'th': '/th/',
+        'my': '/my/', 'km': '/km/', 'lo': '/lo/',
+        'ru': '/ru/', 'tr': '/tr/'
+      };
+      var langs = (navigator.languages || [navigator.language || '']);
+      for (var i = 0; i < langs.length; i++) {
+        var code = langs[i].toLowerCase().split('-')[0];
+        if (map[code]) { window.location.replace(map[code]); return; }
+      }
+    })();
+  </script>
+  {% endif %}
 </head>
