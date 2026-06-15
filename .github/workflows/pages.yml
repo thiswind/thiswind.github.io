@@ -18,6 +18,7 @@ on:
         type: choice
         options:
           - ""
+          - en
           - th
           - my
           - km
@@ -70,6 +71,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: |
+            _posts_en
             _posts_th
             _posts_my
             _posts_km
@@ -112,6 +114,19 @@ jobs:
           status=$?
           set -e
           echo "TRANSLATE_STATUS=$status" >> "$GITHUB_ENV"
+
+      - name: Commit translated posts
+        if: ${{ github.event_name == 'push' || github.event.inputs.translate == 'true' }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add _posts_en _posts_th _posts_my _posts_km _posts_lo _posts_ru _posts_fa _posts_ar _posts_tr .i18n/manifest.yml
+          if git diff --cached --quiet; then
+            echo "No translation changes to commit."
+          else
+            git commit -m "chore: update translated posts [skip ci]"
+            git push
+          fi
 
       - name: Check translation result
         if: ${{ github.event_name == 'push' || github.event.inputs.translate == 'true' }}
