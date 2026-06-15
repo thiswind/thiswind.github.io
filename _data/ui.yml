@@ -9,6 +9,17 @@ zh:
   read_more: 继续阅读
   published_on: 发布于
   source_language: 中文原文
+en:
+  home: Home
+  posts: Posts
+  categories: Categories
+  tags: Tags
+  about: About
+  mygpts: GPTs
+  languages: Languages
+  read_more: Read more
+  published_on: Published on
+  source_language: Original in Chinese
 th:
   home: หน้าแรก
   posts: บทความ

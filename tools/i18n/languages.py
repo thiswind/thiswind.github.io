@@ -1,4 +1,11 @@
 LANGUAGES = {
+    "en": {
+        "name": "English",
+        "native_name": "English",
+        "dir": "ltr",
+        "collection_dir": "_posts_en",
+        "style": "natural English technical blog prose",
+    },
     "th": {
         "name": "Thai",
         "native_name": "ไทย",

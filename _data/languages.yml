@@ -6,6 +6,13 @@ zh:
   path_prefix: /
   source: true
   typography: zh
+en:
+  label: English
+  native_name: English
+  dir: ltr
+  collection: posts_en
+  path_prefix: /en/
+  typography: en
 th:
   label: Thai
   native_name: ไทย

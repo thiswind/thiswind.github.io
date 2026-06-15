@@ -8,4 +8,4 @@ ANALYSIS_DIR = I18N_DIR / "analysis"
 LLM_BASE_URL = "https://apinexus.net/v1"
 LLM_MODEL = "gpt-5.4-nano"
 SOURCE_LANG = "zh"
-TARGET_LANGS = ["th", "my", "km", "lo", "ru", "fa", "ar", "tr"]
+TARGET_LANGS = ["en", "th", "my", "km", "lo", "ru", "fa", "ar", "tr"]
